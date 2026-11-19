@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "packs": [
     {
       "pack_id": "yomizora_addon_n5_n4_v1",
@@ -7,6 +7,13 @@
       "title": "Дополнительный набор N5–N4 (30 текстов)",
       "description": "15 текстов JLPT N5 и 15 текстов JLPT N4 во всех категориях",
       "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_addon_n5_n4_v1.json"
+    },
+    {
+      "pack_id": "yomizora_addon_n5_n4_v2",
+      "pack_version": 1,
+      "title": "Большой набор N5–N4 (60 текстов)",
+      "description": "30 новых текстов JLPT N5 и 30 новых текстов JLPT N4 (до 100 текстов в каждом уровне)",
+      "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_addon_n5_n4_v2.json"
     }
   ]
 }
