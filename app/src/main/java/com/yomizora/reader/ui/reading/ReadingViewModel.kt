@@ -105,18 +105,30 @@ class ReadingViewModel @Inject constructor(
             val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
 
             val keyVocab = mutableListOf<DictionaryEntry>()
+            val conversationalVocab = mutableListOf<DictionaryEntry>()
+            val regularVocab = mutableListOf<DictionaryEntry>()
             val seenIds = mutableSetOf<String>()
             for (p in updated.material.paragraphs) {
                 for (s in p.sentences) {
                     for (seg in s.segments) {
-                        if (keyVocab.size >= 7) break
-                        if (seg.reading.isNullOrBlank()) continue
+                        val hasKanjiReading = !seg.reading.isNullOrBlank()
+                        val hasDictId = !seg.dictId.isNullOrBlank()
+                        if (!hasKanjiReading && !hasDictId) continue
                         val entry = contentRepository.lookupWord(seg.dictId, seg.text, seg.reading) ?: continue
-                        if (!entry.partOfSpeech.startsWith("числительное") && seenIds.add(entry.id)) {
-                            keyVocab += entry
+                        if (entry.partOfSpeech.startsWith("числительное") || !seenIds.add(entry.id)) continue
+                        val posLower = entry.partOfSpeech.lowercase()
+                        if (posLower.contains("разговор") || posLower.contains("выражен") || posLower.contains("идиом")) {
+                            conversationalVocab += entry
+                        } else if (hasKanjiReading) {
+                            regularVocab += entry
                         }
                     }
                 }
+            }
+            keyVocab.addAll(conversationalVocab)
+            for (entry in regularVocab) {
+                if (keyVocab.size >= 12) break
+                keyVocab += entry
             }
 
             _uiState.update {

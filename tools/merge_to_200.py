@@ -6,7 +6,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from content_builder import KANJI_RE, normalize_text, parse_annotated_text, text_similarity
+from conversational_dict import CONVERSATIONAL_EXPRESSIONS
 from ext_dict_entries import NEW_KANJI_DICT, NEW_KATAKANA_DICT
+from ext_dict_extra import EXTRA_KANJI_DICT, EXTRA_KATAKANA_DICT
 from ext_n4_texts import EXT_N4_TEXTS
 from ext_n5_texts import EXT_N5_TEXTS
 from kana_and_quiz_enricher import (
@@ -43,9 +45,9 @@ def build_master_dictionary(n5_dict, n4_dict, v1_dict):
         if e["word"] not in word_to_entry:
             word_to_entry[e["word"]] = e
 
-    # Add NEW_KANJI_DICT entries
+    # Add NEW_KANJI_DICT + EXTRA_KANJI_DICT entries
     stem_to_id = {}
-    for (seg_w, seg_r), (dw, dr, pos, trans) in NEW_KANJI_DICT.items():
+    for (seg_w, seg_r), (dw, dr, pos, trans) in {**NEW_KANJI_DICT, **EXTRA_KANJI_DICT}.items():
         if (dw, dr) in word_reading_to_id:
             did = word_reading_to_id[(dw, dr)]
         elif dw in word_to_entry:
@@ -69,8 +71,8 @@ def build_master_dictionary(n5_dict, n4_dict, v1_dict):
                 word_to_entry[dw] = entry
         stem_to_id[(seg_w, seg_r)] = did
 
-    # Add NEW_KATAKANA_DICT entries
-    for kw, (dw, dr, pos, trans) in NEW_KATAKANA_DICT.items():
+    # Add NEW_KATAKANA_DICT + EXTRA_KATAKANA_DICT entries
+    for kw, (dw, dr, pos, trans) in {**NEW_KATAKANA_DICT, **EXTRA_KATAKANA_DICT}.items():
         if dw in word_to_entry:
             continue
         did = make_dict_id("dk", dw)
@@ -88,6 +90,32 @@ def build_master_dictionary(n5_dict, n4_dict, v1_dict):
         dictionary.append(entry)
         word_reading_to_id[(dw, dr)] = did
         word_to_entry[dw] = entry
+
+    # Ensure conversational expressions have natural speech meanings and part_of_speech = "разговорное выражение"
+    for key, (dw, dr, trans) in CONVERSATIONAL_EXPRESSIONS.items():
+        if dw in word_to_entry:
+            e = word_to_entry[dw]
+            e["part_of_speech"] = "разговорное выражение"
+            e["translation_ru"] = trans
+            if key not in word_to_entry:
+                word_to_entry[key] = e
+        else:
+            did = make_dict_id("dc", dw)
+            while did in seen_ids:
+                did = did + "x"
+            seen_ids.add(did)
+            entry = {
+                "id": did,
+                "word": dw,
+                "reading": dr,
+                "translation_ru": trans,
+                "part_of_speech": "разговорное выражение",
+                "note": None,
+            }
+            dictionary.append(entry)
+            word_reading_to_id[(dw, dr)] = did
+            word_to_entry[dw] = entry
+            word_to_entry[key] = entry
 
     return dictionary, word_reading_to_id, word_to_entry, stem_to_id
 
@@ -147,6 +175,61 @@ EXTRA_QUESTION_READINGS = {
     "昼過": "ひるす",
     "朝早": "あさはや",
     "順番": "じゅんばん",
+    "一年前": "いちねんまえ",
+    "一度使": "いちどつか",
+    "一番前": "いちばんまえ",
+    "一番後": "いちばんうし",
+    "一番高": "いちばんたか",
+    "一週間前": "いっしゅうかんまえ",
+    "七時半": "しちじはん",
+    "三週間続": "さんしゅうかんつづ",
+    "二倍": "にばい",
+    "二時十分": "にじじゅっぷん",
+    "人々": "ひとびと",
+    "今少": "いますこ",
+    "何日": "なんにち",
+    "何時何分": "なんじなんぷん",
+    "何点": "なんてん",
+    "何色": "なにいろ",
+    "保存方法": "ほぞんほうほう",
+    "修理": "しゅうり",
+    "先週入": "せんしゅうはい",
+    "全部消": "ぜんぶけ",
+    "全部送": "ぜんぶおく",
+    "八十点": "はちじゅってん",
+    "凍": "こお",
+    "凶": "きょう",
+    "列": "れつ",
+    "割": "わ",
+    "割引": "わりびき",
+    "十時半": "じゅうじはん",
+    "半分近": "はんぶんちか",
+    "半額以下": "はんがくいか",
+    "厳": "きび",
+    "反応": "はんのう",
+    "味噌作": "みそづく",
+    "命令": "めいれい",
+    "大雪": "おおゆき",
+    "急行電車": "きゅうこうでんしゃ",
+    "月前": "げつまえ",
+    "月続": "げつつづ",
+    "服": "ふく",
+    "材料": "ざいりょう",
+    "毎日三十分": "まいにちさんじゅっぷん",
+    "毎日十回書": "まいにちじゅっかいか",
+    "毎日十時間寝": "まいにちじゅうじかんね",
+    "毎日練習": "まいにちれんしゅう",
+    "毎朝何時": "まいあさなんじ",
+    "点数": "てんすう",
+    "無口": "むくち",
+    "端": "はし",
+    "街": "まち",
+    "賞金": "しょうきん",
+    "運転": "うんてん",
+    "運転手": "うんてんしゅ",
+    "金属": "きんぞく",
+    "鏡": "かがみ",
+    "閉館時間": "へいかんじかん",
 }
 
 
@@ -290,9 +373,12 @@ def main():
     )
 
     kana_id_map = {}
-    for w in {**KATAKANA_DICT, **HIRAGANA_DICT, **NEW_KATAKANA_DICT}:
+    for w in {**KATAKANA_DICT, **HIRAGANA_DICT, **NEW_KATAKANA_DICT, **EXTRA_KATAKANA_DICT}:
         if w in word_to_entry:
             kana_id_map[w] = word_to_entry[w]["id"]
+    for key, (dw, dr, _) in CONVERSATIONAL_EXPRESSIONS.items():
+        if not KANJI_RE.search(key) and key in word_to_entry:
+            kana_id_map[key] = word_to_entry[key]["id"]
     kana_words_sorted = sorted(kana_id_map.keys(), key=len, reverse=True)
 
     unannotated_q = set()
@@ -326,19 +412,19 @@ def main():
     all_n5 = sorted(all_n5, key=complexity_score)
     for idx, m in enumerate(all_n5, start=1):
         m["order_index"] = idx
-        m["version"] = 3
+        m["version"] = 4
 
     all_n4 = sorted(all_n4, key=complexity_score)
     for idx, m in enumerate(all_n4, start=1):
         m["order_index"] = idx
-        m["version"] = 3
+        m["version"] = 4
 
-    n5_data["pack_version"] = 5
+    n5_data["pack_version"] = 6
     n5_data["materials"] = all_n5
     n5_data["dictionary"] = dictionary
     N5_PATH.write_text(json.dumps(n5_data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    n4_data["pack_version"] = 5
+    n4_data["pack_version"] = 6
     n4_data["materials"] = all_n4
     n4_data["dictionary"] = []
     N4_PATH.write_text(json.dumps(n4_data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -347,7 +433,7 @@ def main():
     v2_materials = sorted(ext_n5_built + ext_n4_built, key=lambda m: (m["level"] != "N5", complexity_score(m)))
     n5_i, n4_i = 71, 71
     for m in v2_materials:
-        m["version"] = 3
+        m["version"] = 4
         if m["level"] == "N5":
             m["order_index"] = n5_i
             n5_i += 1
@@ -374,14 +460,14 @@ def main():
 
     addon_v2 = {
         "pack_id": "yomizora_addon_n5_n4_v2",
-        "pack_version": 1,
+        "pack_version": 2,
         "materials": v2_materials,
         "dictionary": v2_dict,
     }
     ADDON_V2_PATH.write_text(json.dumps(addon_v2, ensure_ascii=False, indent=2), encoding="utf-8")
 
     manifest = {
-        "manifest_version": 2,
+        "manifest_version": 3,
         "packs": [
             {
                 "pack_id": "yomizora_addon_n5_n4_v1",
@@ -392,9 +478,9 @@ def main():
             },
             {
                 "pack_id": "yomizora_addon_n5_n4_v2",
-                "pack_version": 1,
-                "title": "Большой набор N5–N4 (60 текстов)",
-                "description": "30 новых текстов JLPT N5 и 30 новых текстов JLPT N4 (до 100 текстов в каждом уровне)",
+                "pack_version": 2,
+                "title": "Большой набор N5–N4 (60 расширенных текстов)",
+                "description": "30 длинных текстов JLPT N5 и 30 длинных текстов JLPT N4 с разговорными выражениями",
                 "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_addon_n5_n4_v2.json",
             },
         ],

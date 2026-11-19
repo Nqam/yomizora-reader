@@ -63,6 +63,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -350,20 +351,35 @@ fun ReadingScreen(
                                             verticalArrangement = Arrangement.spacedBy(6.dp)
                                         ) {
                                             state.keyVocabulary.forEach { entry ->
+                                                val isConversational = entry.partOfSpeech.lowercase().let {
+                                                    it.contains("разговор") || it.contains("выражен") || it.contains("идиом")
+                                                }
+                                                val label = if (entry.word == entry.reading) {
+                                                    entry.word
+                                                } else {
+                                                    "${entry.word} (${entry.reading})"
+                                                }
                                                 Row(
                                                     modifier = Modifier.fillMaxWidth(),
-                                                    horizontalArrangement = Arrangement.SpaceBetween
+                                                    horizontalArrangement = Arrangement.spacedBy(12.dp),
+                                                    verticalAlignment = Alignment.Top
                                                 ) {
                                                     Text(
-                                                        text = "${entry.word} (${entry.reading})",
+                                                        text = if (isConversational) "💬 $label" else label,
                                                         style = MaterialTheme.typography.bodyMedium,
                                                         fontWeight = FontWeight.SemiBold,
-                                                        color = MaterialTheme.colorScheme.primary
+                                                        color = if (isConversational) {
+                                                            MaterialTheme.colorScheme.tertiary
+                                                        } else {
+                                                            MaterialTheme.colorScheme.primary
+                                                        }
                                                     )
                                                     Text(
                                                         text = entry.translationRu,
                                                         style = MaterialTheme.typography.bodyMedium,
-                                                        color = MaterialTheme.colorScheme.onSurface
+                                                        color = MaterialTheme.colorScheme.onSurface,
+                                                        textAlign = TextAlign.End,
+                                                        modifier = Modifier.weight(1f)
                                                     )
                                                 }
                                             }
