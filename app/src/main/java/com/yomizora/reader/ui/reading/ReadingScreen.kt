@@ -465,11 +465,13 @@ fun ReadingScreen(
                             }
                         }
 
-                        material.paragraphs.forEach { paragraph ->
+                        material.paragraphs.forEachIndexed { pIdx, paragraph ->
                             FuriganaParagraph(
+                                paragraphIndex = pIdx,
                                 paragraph = paragraph,
                                 settings = settings,
                                 familiarWords = state.familiarWords,
+                                underlinedGrammarPositions = state.underlinedGrammarPositions,
                                 selectedSegment = state.selectedWord?.segment,
                                 onSegmentClick = viewModel::onSegmentClick,
                                 onGrammarClick = viewModel::onGrammarClick

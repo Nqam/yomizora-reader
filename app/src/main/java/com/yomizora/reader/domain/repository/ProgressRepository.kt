@@ -37,6 +37,7 @@ interface ProgressRepository {
     suspend fun exportProgressBackupJson(): String
     suspend fun importProgressBackupJson(rawJson: String): Int
     suspend fun getFamiliarWords(minCompletedTexts: Int = 2): Set<Pair<String, String>>
+    suspend fun getSeenGrammarIds(excludeMaterialId: String? = null): Set<String>
 
     fun observeWordReviews(): Flow<List<WordReviewItem>>
     suspend fun syncWordsFromCompletedMaterials()

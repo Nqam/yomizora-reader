@@ -38,9 +38,11 @@ import com.yomizora.reader.domain.model.TextSegment
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun FuriganaParagraph(
+    paragraphIndex: Int = 0,
     paragraph: Paragraph,
     settings: ReaderSettings,
     familiarWords: Set<Pair<String, String>> = emptySet(),
+    underlinedGrammarPositions: Map<Triple<Int, Int, Int>, GrammarPoint> = emptyMap(),
     selectedSegment: TextSegment?,
     onSegmentClick: (TextSegment) -> Unit,
     onGrammarClick: (GrammarPoint) -> Unit = {},
@@ -56,8 +58,8 @@ fun FuriganaParagraph(
         horizontalArrangement = Arrangement.Start,
         verticalArrangement = Arrangement.spacedBy(verticalSpacing)
     ) {
-        for (sentence in paragraph.sentences) {
-            for (segment in sentence.segments) {
+        paragraph.sentences.forEachIndexed { sIdx, sentence ->
+            sentence.segments.forEachIndexed { segIdx, segment ->
                 val displayText = when (settings.displayMode) {
                     TextDisplayMode.KANA_ONLY -> segment.reading ?: segment.text
                     else -> segment.text
@@ -73,14 +75,7 @@ fun FuriganaParagraph(
                 }
 
                 val isWordInteractive = !segment.dictId.isNullOrBlank() || !segment.reading.isNullOrBlank()
-                val matchedGrammar = if (!isWordInteractive &&
-                    segment.text.length >= 2 &&
-                    !segment.text.all { it == '。' || it == '、' || it == '「' || it == '」' }
-                ) {
-                    GrammarCatalog.findGrammarForSegment(segment.text)
-                } else {
-                    null
-                }
+                val matchedGrammar = underlinedGrammarPositions[Triple(paragraphIndex, sIdx, segIdx)]
                 val isGrammarSegment = matchedGrammar != null
 
                 val isSelected = selectedSegment == segment

@@ -36,6 +36,7 @@ data class ReadingUiState(
     val materialWithProgress: MaterialWithProgress? = null,
     val selectedWord: WordPopupState? = null,
     val grammarPoints: List<GrammarPoint> = emptyList(),
+    val underlinedGrammarPositions: Map<Triple<Int, Int, Int>, GrammarPoint> = emptyMap(),
     val selectedGrammar: GrammarPoint? = null,
     val keyVocabulary: List<DictionaryEntry> = emptyList(),
     val familiarWords: Set<Pair<String, String>> = emptySet()
@@ -79,7 +80,28 @@ class ReadingViewModel @Inject constructor(
             }
             progressRepository.markMaterialOpened(materialId)
             val updated = progressRepository.getMaterialWithProgress(materialId) ?: item
+            val seenGrammarIds = progressRepository.getSeenGrammarIds(excludeMaterialId = materialId)
             val grammar = GrammarCatalog.findGrammarInMaterial(updated.material)
+                .filter { it.id !in seenGrammarIds }
+
+            val underlinedPositions = mutableMapOf<Triple<Int, Int, Int>, GrammarPoint>()
+            val seenInThisText = mutableSetOf<String>()
+            updated.material.paragraphs.forEachIndexed { pIdx, p ->
+                p.sentences.forEachIndexed { sIdx, s ->
+                    s.segments.forEachIndexed { segIdx, seg ->
+                        val isWord = !seg.dictId.isNullOrBlank() || !seg.reading.isNullOrBlank()
+                        if (!isWord && seg.text.length >= 2 &&
+                            !seg.text.all { it == '。' || it == '、' || it == '「' || it == '」' }
+                        ) {
+                            val gp = GrammarCatalog.findGrammarForSegment(seg.text)
+                            if (gp != null && gp.id !in seenGrammarIds && seenInThisText.add(gp.id)) {
+                                underlinedPositions[Triple(pIdx, sIdx, segIdx)] = gp
+                            }
+                        }
+                    }
+                }
+            }
+
             val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
 
             val keyVocab = mutableListOf<DictionaryEntry>()
@@ -103,6 +125,7 @@ class ReadingViewModel @Inject constructor(
                     isLocked = false,
                     materialWithProgress = updated,
                     grammarPoints = grammar,
+                    underlinedGrammarPositions = underlinedPositions,
                     keyVocabulary = keyVocab,
                     familiarWords = familiar
                 )

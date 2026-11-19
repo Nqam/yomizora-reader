@@ -445,6 +445,22 @@ class ProgressRepositoryImpl @Inject constructor(
         return counts.filterValues { it >= minCompletedTexts }.keys
     }
 
+    override suspend fun getSeenGrammarIds(excludeMaterialId: String?): Set<String> {
+        val profileId = currentProfileId()
+        val completedIds = progressDao.getAllOnce(profileId)
+            .filter { it.state == STATE_COMPLETED && it.materialId != excludeMaterialId }
+            .map { it.materialId }
+        if (completedIds.isEmpty()) return emptySet()
+
+        val seen = mutableSetOf<String>()
+        for (id in completedIds) {
+            val mat = contentRepository.getMaterialById(id) ?: continue
+            com.yomizora.reader.data.content.GrammarCatalog.findGrammarInMaterial(mat)
+                .forEach { seen += it.id }
+        }
+        return seen
+    }
+
     override fun observeWordReviews(): Flow<List<WordReviewItem>> =
         settingsRepository.activeProfileIdFlow.flatMapLatest { profileId ->
             wordReviewDao.observeAll(profileId).map { list ->
