@@ -8,9 +8,9 @@ enum class JlptLevel(
 ) {
     N5("N5", "JLPT N5", "Начальный уровень", true),
     N4("N4", "JLPT N4", "Базовый уровень", true),
-    N3("N3", "JLPT N3", "Средний уровень", false),
-    N2("N2", "JLPT N2", "Продвинутый уровень", false),
-    N1("N1", "JLPT N1", "Высший уровень", false);
+    N3("N3", "JLPT N3", "Средний уровень", true),
+    N2("N2", "JLPT N2", "Продвинутый уровень", true),
+    N1("N1", "JLPT N1", "Высший уровень", true);
 
     companion object {
         fun fromCode(code: String): JlptLevel =

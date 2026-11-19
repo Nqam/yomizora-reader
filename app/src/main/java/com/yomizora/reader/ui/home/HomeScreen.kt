@@ -141,18 +141,13 @@ fun HomeScreen(
             )
         }
 
-        item {
-            LevelProgressCard(
-                progress = state.n5Progress,
-                onClick = { onOpenLevel(JlptLevel.N5) }
-            )
-        }
-
-        item {
-            LevelProgressCard(
-                progress = state.n4Progress,
-                onClick = { onOpenLevel(JlptLevel.N4) }
-            )
+        state.levelProgresses.forEach { progress ->
+            item(key = progress.level.code) {
+                LevelProgressCard(
+                    progress = progress,
+                    onClick = { onOpenLevel(progress.level) }
+                )
+            }
         }
 
         item {

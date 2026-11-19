@@ -137,7 +137,10 @@ fun LibraryScreen(
                             count = JlptLevel.activeLevels.size
                         )
                     ) {
-                        Text(level.titleRu)
+                        Text(
+                            text = if (JlptLevel.activeLevels.size > 2) level.code else level.titleRu,
+                            maxLines = 1
+                        )
                     }
                 }
             }
