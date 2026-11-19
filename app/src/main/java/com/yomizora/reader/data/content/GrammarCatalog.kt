@@ -11,72 +11,34 @@ object GrammarCatalog {
         val regex: Regex
     )
 
+    // Ordered from MOST specific / longest constructions to most general so segment matching
+    // always picks the exact construction rather than a shorter substring.
     private val rules: List<GrammarRule> = listOf(
-        // === N5 Core Grammar ===
         GrammarRule(
             GrammarPoint(
-                id = "g_n5_desu_masu",
-                pattern = "～です / ～ます",
-                level = JlptLevel.N5,
-                titleRu = "Вежливая форма речи (наст./буд. и прош. время)",
-                formula = "Сущ./Прил. + です (でした) | Глагол (ます-основа) + ます (ました)",
-                explanationRu = "Базовая нейтрально-вежливая форма японского предложения. Используется в повседневном общении с незнакомыми, коллегами и преподавателями.",
-                exampleJp = "私は毎日日本語を勉強します。",
-                exampleRu = "Я каждый день изучаю японский язык."
+                id = "g_n4_te_itadakemasenka",
+                pattern = "～ていただけませんか",
+                level = JlptLevel.N4,
+                titleRu = "Очень вежливая просьба («Не могли бы вы...?»)",
+                formula = "Глагол (て/で-форма) + いただけませんか",
+                explanationRu = "Вежливая форма просьбы, обращённая к незнакомому человеку, старшему или коллеге. Буквально: «Не мог бы я получить от вас это действие?».",
+                exampleJp = "すみません。ちょっと写真を撮っていただけませんか。",
+                exampleRu = "Извините, не могли бы вы сделать фотографию?"
             ),
-            Regex("(です|でした|ます|ました|ません)")
+            Regex("いただけませんか")
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n5_ga_arimasu_imasu",
-                pattern = "～があります / ～います",
-                level = JlptLevel.N5,
-                titleRu = "Наличие предметов и живых существ",
-                formula = "Место + に + Предмет + が あります / Существо + が います",
-                explanationRu = "あります используется для неодушевлённых предметов и событий, а います — для людей и животных.",
-                exampleJp = "公園に小さい白い猫がいました。",
-                exampleRu = "В парке была маленькая белая кошка."
+                id = "g_n4_nakerebanaranai",
+                pattern = "～なければならない",
+                level = JlptLevel.N4,
+                titleRu = "Необходимость («нужно, обязан»)",
+                formula = "Глагол (ない-основа) + なければならない / なりません",
+                explanationRu = "Выражает обязанность или строгую необходимость.",
+                exampleJp = "ゴミを分別しなければなりません。",
+                exampleRu = "Мусор необходимо сортировать."
             ),
-            Regex("が(あり|いま)(す|した|せん)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_suki_jouzu",
-                pattern = "～が好き / 上手 / 苦手",
-                level = JlptLevel.N5,
-                titleRu = "Нравится / умею / плохо удаётся",
-                formula = "Объект + が + 好きです / 上手です / 苦手です",
-                explanationRu = "Выражает отношение к чему-либо или оценку своих навыков. Перед таким предикативом всегда ставится частица が.",
-                exampleJp = "私は秋が一番好きです。",
-                exampleRu = "Больше всего мне нравится осень."
-            ),
-            Regex("が[^。、]*(好き|大好き|上手|苦手)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_teiru",
-                pattern = "～ている / ～ています",
-                level = JlptLevel.N5,
-                titleRu = "Длительное действие или текущее состояние",
-                formula = "Глагол (て/で-форма) + いる / います / いました",
-                explanationRu = "Обозначает действие, происходящее прямо сейчас, регулярную привычку или сохраняющееся состояние.",
-                exampleJp = "自動販売機で温かいスープも売っています。",
-                exampleRu = "В автоматах также продаётся горячий суп."
-            ),
-            Regex("[てで]い(る|ます|ました|た|ない)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_tekudasai",
-                pattern = "～てください",
-                level = JlptLevel.N5,
-                titleRu = "Вежливая просьба («пожалуйста, сделайте»)",
-                formula = "Глагол (て/で-форма) + ください",
-                explanationRu = "Используется для вежливой просьбы или инструкции выполнить действие.",
-                exampleJp = "この道をまっすぐ行ってください。",
-                exampleRu = "Пожалуйста, идите прямо по этой дороге."
-            ),
-            Regex("[てで]ください")
+            Regex("なければなら(ない|ません)")
         ),
         GrammarRule(
             GrammarPoint(
@@ -93,99 +55,6 @@ object GrammarCatalog {
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n5_tai",
-                pattern = "～たい",
-                level = JlptLevel.N5,
-                titleRu = "Желание («хочу сделать»)",
-                formula = "Глагол (ます-основа) + たいです / たかった",
-                explanationRu = "Выражает собственное желание говорящего совершить действие.",
-                exampleJp = "また京都へ行きたいです。",
-                exampleRu = "Я хочу снова поехать в Киото."
-            ),
-            Regex("たい(です|と|か)|たかった")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_tari",
-                pattern = "～たり～たりする",
-                level = JlptLevel.N5,
-                titleRu = "Перечисление действий («и то, и другое»)",
-                formula = "Глагол (た-форма) + り、... + りする / します",
-                explanationRu = "Перечисляет несколько примеров действий из числа многих.",
-                exampleJp = "お弁当を食べたり、お茶を飲んだりします。",
-                exampleRu = "Едят бэнто, пьют чай и т.п."
-            ),
-            Regex("[ただ]り")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_te_kara",
-                pattern = "～てから",
-                level = JlptLevel.N5,
-                titleRu = "Последовательность («после того как...»)",
-                formula = "Глагол (て/で-форма) + から、...",
-                explanationRu = "Показывает, что второе действие происходит сразу после завершения первого.",
-                exampleJp = "荷物を預けてから、朝ご飯を食べました。",
-                exampleRu = "Сдав багаж, я позавтракал."
-            ),
-            Regex("[てで]から")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_mae_ato",
-                pattern = "～前に / ～後で",
-                level = JlptLevel.N5,
-                titleRu = "Время действия («до / после»)",
-                formula = "Глагол (словарная) + 前に | Глагол (た-форма) / Сущ. + の + 後で",
-                explanationRu = "Указывает, происходит ли главное действие до или после другого события.",
-                exampleJp = "寝る前にストレッチをします。",
-                exampleRu = "Перед сном я делаю растяжку."
-            ),
-            Regex("(前に|後で)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_kara_reason",
-                pattern = "～から (причина)",
-                level = JlptLevel.N5,
-                titleRu = "Причина («потому что...»)",
-                formula = "Причина + から、Результат",
-                explanationRu = "Указывает на причину или основание. В разговорной речи часто ставится в конце предложения: ～からです.",
-                exampleJp = "図書館は静かですから、本が読みやすいです。",
-                exampleRu = "Поскольку в библиотеке тихо, читать книги легко."
-            ),
-            Regex("(ですから|ますから|から。|からです)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_mashou_masenka",
-                pattern = "～ましょう / ～ませんか",
-                level = JlptLevel.N5,
-                titleRu = "Приглашение к совместному действию",
-                formula = "Глагол (ます-основа) + ましょう (давайте) / ませんか (не хотите ли?)",
-                explanationRu = "～ませんか — мягкое приглашение, ～ましょう — предложение сделать что-то вместе.",
-                exampleJp = "一緒に映画を見に行きませんか。",
-                exampleRu = "Не сходить ли нам вместе в кино?"
-            ),
-            Regex("(ましょう|ませんか)")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n5_kedo_ga",
-                pattern = "～が / ～けれど (противопоставление)",
-                level = JlptLevel.N5,
-                titleRu = "Сопоставление («но, хотя»)",
-                formula = "Часть 1 + が / けれど（も）、Часть 2",
-                explanationRu = "Соединяет две части предложения с оттенком контраста или мягкого перехода к новой теме.",
-                exampleJp = "少し難しいですが、とても面白いです。",
-                exampleRu = "Немного сложно, но очень интересно."
-            ),
-            Regex("(ですが、|ますが、|ましたが、|けれど|けど)")
-        ),
-
-        // === N4 Grammar ===
-        GrammarRule(
-            GrammarPoint(
                 id = "g_n4_koto_ga_dekiru",
                 pattern = "～ことができる",
                 level = JlptLevel.N4,
@@ -195,7 +64,7 @@ object GrammarCatalog {
                 exampleJp = "安心して働くことができました。",
                 exampleRu = "Я смог спокойно работать."
             ),
-            Regex("ことができ(る|ます|ました|た|ない)")
+            Regex("ことができ(る|ます|ました|た|ない|ません)")
         ),
         GrammarRule(
             GrammarPoint(
@@ -209,6 +78,71 @@ object GrammarCatalog {
                 exampleRu = "До этого я пил только растворимый вариант."
             ),
             Regex("[ただ]ことが(ある|あり|ない|なかっ)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n4_younisuru",
+                pattern = "～ようにする",
+                level = JlptLevel.N4,
+                titleRu = "Стараться выработать привычку",
+                formula = "Глагол (словарная / ない-форма) + ようにする",
+                explanationRu = "Описывает сознательное усилие приучить себя к чему-либо или следовать правилу.",
+                exampleJp = "毎晩ストレッチをするようにしています。",
+                exampleRu = "Я стараюсь каждый вечер делать растяжку."
+            ),
+            Regex("ようにし(て|ます|た|よう)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n4_youninaru",
+                pattern = "～ようになる",
+                level = JlptLevel.N4,
+                titleRu = "Изменение состояния («стал уметь / начал»)",
+                formula = "Глагол (словарная / потенц.) + ようになる",
+                explanationRu = "Показывает постепенное изменение, когда раньше что-то не получалось, а теперь стало возможным.",
+                exampleJp = "少しずつ読めるようになりました。",
+                exampleRu = "Я постепенно научился читать."
+            ),
+            Regex("ようになり(ます|ました|った)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n4_kotonisuru_naru",
+                pattern = "～ことにする / ～ことになる",
+                level = JlptLevel.N4,
+                titleRu = "Принять решение / так сложилось",
+                formula = "Глагол (словарная) + ことにする (сам решил) / ことになる (так вышло)",
+                explanationRu = "ことにする выражает личное решение говорящего; ことになる — решение обстоятельств или других людей.",
+                exampleJp = "本屋でアルバイトを始めることにしました。",
+                exampleRu = "Я решил начать подрабатывать в книжном магазине."
+            ),
+            Regex("ことに(し|なり)(ます|ました|て|た)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n4_kamoshirenai",
+                pattern = "～かもしれない",
+                level = JlptLevel.N4,
+                titleRu = "Вероятность («возможно, может быть»)",
+                formula = "Простая форма + かもしれない / かもしれません",
+                explanationRu = "Выражает предположение с долей неуверенности.",
+                exampleJp = "もう直せないかもしれないと思っていました。",
+                exampleRu = "Я думал, что, возможно, уже не починить."
+            ),
+            Regex("かもしれ(ない|ません)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n4_hougaii",
+                pattern = "～ほうがいい",
+                level = JlptLevel.N4,
+                titleRu = "Совет («лучше сделать / не делать»)",
+                formula = "Глагол (た-форма / ない-форма) + ほうがいいです",
+                explanationRu = "Используется для мягкого совета или рекомендации.",
+                exampleJp = "お湯を沸騰させないほうがいいそうです。",
+                exampleRu = "Говорят, воду лучше не доводить до кипения."
+            ),
+            Regex("ほうがいい")
         ),
         GrammarRule(
             GrammarPoint(
@@ -251,42 +185,55 @@ object GrammarCatalog {
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_younisuru",
-                pattern = "～ようにする",
+                id = "g_n4_tekureru_morau",
+                pattern = "～てくれる / ～てもらう",
                 level = JlptLevel.N4,
-                titleRu = "Стараться выработать привычку",
-                formula = "Глагол (словарная / ない-форма) + ようにする",
-                explanationRu = "Описывает сознательное усилие приучить себя к чему-либо или следовать правилу.",
-                exampleJp = "毎晩ストレッチをするようにしています。",
-                exampleRu = "Я стараюсь каждый вечер делать растяжку."
+                titleRu = "Действие для меня / получение помощи",
+                formula = "Глагол (て/で-форма) + くれる (для меня) / もらう (получил помощь)",
+                explanationRu = "てくれる подчёркивает доброту другого человека к говорящему; てもらう — что говорящий попросил или получил помощь.",
+                exampleJp = "先輩が丁寧に教えてくれました。",
+                exampleRu = "Старший коллега вежливо объяснил мне."
             ),
-            Regex("ようにし(て|ます|た)")
+            Regex("[てで](くれ|もら)(る|ます|ました|た|い|え)")
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_youninaru",
-                pattern = "～ようになる",
-                level = JlptLevel.N4,
-                titleRu = "Изменение состояния («стал уметь / начал»)",
-                formula = "Глагол (словарная / потенц.) + ようになる",
-                explanationRu = "Показывает постепенное изменение, когда раньше что-то не получалось, а теперь стало возможным.",
-                exampleJp = "少しずつ読めるようになりました。",
-                exampleRu = "Я постепенно научился читать."
+                id = "g_n5_tekudasai",
+                pattern = "～てください",
+                level = JlptLevel.N5,
+                titleRu = "Вежливая просьба («пожалуйста, сделайте»)",
+                formula = "Глагол (て/で-форма) + ください",
+                explanationRu = "Используется для вежливой просьбы или инструкции выполнить действие.",
+                exampleJp = "この道をまっすぐ行ってください。",
+                exampleRu = "Пожалуйста, идите прямо по этой дороге."
             ),
-            Regex("ようになり(ます|ました|った)")
+            Regex("[てで]ください")
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_kotonisuru_naru",
-                pattern = "～ことにする / ～ことになる",
-                level = JlptLevel.N4,
-                titleRu = "Принять решение / так сложилось",
-                formula = "Глагол (словарная) + ことにする (сам решил) / ことになる (так вышло)",
-                explanationRu = "ことにする выражает личное решение говорящего; ことになる — решение обстоятельств или других людей.",
-                exampleJp = "本屋でアルバイトを始めることにしました。",
-                exampleRu = "Я решил начать подрабатывать в книжном магазине."
+                id = "g_n5_te_kara",
+                pattern = "～てから",
+                level = JlptLevel.N5,
+                titleRu = "Последовательность («после того как...»)",
+                formula = "Глагол (て/で-форма) + から、...",
+                explanationRu = "Показывает, что второе действие происходит сразу после завершения первого.",
+                exampleJp = "荷物を預けてから、朝ご飯を食べました。",
+                exampleRu = "Сдав багаж, я позавтракал."
             ),
-            Regex("ことに(し|なり)(ます|ました|て|た)")
+            Regex("[てで]から")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_teiru",
+                pattern = "～ている / ～ています",
+                level = JlptLevel.N5,
+                titleRu = "Длительное действие или текущее состояние",
+                formula = "Глагол (て/で-форма) + いる / います / いました",
+                explanationRu = "Обозначает действие, происходящее прямо сейчас, регулярную привычку или сохраняющееся состояние.",
+                exampleJp = "自動販売機で温かいスープも売っています。",
+                exampleRu = "В автоматах также продаётся горячий суп."
+            ),
+            Regex("[てで]い(る|ます|ました|た|ない)")
         ),
         GrammarRule(
             GrammarPoint(
@@ -303,19 +250,6 @@ object GrammarCatalog {
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_kamoshirenai",
-                pattern = "～かもしれない",
-                level = JlptLevel.N4,
-                titleRu = "Вероятность («возможно, может быть»)",
-                formula = "Простая форма + かもしれない / かもしれません",
-                explanationRu = "Выражает предположение с долей неуверенности.",
-                exampleJp = "もう直せないかもしれないと思っていました。",
-                exampleRu = "Я думал, что, возможно, уже не починить."
-            ),
-            Regex("かもしれ(ない|ません)")
-        ),
-        GrammarRule(
-            GrammarPoint(
                 id = "g_n4_souda",
                 pattern = "～そうだ (внешний вид / слухи)",
                 level = JlptLevel.N4,
@@ -325,7 +259,7 @@ object GrammarCatalog {
                 exampleJp = "通勤がとても便利になりそうです。",
                 exampleRu = "Поездки на работу, похоже, станут очень удобными."
             ),
-            Regex("そう(です|だ|な|に)")
+            Regex("(?<![、。「\\s])そう(です|だ|な|に)")
         ),
         GrammarRule(
             GrammarPoint(
@@ -338,7 +272,7 @@ object GrammarCatalog {
                 exampleJp = "用紙が切れているみたいです。",
                 exampleRu = "Похоже, закончилась бумага."
             ),
-            Regex("(よう(です|だ|な|に)|みたい(です|だ))")
+            Regex("(?<!おは|にち|げつ|か|すい|もく|きん|ど|し)よう(です|だ|な(?!り|し)|に(?!し|な))|みたい(です|だ)")
         ),
         GrammarRule(
             GrammarPoint(
@@ -381,32 +315,6 @@ object GrammarCatalog {
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_hougaii",
-                pattern = "～ほうがいい",
-                level = JlptLevel.N4,
-                titleRu = "Совет («лучше сделать / не делать»)",
-                formula = "Глагол (た-форма / ない-форма) + ほうがいいです",
-                explanationRu = "Используется для мягкого совета или рекомендации.",
-                exampleJp = "お湯を沸騰させないほうがいいそうです。",
-                exampleRu = "Говорят, воду лучше не доводить до кипения."
-            ),
-            Regex("ほうがいい")
-        ),
-        GrammarRule(
-            GrammarPoint(
-                id = "g_n4_tekureru_morau",
-                pattern = "～てくれる / ～てもらう",
-                level = JlptLevel.N4,
-                titleRu = "Действие для меня / получение помощи",
-                formula = "Глагол (て/で-форма) + くれる (для меня) / もらう (получил помощь)",
-                explanationRu = "てくれる подчёркивает доброту другого человека к говорящему; てもらう — что говорящий попросил или получил помощь.",
-                exampleJp = "先輩が丁寧に教えてくれました。",
-                exampleRu = "Старший коллега вежливо объяснил мне."
-            ),
-            Regex("[てで](くれ|もら)(る|ます|ました|た|い|え)")
-        ),
-        GrammarRule(
-            GrammarPoint(
                 id = "g_n4_node",
                 pattern = "～ので",
                 level = JlptLevel.N4,
@@ -433,19 +341,6 @@ object GrammarCatalog {
         ),
         GrammarRule(
             GrammarPoint(
-                id = "g_n4_nakerebanaranai",
-                pattern = "～なければならない",
-                level = JlptLevel.N4,
-                titleRu = "Необходимость («нужно, обязан»)",
-                formula = "Глагол (ない-основа) + なければならない / なりません",
-                explanationRu = "Выражает обязанность или строгую необходимость.",
-                exampleJp = "ゴミを分別しなければなりません。",
-                exampleRu = "Мусор необходимо сортировать."
-            ),
-            Regex("なければなら(ない|ません)")
-        ),
-        GrammarRule(
-            GrammarPoint(
                 id = "g_n4_tara_ba_nara",
                 pattern = "～たら / ～ば / ～なら (условие)",
                 level = JlptLevel.N4,
@@ -455,7 +350,7 @@ object GrammarCatalog {
                 exampleJp = "言われた通りに作ったら、おいしくなりました。",
                 exampleRu = "Когда я приготовил как было сказано, получилось вкусно."
             ),
-            Regex("(たら、|れば|なら、|なら)")
+            Regex("(たら、|(?<!なけ)れば|(?<!なければ)なら(?!ない|ません))")
         ),
         GrammarRule(
             GrammarPoint(
@@ -468,7 +363,7 @@ object GrammarCatalog {
                 exampleJp = "少し間違えても大丈夫です。",
                 exampleRu = "Даже если немного ошибёшься — ничего страшного."
             ),
-            Regex("[てで]も")
+            Regex("(?<![とでそこど])[てで]も")
         ),
         GrammarRule(
             GrammarPoint(
@@ -508,6 +403,123 @@ object GrammarCatalog {
                 exampleRu = "Я только недавно начал."
             ),
             Regex("ばかり")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_tari",
+                pattern = "～たり～たりする",
+                level = JlptLevel.N5,
+                titleRu = "Перечисление действий («и то, и другое»)",
+                formula = "Глагол (た-форма) + り、... + りする / します",
+                explanationRu = "Перечисляет несколько примеров действий из числа многих.",
+                exampleJp = "お弁当を食べたり、お茶を飲んだりします。",
+                exampleRu = "Едят бэнто, пьют чай и т.п."
+            ),
+            Regex("[ただ]り(し|する|します|した)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_tai",
+                pattern = "～たい",
+                level = JlptLevel.N5,
+                titleRu = "Желание («хочу сделать»)",
+                formula = "Глагол (ます-основа) + たいです / たかった",
+                explanationRu = "Выражает собственное желание говорящего совершить действие.",
+                exampleJp = "また京都へ行きたいです。",
+                exampleRu = "Я хочу снова поехать в Киото."
+            ),
+            Regex("(?<!み|だ|い|し|き)たい(です|と|か)|(?<!み)たかった")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_mae_ato",
+                pattern = "～前に / ～後で",
+                level = JlptLevel.N5,
+                titleRu = "Время действия («до / после»)",
+                formula = "Глагол (словарная) + 前に | Глагол (た-форма) / Сущ. + の + 後で",
+                explanationRu = "Указывает, происходит ли главное действие до или после другого события.",
+                exampleJp = "寝る前にストレッチをします。",
+                exampleRu = "Перед сном я делаю растяжку."
+            ),
+            Regex("(前に|後で)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_kara_reason",
+                pattern = "～から (причина)",
+                level = JlptLevel.N5,
+                titleRu = "Причина («потому что...»)",
+                formula = "Причина + から、Результат",
+                explanationRu = "Указывает на причину или основание. В конце предложения часто ставится ～からです.",
+                exampleJp = "図書館は静かですから、本が読みやすいです。",
+                exampleRu = "Поскольку в библиотеке тихо, читать книги легко."
+            ),
+            Regex("(ですから|ますから|(?<![てで])からです)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_mashou_masenka",
+                pattern = "～ましょう / ～ませんか",
+                level = JlptLevel.N5,
+                titleRu = "Приглашение к совместному действию",
+                formula = "Глагол (ます-основа) + ましょう (давайте) / ませんか (не хотите ли?)",
+                explanationRu = "～ませんか — мягкое приглашение, ～ましょう — предложение сделать что-то вместе.",
+                exampleJp = "一緒に映画を見に行きませんか。",
+                exampleRu = "Не сходить ли нам вместе в кино?"
+            ),
+            Regex("(?<!いただけ|くれ|あり|でき|わかり)(ましょう|ませんか)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_kedo_ga",
+                pattern = "～が / ～けれど (противопоставление)",
+                level = JlptLevel.N5,
+                titleRu = "Сопоставление («но, хотя»)",
+                formula = "Часть 1 + が / けれど（も）、Часть 2",
+                explanationRu = "Соединяет две части предложения с оттенком контраста или мягкого перехода к новой теме.",
+                exampleJp = "少し難しいですが、とても面白いです。",
+                exampleRu = "Немного сложно, но очень интересно."
+            ),
+            Regex("(ですが、|ますが、|ましたが、|けれど|けど)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_ga_arimasu_imasu",
+                pattern = "～があります / ～います",
+                level = JlptLevel.N5,
+                titleRu = "Наличие предметов и живых существ",
+                formula = "Место + に + Предмет + が あります / Существо + が います",
+                explanationRu = "あります используется для неодушевлённых предметов и событий, а います — для людей и животных.",
+                exampleJp = "公園に小さい白い猫がいました。",
+                exampleRu = "В парке была маленькая белая кошка."
+            ),
+            Regex("が(あり|いま)(す|した|せん)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_suki_jouzu",
+                pattern = "～が好き / 上手 / 苦手",
+                level = JlptLevel.N5,
+                titleRu = "Нравится / умею / плохо удаётся",
+                formula = "Объект + が + 好きです / 上手です / 苦手です",
+                explanationRu = "Выражает отношение к чему-либо или оценку своих навыков. Перед таким предикативом всегда ставится частица が.",
+                exampleJp = "私は秋が一番好きです。",
+                exampleRu = "Больше всего мне нравится осень."
+            ),
+            Regex("が[^。、]*(好き|大好き|上手|苦手)")
+        ),
+        GrammarRule(
+            GrammarPoint(
+                id = "g_n5_desu_masu",
+                pattern = "～です / ～ます",
+                level = JlptLevel.N5,
+                titleRu = "Вежливая форма речи (наст./буд. и прош. время)",
+                formula = "Сущ./Прил. + です (でした) | Глагол (ます-основа) + ます (ました)",
+                explanationRu = "Базовая нейтрально-вежливая форма японского предложения. Используется в повседневном общении.",
+                exampleJp = "私は毎日日本語を勉強します。",
+                exampleRu = "Я каждый день изучаю японский язык."
+            ),
+            Regex("(です|でした|ます(?!か)|ました|ません(?!か))")
         )
     )
 
@@ -518,8 +530,9 @@ object GrammarCatalog {
             .map { it.point }
     }
 
-    fun findGrammarInSentence(sentenceText: String): List<GrammarPoint> =
-        rules
-            .filter { it.regex.containsMatchIn(sentenceText) }
-            .map { it.point }
+    /**
+     * Finds the most specific grammar rule matching a single segment's text.
+     */
+    fun findGrammarForSegment(segmentText: String): GrammarPoint? =
+        rules.firstOrNull { it.regex.containsMatchIn(segmentText) }?.point
 }

@@ -57,9 +57,6 @@ fun FuriganaParagraph(
         verticalArrangement = Arrangement.spacedBy(verticalSpacing)
     ) {
         for (sentence in paragraph.sentences) {
-            val sentenceGrammar = GrammarCatalog.findGrammarInSentence(sentence.plainText())
-            val primaryGrammar = sentenceGrammar.firstOrNull()
-
             for (segment in sentence.segments) {
                 val displayText = when (settings.displayMode) {
                     TextDisplayMode.KANA_ONLY -> segment.reading ?: segment.text
@@ -76,11 +73,15 @@ fun FuriganaParagraph(
                 }
 
                 val isWordInteractive = !segment.dictId.isNullOrBlank() || !segment.reading.isNullOrBlank()
-                val isGrammarSegment = !isWordInteractive &&
-                    primaryGrammar != null &&
+                val matchedGrammar = if (!isWordInteractive &&
                     segment.text.length >= 2 &&
-                    !segment.text.all { it == '。' || it == '、' || it == '「' || it == '」' } &&
-                    GrammarCatalog.findGrammarInSentence(segment.text).isNotEmpty()
+                    !segment.text.all { it == '。' || it == '、' || it == '「' || it == '」' }
+                ) {
+                    GrammarCatalog.findGrammarForSegment(segment.text)
+                } else {
+                    null
+                }
+                val isGrammarSegment = matchedGrammar != null
 
                 val isSelected = selectedSegment == segment
                 val bgColor = if (isSelected) {
@@ -98,7 +99,7 @@ fun FuriganaParagraph(
                         .then(
                             when {
                                 isWordInteractive -> Modifier.clickable { onSegmentClick(segment) }
-                                isGrammarSegment -> Modifier.clickable { onGrammarClick(primaryGrammar!!) }
+                                isGrammarSegment -> Modifier.clickable { onGrammarClick(matchedGrammar!!) }
                                 else -> Modifier
                             }
                         )
