@@ -1,6 +1,6 @@
 # Yomizora (読み空) — Android-приложение для чтения на японском языке
 
-**Скачать актуальный APK (v1.1.3):**
+**Скачать актуальный APK (v1.1.4):**
 - Прямая загрузка из репозитория: [apk/yomizora-latest.apk](https://github.com/Nqam/yomizora-reader/raw/main/apk/yomizora-latest.apk)
 - Страница релизов: [GitHub Releases](https://github.com/Nqam/yomizora-reader/releases/latest)
 

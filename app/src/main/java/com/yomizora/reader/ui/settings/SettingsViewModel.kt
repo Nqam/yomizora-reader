@@ -4,7 +4,6 @@ import android.content.Context
 import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.yomizora.reader.data.content.ContentImporter
 import com.yomizora.reader.data.content.ImportReport
 import com.yomizora.reader.data.update.AppUpdateCheckResult
 import com.yomizora.reader.data.update.AppUpdateInfo
@@ -35,7 +34,6 @@ class SettingsViewModel @Inject constructor(
     @ApplicationContext private val context: Context,
     private val settingsRepository: SettingsRepository,
     private val progressRepository: ProgressRepository,
-    private val contentImporter: ContentImporter,
     private val updateManager: GitHubUpdateManager
 ) : ViewModel() {
 
@@ -218,22 +216,6 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             progressRepository.resetLevelProgress(level)
             _statusMessage.value = "Прогресс ${level.code} сброшен."
-        }
-    }
-
-    fun importContentFromUri(uri: Uri) {
-        viewModelScope.launch {
-            try {
-                val rawJson = withContext(Dispatchers.IO) {
-                    context.contentResolver.openInputStream(uri)?.bufferedReader(Charsets.UTF_8)
-                        ?.use { it.readText() }
-                        ?: throw IllegalStateException("Не удалось прочитать файл")
-                }
-                val report = contentImporter.importPackageJson(rawJson)
-                _importReport.value = report
-            } catch (e: Exception) {
-                _statusMessage.value = "Ошибка импорта: ${e.localizedMessage ?: "Неизвестная ошибка"}"
-            }
         }
     }
 

@@ -21,7 +21,6 @@ import androidx.compose.material.icons.rounded.Backup
 import androidx.compose.material.icons.rounded.CloudDownload
 import androidx.compose.material.icons.rounded.DeleteOutline
 import androidx.compose.material.icons.rounded.Edit
-import androidx.compose.material.icons.rounded.FileUpload
 import androidx.compose.material.icons.rounded.PersonAdd
 import androidx.compose.material.icons.rounded.RestartAlt
 import androidx.compose.material.icons.rounded.Restore
@@ -88,12 +87,6 @@ fun SettingsScreen(
     var deletingProfile by remember { mutableStateOf<UserProfile?>(null) }
     var profileNameInput by remember { mutableStateOf("") }
     val snackbarHostState = remember { SnackbarHostState() }
-
-    val importLauncher = rememberLauncherForActivityResult(
-        contract = ActivityResultContracts.OpenDocument()
-    ) { uri ->
-        if (uri != null) viewModel.importContentFromUri(uri)
-    }
 
     val backupLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.CreateDocument("application/json")
@@ -386,17 +379,7 @@ fun SettingsScreen(
             }
 
             item {
-                SettingsSectionCard(title = "Контент и резервное копирование") {
-                    OutlinedButton(
-                        onClick = { importLauncher.launch(arrayOf("application/json")) },
-                        shape = RoundedCornerShape(12.dp),
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Icon(Icons.Rounded.FileUpload, contentDescription = null)
-                        Spacer(Modifier.width(8.dp))
-                        Text("Импортировать пакет контента (JSON)")
-                    }
-                    Spacer(Modifier.height(8.dp))
+                SettingsSectionCard(title = "Резервное копирование") {
                     OutlinedButton(
                         onClick = { backupLauncher.launch("yomizora_progress_backup.json") },
                         shape = RoundedCornerShape(12.dp),
