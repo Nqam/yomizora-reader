@@ -1,0 +1,59 @@
+{
+  "pack_id": "sample_addon_pack_v1",
+  "pack_version": 1,
+  "dictionary": [
+    {
+      "id": "d_sample_koucha",
+      "word": "紅茶",
+      "reading": "こうちゃ",
+      "translation_ru": "чёрный чай",
+      "part_of_speech": "существительное",
+      "note": "Обычный европейский чёрный чай"
+    }
+  ],
+  "materials": [
+    {
+      "id": "n5_sample_addon_001",
+      "level": "N5",
+      "category": "Daily Life",
+      "title": "午後の紅茶",
+      "description": "Спокойный перерыв на чай после обеда",
+      "content_type": "original",
+      "source": "Sample Addon Pack",
+      "author": "Yomizora",
+      "license": "CC-BY-4.0 / Original",
+      "created_at": "2026-11-18",
+      "version": 1,
+      "paragraphs": [
+        {
+          "sentences": [
+            {
+              "segments": [
+                { "text": "午後", "reading": "ごご" },
+                { "text": "三時", "reading": "さんじ" },
+                { "text": "に、", "reading": null },
+                { "text": "温", "reading": "あたた" },
+                { "text": "かい", "reading": null },
+                { "text": "紅茶", "reading": "こうちゃ", "dict_id": "d_sample_koucha" },
+                { "text": "を", "reading": null },
+                { "text": "飲", "reading": "の" },
+                { "text": "みました。", "reading": null }
+              ]
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "q1",
+          "type": "multiple_choice",
+          "question": "何時に紅茶を飲みましたか。",
+          "options": ["午前十時", "午後三時", "夜九時"],
+          "correct_answer": 1,
+          "explanation": "В тексте сказано: «午後三時に、温かい紅茶を飲みました».",
+          "reference_excerpt": "午後三時に、温かい紅茶を飲みました。"
+        }
+      ]
+    }
+  ]
+}
