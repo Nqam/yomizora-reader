@@ -14,6 +14,11 @@ from n3_texts import N3_TEXTS
 from n321_dict_1 import DICT_ENTRIES as D1
 from n321_dict_2 import DICT_ENTRIES as D2
 from n321_dict_3 import DICT_ENTRIES as D3
+from n321_long_dict_1 import DICT_ENTRIES as L1
+from n321_long_dict_2 import DICT_ENTRIES as L2
+from n321_long_dict_3 import DICT_ENTRIES as L3
+from n321_long_dict_4 import DICT_ENTRIES as L4
+from n321_long_dict_extra import DICT_ENTRIES as LX
 from upgrade_dictionary_and_sort import complexity_score
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -40,9 +45,8 @@ def main():
 
     # Load all N3/N2/N1 dictionary entries
     all_new = {}
-    all_new.update(D1)
-    all_new.update(D2)
-    all_new.update(D3)
+    for src in (D1, D2, D3, L1, L2, L3, L4, LX):
+        all_new.update(src)
     # Fix typo entry if needed
     if ("成果", "せいかつ") in all_new:
         all_new[("成果", "せいか")] = ("成果", "せいか", "существительное", "результат, плоды труда")
@@ -170,6 +174,41 @@ def main():
         "長距離輸送": "ちょうきょりゆそう", "開始時間": "かいしじかん", "関": "かか",
         "隙間時間": "すきまじかん", "飲酒状態": "いんしゅじょうたい", "駐車場": "ちゅうしゃじょう",
         "高温多湿": "こうおんたしつ", "黙": "だま",
+        "一切乗": "いっさいの", "一切取": "いっさいと", "一切持": "いっさいも",
+        "一切立": "いっさいた", "一呼吸置": "ひとこきゅうお", "一度決": "いちどき",
+        "一日間違": "いちにちまちが", "一番大": "いちばんおお", "一番面白": "いちばんおもしろ",
+        "不可避": "ふかひ", "不明": "ふめい", "両者": "りょうしゃ",
+        "事務所": "じむしょ", "二倍以上速": "にばいいじょうはや", "交渉": "こうしょう",
+        "今感": "いまかん", "付属物": "ふぞくぶつ", "充実感": "じゅうじつかん",
+        "入居者": "にゅうきょしゃ", "全員降": "ぜんいんお", "凝縮感": "ぎょうしゅくかん",
+        "出席": "しゅっせき", "出席者": "しゅっせきしゃ", "出版": "しゅっぱん",
+        "出版社": "しゅっぱんしゃ", "切迫感": "せっぱくかん", "制覇": "せいは",
+        "割引券": "わりびきけん", "加入": "かにゅう", "劣": "おと",
+        "劣化": "れっか", "十回見": "じゅっかいみ", "協業": "きょうぎょう",
+        "反映": "はんえい", "各自": "かくじ", "同一": "どういつ",
+        "同居": "どうきょ", "名乗": "なの", "喧嘩": "けんか",
+        "四時間": "よじかん", "団体": "だんたい", "大賛成": "だいさんせい",
+        "季節感": "きせつかん", "孤立感": "こりつかん", "専門知識": "せんもんちしき",
+        "展示": "てんじ", "徴収": "ちょうしゅう", "心構": "こころがま",
+        "意地悪": "いじわる", "慰": "なぐさ", "提出": "ていしゅつ",
+        "損害": "そんがい", "改装": "かいそう", "政府": "せいふ",
+        "敗": "やぶ", "昇進": "しょうしん", "有無": "うむ",
+        "段落": "だんらく", "殺到": "さっとう", "毎日二十四時間見続": "まいにちにじゅうよじかんみつづ",
+        "毎日出": "まいにちで", "毎日届": "まいにちとど", "毎日必": "まいにちかなら",
+        "毎日早": "まいにちはや", "毎食必": "まいしょくかなら", "法律": "ほうりつ",
+        "消去": "しょうきょ", "混乱": "こんらん", "湿気": "しっけ",
+        "無人": "むじん", "無視": "むし", "片方": "かたほう",
+        "画質": "がしつ", "省略": "しょうりゃく", "破棄": "はき",
+        "納得感": "なっとくかん", "経費削減": "けいひさくげん", "総責任者": "そうせきにんしゃ",
+        "耐震工事": "たいしんこうじ", "脅迫": "きょうはく", "血圧": "けつあつ",
+        "補助金": "ほじょきん", "褪": "あ", "要旨": "ようし",
+        "見続": "みつづ", "見込": "みこ", "規則": "きそく",
+        "観光業": "かんこうぎょう", "言葉少": "ことばずく", "訂正": "ていせい",
+        "輸出": "ゆしゅつ", "返却": "へんきゃく", "追及": "ついきゅう",
+        "週一度振": "しゅういちどふ", "違反": "いはん", "遠近感": "えんきんかん",
+        "避難所": "ひなんじょ", "長年続": "ながねんつづ", "開催場所": "かいさいばしょ",
+        "開放": "かいほう", "食器洗": "しょっきあら", "飲酒時": "いんしゅじ",
+        "高額": "こうがく",
     }
 
     def annotate_q(text):
@@ -204,8 +243,41 @@ def main():
                     pack_dict_entries[matched[2]["id"]] = matched[2]
                     segs.append({"text": kw, "reading": matched[0], "dict_id": matched[1]})
                 else:
-                    unannotated_q.add(kw)
-                    segs.append({"text": kw, "reading": None})
+                    # Greedy split of multi-kanji compounds using known dictionary/stem words (e.g. 人間関係 -> 人間 + 関係)
+                    sub_segs = []
+                    idx = 0
+                    all_ok = True
+                    while idx < len(kw):
+                        found_sub = None
+                        for end in range(len(kw), idx, -1):
+                            sub = kw[idx:end]
+                            if sub in word_to_entry:
+                                e = word_to_entry[sub]
+                                pack_dict_entries[e["id"]] = e
+                                found_sub = {"text": sub, "reading": e["reading"], "dict_id": e["id"]}
+                                break
+                            elif sub in stem_reading_map:
+                                r = stem_reading_map[sub]
+                                did = stem_to_id[(sub, r)]
+                                found_sub = {"text": sub, "reading": r, "dict_id": did}
+                                break
+                            elif sub in extra_q_readings:
+                                found_sub = {"text": sub, "reading": extra_q_readings[sub]}
+                                break
+                            elif sub in QUESTION_KANJI_READINGS:
+                                found_sub = {"text": sub, "reading": QUESTION_KANJI_READINGS[sub]}
+                                break
+                        if found_sub:
+                            sub_segs.append(found_sub)
+                            idx += len(found_sub["text"])
+                        else:
+                            all_ok = False
+                            break
+                    if all_ok and sub_segs:
+                        segs.extend(sub_segs)
+                    else:
+                        unannotated_q.add(kw)
+                        segs.append({"text": kw, "reading": None})
             pos = m.end()
         if pos < len(text):
             segs.extend(split_plain_segment(text[pos:], kana_words_sorted, kana_id_map))
@@ -247,7 +319,7 @@ def main():
                 "title": item["title"],
                 "description": item["description"],
                 "order_index": 0,
-                "version": 1,
+                "version": 2,
                 "content_hash": chash,
                 "paragraphs": paras,
                 "questions": qs,
@@ -294,20 +366,20 @@ def main():
 
     pack_out = {
         "pack_id": "yomizora_pack_n3_n2_n1_v1",
-        "pack_version": 1,
+        "pack_version": 2,
         "materials": built_all,
         "dictionary": list(pack_dict_entries.values()),
     }
     OUT_PACK_PATH.write_text(json.dumps(pack_out, ensure_ascii=False, indent=2), encoding="utf-8")
 
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-    manifest["manifest_version"] = 4
+    manifest["manifest_version"] = 5
     packs = [p for p in manifest["packs"] if p["pack_id"] != "yomizora_pack_n3_n2_n1_v1"]
     packs.append({
         "pack_id": "yomizora_pack_n3_n2_n1_v1",
-        "pack_version": 1,
-        "title": "Уровни JLPT N3–N2–N1 (90 текстов)",
-        "description": "По 30 уникальных текстов для JLPT N3, N2 и N1 с полным словарём и грамматикой",
+        "pack_version": 2,
+        "title": "Уровни JLPT N3–N2–N1 (90 лонгрид-текстов)",
+        "description": "По 30 расширенных текстов для JLPT N3 (500–900 симв.), N2 (950–1500 симв.) и N1 (1550–2130 симв.) с 2–4 вопросами",
         "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_pack_n3_n2_n1_v1.json",
     })
     manifest["packs"] = packs

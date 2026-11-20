@@ -75,6 +75,7 @@ import com.yomizora.reader.domain.model.ReaderSettings
 import com.yomizora.reader.domain.model.TextDisplayMode
 import com.yomizora.reader.domain.model.ThemeMode
 import com.yomizora.reader.ui.components.FuriganaParagraph
+import kotlinx.coroutines.delay
 import java.util.Locale
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
@@ -118,6 +119,7 @@ fun ReadingScreen(
 
     LaunchedEffect(scrollFraction) {
         if (state.materialWithProgress != null && !state.isLocked) {
+            delay(400L)
             viewModel.onScrollProgressChanged(scrollFraction)
         }
     }
