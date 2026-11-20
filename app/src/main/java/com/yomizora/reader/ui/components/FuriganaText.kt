@@ -15,6 +15,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -35,6 +37,15 @@ import com.yomizora.reader.domain.model.TextSegment
  * corresponding kanji segments, progressive furigana hiding for familiar words,
  * and subtle grammar underlines for sentences containing JLPT grammar points.
  */
+@Immutable
+private data class RenderedSegmentItem(
+    val segment: TextSegment,
+    val displayText: String,
+    val rubyText: String?,
+    val isWordInteractive: Boolean,
+    val matchedGrammar: GrammarPoint?
+)
+
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun FuriganaParagraph(
@@ -53,71 +64,95 @@ fun FuriganaParagraph(
     val rubyFontSize = (settings.fontSizeSp * 0.48f).coerceAtLeast(9.5f).sp
     val verticalSpacing = ((settings.lineHeightMultiplier - 1.2f) * 14f).coerceAtLeast(4f).dp
 
+    val renderItems = remember(
+        paragraphIndex,
+        paragraph,
+        settings.displayMode,
+        showRubyGlobal,
+        settings.progressiveFurigana,
+        familiarWords,
+        underlinedGrammarPositions
+    ) {
+        buildList {
+            paragraph.sentences.forEachIndexed { sIdx, sentence ->
+                sentence.segments.forEachIndexed { segIdx, segment ->
+                    val displayText = when (settings.displayMode) {
+                        TextDisplayMode.KANA_ONLY -> segment.reading ?: segment.text
+                        else -> segment.text
+                    }
+                    val isFamiliar = settings.progressiveFurigana &&
+                        !segment.reading.isNullOrBlank() &&
+                        familiarWords.contains(segment.text to segment.reading)
+                    val rubyText = if (showRubyGlobal && !segment.reading.isNullOrBlank() && !isFamiliar) {
+                        segment.reading
+                    } else {
+                        null
+                    }
+                    val isWordInteractive = !segment.dictId.isNullOrBlank() || !segment.reading.isNullOrBlank()
+                    val matchedGrammar = underlinedGrammarPositions[Triple(paragraphIndex, sIdx, segIdx)]
+                    add(
+                        RenderedSegmentItem(
+                            segment = segment,
+                            displayText = displayText,
+                            rubyText = rubyText,
+                            isWordInteractive = isWordInteractive,
+                            matchedGrammar = matchedGrammar
+                        )
+                    )
+                }
+            }
+        }
+    }
+
     FlowRow(
         modifier = modifier.fillMaxWidth(),
         horizontalArrangement = Arrangement.Start,
         verticalArrangement = Arrangement.spacedBy(verticalSpacing)
     ) {
-        paragraph.sentences.forEachIndexed { sIdx, sentence ->
-            sentence.segments.forEachIndexed { segIdx, segment ->
-                val displayText = when (settings.displayMode) {
-                    TextDisplayMode.KANA_ONLY -> segment.reading ?: segment.text
-                    else -> segment.text
-                }
-                val isFamiliar = settings.progressiveFurigana &&
-                    !segment.reading.isNullOrBlank() &&
-                    familiarWords.contains(segment.text to segment.reading)
+        renderItems.forEach { item ->
+            val segment = item.segment
+            val matchedGrammar = item.matchedGrammar
+            val isGrammarSegment = matchedGrammar != null
+            val isSelected = selectedSegment == segment
+            val bgColor = if (isSelected) {
+                MaterialTheme.colorScheme.primaryContainer
+            } else {
+                Color.Transparent
+            }
 
-                val rubyText = if (showRubyGlobal && !segment.reading.isNullOrBlank() && !isFamiliar) {
-                    segment.reading
-                } else {
-                    null
-                }
-
-                val isWordInteractive = !segment.dictId.isNullOrBlank() || !segment.reading.isNullOrBlank()
-                val matchedGrammar = underlinedGrammarPositions[Triple(paragraphIndex, sIdx, segIdx)]
-                val isGrammarSegment = matchedGrammar != null
-
-                val isSelected = selectedSegment == segment
-                val bgColor = if (isSelected) {
-                    MaterialTheme.colorScheme.primaryContainer
-                } else {
-                    Color.Transparent
-                }
-
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.Bottom,
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(4.dp))
-                        .background(bgColor)
-                        .then(
-                            when {
-                                isWordInteractive -> Modifier.clickable { onSegmentClick(segment) }
-                                isGrammarSegment -> Modifier.clickable { onGrammarClick(matchedGrammar!!) }
-                                else -> Modifier
-                            }
-                        )
-                        .padding(horizontal = if (rubyText != null) 1.dp else 0.dp)
-                ) {
-                    if (showRubyGlobal) {
-                        Text(
-                            text = rubyText ?: " ",
-                            fontSize = rubyFontSize,
-                            lineHeight = rubyFontSize * 1.1f,
-                            color = if (rubyText != null) {
-                                MaterialTheme.colorScheme.onSurfaceVariant
-                            } else {
-                                Color.Transparent
-                            },
-                            textAlign = TextAlign.Center,
-                            maxLines = 1
-                        )
-                    }
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Bottom,
+                modifier = Modifier
+                    .clip(RoundedCornerShape(4.dp))
+                    .background(bgColor)
+                    .then(
+                        when {
+                            item.isWordInteractive -> Modifier.clickable { onSegmentClick(segment) }
+                            isGrammarSegment -> Modifier.clickable { onGrammarClick(matchedGrammar!!) }
+                            else -> Modifier
+                        }
+                    )
+                    .padding(horizontal = if (item.rubyText != null) 1.dp else 0.dp)
+            ) {
+                if (showRubyGlobal) {
                     Text(
-                        text = displayText,
-                        fontSize = baseFontSize,
-                        lineHeight = baseFontSize * 1.15f,
+                        text = item.rubyText ?: " ",
+                        fontSize = rubyFontSize,
+                        lineHeight = rubyFontSize * 1.1f,
+                        color = if (item.rubyText != null) {
+                            MaterialTheme.colorScheme.onSurfaceVariant
+                        } else {
+                            Color.Transparent
+                        },
+                        textAlign = TextAlign.Center,
+                        maxLines = 1
+                    )
+                }
+                Text(
+                    text = item.displayText,
+                    fontSize = baseFontSize,
+                    lineHeight = baseFontSize * 1.15f,
                         fontWeight = if (isSelected) FontWeight.Medium else FontWeight.Normal,
                         color = when {
                             isSelected -> MaterialTheme.colorScheme.primary
@@ -141,7 +176,6 @@ fun FuriganaParagraph(
             }
         }
     }
-}
 
 /**
  * Compact Ruby-style furigana row for quiz questions and options, respecting

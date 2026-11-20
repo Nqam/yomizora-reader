@@ -64,6 +64,9 @@ interface DictionaryDao {
     @Query("SELECT * FROM dictionary WHERE id = :id LIMIT 1")
     suspend fun getById(id: String): DictionaryEntity?
 
+    @Query("SELECT * FROM dictionary WHERE id IN (:ids)")
+    suspend fun getByIds(ids: List<String>): List<DictionaryEntity>
+
     @Query("SELECT * FROM dictionary WHERE word = :word AND reading = :reading LIMIT 1")
     suspend fun getByWordAndReading(word: String, reading: String): DictionaryEntity?
 

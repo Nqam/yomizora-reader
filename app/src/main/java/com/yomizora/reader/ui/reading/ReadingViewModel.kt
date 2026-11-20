@@ -16,6 +16,7 @@ import com.yomizora.reader.domain.repository.ContentRepository
 import com.yomizora.reader.domain.repository.ProgressRepository
 import com.yomizora.reader.domain.repository.SettingsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -23,6 +24,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 data class WordPopupState(
@@ -81,54 +83,70 @@ class ReadingViewModel @Inject constructor(
             progressRepository.markMaterialOpened(materialId)
             val updated = progressRepository.getMaterialWithProgress(materialId) ?: item
             val seenGrammarIds = progressRepository.getSeenGrammarIds(excludeMaterialId = materialId)
-            val grammar = GrammarCatalog.findGrammarInMaterial(updated.material)
-                .filter { it.id !in seenGrammarIds }
+            val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
 
-            val underlinedPositions = mutableMapOf<Triple<Int, Int, Int>, GrammarPoint>()
-            val seenInThisText = mutableSetOf<String>()
-            updated.material.paragraphs.forEachIndexed { pIdx, p ->
-                p.sentences.forEachIndexed { sIdx, s ->
-                    s.segments.forEachIndexed { segIdx, seg ->
-                        val isWord = !seg.dictId.isNullOrBlank() || !seg.reading.isNullOrBlank()
-                        if (!isWord && seg.text.length >= 2 &&
-                            !seg.text.all { it == '。' || it == '、' || it == '「' || it == '」' }
-                        ) {
-                            val gp = GrammarCatalog.findGrammarForSegment(seg.text)
-                            if (gp != null && gp.id !in seenGrammarIds && seenInThisText.add(gp.id)) {
-                                underlinedPositions[Triple(pIdx, sIdx, segIdx)] = gp
+            val dictIds = LinkedHashSet<String>()
+            for (p in updated.material.paragraphs) {
+                for (s in p.sentences) {
+                    for (seg in s.segments) {
+                        val did = seg.dictId
+                        if (!did.isNullOrBlank()) dictIds += did
+                    }
+                }
+            }
+            val batchDict = contentRepository.lookupWordsByIds(dictIds)
+
+            val (grammar, underlinedPositions, keyVocab) = withContext(Dispatchers.Default) {
+                val foundGrammar = GrammarCatalog.findGrammarInMaterial(updated.material)
+                    .filter { it.id !in seenGrammarIds }
+
+                val positions = mutableMapOf<Triple<Int, Int, Int>, GrammarPoint>()
+                val seenInThisText = mutableSetOf<String>()
+                updated.material.paragraphs.forEachIndexed { pIdx, p ->
+                    p.sentences.forEachIndexed { sIdx, s ->
+                        s.segments.forEachIndexed { segIdx, seg ->
+                            val isWord = !seg.dictId.isNullOrBlank() || !seg.reading.isNullOrBlank()
+                            if (!isWord && seg.text.length >= 2 &&
+                                !seg.text.all { it == '。' || it == '、' || it == '「' || it == '」' }
+                            ) {
+                                val gp = GrammarCatalog.findGrammarForSegment(seg.text)
+                                if (gp != null && gp.id !in seenGrammarIds && seenInThisText.add(gp.id)) {
+                                    positions[Triple(pIdx, sIdx, segIdx)] = gp
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
-
-            val keyVocab = mutableListOf<DictionaryEntry>()
-            val conversationalVocab = mutableListOf<DictionaryEntry>()
-            val regularVocab = mutableListOf<DictionaryEntry>()
-            val seenIds = mutableSetOf<String>()
-            for (p in updated.material.paragraphs) {
-                for (s in p.sentences) {
-                    for (seg in s.segments) {
-                        val hasKanjiReading = !seg.reading.isNullOrBlank()
-                        val hasDictId = !seg.dictId.isNullOrBlank()
-                        if (!hasKanjiReading && !hasDictId) continue
-                        val entry = contentRepository.lookupWord(seg.dictId, seg.text, seg.reading) ?: continue
-                        if (entry.partOfSpeech.startsWith("числительное") || !seenIds.add(entry.id)) continue
-                        val posLower = entry.partOfSpeech.lowercase()
-                        if (posLower.contains("разговор") || posLower.contains("выражен") || posLower.contains("идиом")) {
-                            conversationalVocab += entry
-                        } else if (hasKanjiReading) {
-                            regularVocab += entry
+                val vocab = mutableListOf<DictionaryEntry>()
+                val conversationalVocab = mutableListOf<DictionaryEntry>()
+                val regularVocab = mutableListOf<DictionaryEntry>()
+                val seenIds = mutableSetOf<String>()
+                for (p in updated.material.paragraphs) {
+                    for (s in p.sentences) {
+                        for (seg in s.segments) {
+                            val hasKanjiReading = !seg.reading.isNullOrBlank()
+                            val hasDictId = !seg.dictId.isNullOrBlank()
+                            if (!hasKanjiReading && !hasDictId) continue
+                            val entry = (if (hasDictId) batchDict[seg.dictId] else null)
+                                ?: contentRepository.lookupWord(seg.dictId, seg.text, seg.reading)
+                                ?: continue
+                            if (entry.partOfSpeech.startsWith("числительное") || !seenIds.add(entry.id)) continue
+                            val posLower = entry.partOfSpeech.lowercase()
+                            if (posLower.contains("разговор") || posLower.contains("выражен") || posLower.contains("идиом")) {
+                                conversationalVocab += entry
+                            } else if (hasKanjiReading) {
+                                regularVocab += entry
+                            }
                         }
                     }
                 }
-            }
-            keyVocab.addAll(conversationalVocab)
-            for (entry in regularVocab) {
-                if (keyVocab.size >= 12) break
-                keyVocab += entry
+                vocab.addAll(conversationalVocab)
+                for (entry in regularVocab) {
+                    if (vocab.size >= 12) break
+                    vocab += entry
+                }
+                Triple(foundGrammar, positions, vocab)
             }
 
             _uiState.update {
