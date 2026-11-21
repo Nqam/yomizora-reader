@@ -151,11 +151,19 @@ fun YomizoraNavHost() {
                     onBack = { navController.popBackStack() },
                     onOpenNextMaterial = { nextId ->
                         navController.navigate("reading/$nextId") {
-                            popUpTo("library") { inclusive = false }
+                            popUpTo("reading/{materialId}") { inclusive = true }
                         }
                     },
                     onBackToLibrary = {
-                        navController.popBackStack("library", inclusive = false)
+                        val popped = navController.popBackStack("library?level={level}", inclusive = false)
+                        if (!popped) {
+                            navController.navigate("library") {
+                                popUpTo(navController.graph.findStartDestination().id) {
+                                    saveState = true
+                                }
+                                launchSingleTop = true
+                            }
+                        }
                     }
                 )
             }

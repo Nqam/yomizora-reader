@@ -3,6 +3,7 @@ package com.yomizora.reader.data.repository
 import com.yomizora.reader.data.local.content.ContentDatabase
 import com.yomizora.reader.data.local.content.MaterialEntity
 import com.yomizora.reader.domain.model.ComprehensionQuestion
+import com.yomizora.reader.domain.model.ContentCategory
 import com.yomizora.reader.domain.model.DictionaryEntry
 import com.yomizora.reader.domain.model.JlptLevel
 import com.yomizora.reader.domain.model.Paragraph
@@ -124,7 +125,7 @@ class ContentRepositoryImpl @Inject constructor(
                 id = id,
                 orderIndex = orderIndex,
                 level = JlptLevel.fromCode(level),
-                category = category,
+                category = ContentCategory.toRussian(category),
                 title = title,
                 description = description,
                 contentType = contentType,

@@ -5,7 +5,7 @@
     {
       "id": "n5_ext_081",
       "level": "N5",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "電話での約束",
       "description": "Телефонный разговор друзей о встрече в субботу",
       "order_index": 71,
@@ -454,7 +454,7 @@
     {
       "id": "n5_ext_074",
       "level": "N5",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "図書館の帰り",
       "description": "Разговор друзей после учёбы в библиотеке и планы на ужин",
       "order_index": 72,
@@ -852,7 +852,7 @@
     {
       "id": "n5_ext_073",
       "level": "N5",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "駅までの近道",
       "description": "Новая тихая дорога до станции и утреннее открытие",
       "order_index": 73,
@@ -1233,7 +1233,7 @@
     {
       "id": "n5_ext_075",
       "level": "N5",
-      "category": "Work",
+      "category": "Работа",
       "title": "机の上のメモ",
       "description": "Важная привычка записывать поручения на работе",
       "order_index": 74,
@@ -1636,7 +1636,7 @@
     {
       "id": "n5_ext_096",
       "level": "N5",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "映画館のチケット",
       "description": "Покупка билетов в кинотеатре и выбор мест",
       "order_index": 75,
@@ -2276,7 +2276,7 @@
     {
       "id": "n5_ext_071",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "新しい靴",
       "description": "Покупка удобных кроссовок и первая долгая прогулка в парке",
       "order_index": 76,
@@ -2644,7 +2644,7 @@
     {
       "id": "n5_ext_080",
       "level": "N5",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "バスの中の親切",
       "description": "Поездка в полном автобусе и добрый поступок школьницы",
       "order_index": 77,
@@ -3105,7 +3105,7 @@
     {
       "id": "n5_ext_072",
       "level": "N5",
-      "category": "Food",
+      "category": "Еда",
       "title": "朝のりんご",
       "description": "Привычка есть яблоки по утрам и домашний сок от мамы",
       "order_index": 78,
@@ -3551,7 +3551,7 @@
     {
       "id": "n5_ext_076",
       "level": "N5",
-      "category": "School",
+      "category": "Образование",
       "title": "日本語のノート",
       "description": "Как цветные ручки и примеры помогают учить слова",
       "order_index": 79,
@@ -3995,7 +3995,7 @@
     {
       "id": "n5_ext_082",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "なくなったかぎ",
       "description": "Утренняя паника из-за потерянных ключей и неожиданная находка",
       "order_index": 80,
@@ -4419,7 +4419,7 @@
     {
       "id": "n5_ext_077",
       "level": "N5",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "お花見のお弁当",
       "description": "Весенний пикник под сакурой с друзьями",
       "order_index": 81,
@@ -4881,7 +4881,7 @@
     {
       "id": "n5_ext_078",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "雨の日の買い物",
       "description": "Дождливый вечер, горячий суп и встреча со знакомым",
       "order_index": 82,
@@ -5354,7 +5354,7 @@
     {
       "id": "n5_ext_079",
       "level": "N5",
-      "category": "Food",
+      "category": "Еда",
       "title": "カレーライス作り",
       "description": "Первый самостоятельный карри и маленькая ошибка с солью",
       "order_index": 83,
@@ -5828,7 +5828,7 @@
     {
       "id": "n5_ext_084",
       "level": "N5",
-      "category": "School",
+      "category": "Образование",
       "title": "初めてのテスト",
       "description": "Волнение перед первым экзаменом и поддержка преподавателя",
       "order_index": 84,
@@ -6180,7 +6180,7 @@
     {
       "id": "n5_ext_083",
       "level": "N5",
-      "category": "Work",
+      "category": "Работа",
       "title": "昼休みの散歩",
       "description": "Короткая прогулка в обеденный перерыв для отдыха от компьютера",
       "order_index": 85,
@@ -6678,7 +6678,7 @@
     {
       "id": "n5_ext_085",
       "level": "N5",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "お正月の手紙",
       "description": "Новогодняя открытка от бабушки и тёплые воспоминания",
       "order_index": 86,
@@ -7207,7 +7207,7 @@
     {
       "id": "n5_ext_089",
       "level": "N5",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "お見舞いの相談",
       "description": "Разговор коллег о подарке для заболевшего товарища",
       "order_index": 87,
@@ -7837,7 +7837,7 @@
     {
       "id": "n5_ext_094",
       "level": "N5",
-      "category": "Food",
+      "category": "Еда",
       "title": "思い出のラーメン屋",
       "description": "Маленькая раменная на углу улицы, куда ходят всей семьёй",
       "order_index": 88,
@@ -8497,7 +8497,7 @@
     {
       "id": "n5_ext_093",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "犬の散歩と新しい友達",
       "description": "Утренние прогулки с собакой Почи и знакомство с соседями",
       "order_index": 89,
@@ -9203,7 +9203,7 @@
     {
       "id": "n5_ext_087",
       "level": "N5",
-      "category": "Food",
+      "category": "Еда",
       "title": "初めてのお好み焼き",
       "description": "Ужин с другом в ресторане окономияки и попытка приготовить самому",
       "order_index": 90,
@@ -9936,7 +9936,7 @@
     {
       "id": "n5_ext_098",
       "level": "N5",
-      "category": "School",
+      "category": "Образование",
       "title": "ピアノの発表会",
       "description": "Волнение перед школьным концертом и поддержка семьи",
       "order_index": 91,
@@ -10614,7 +10614,7 @@
     {
       "id": "n5_ext_086",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "日曜日の大掃除",
       "description": "Генеральная уборка комнаты и неожиданная находка старых вещей",
       "order_index": 92,
@@ -11305,7 +11305,7 @@
     {
       "id": "n5_ext_099",
       "level": "N5",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "浅草の休日",
       "description": "Прогулка по историческому району Асакуса и японские сладости",
       "order_index": 93,
@@ -12067,7 +12067,7 @@
     {
       "id": "n5_ext_090",
       "level": "N5",
-      "category": "Work",
+      "category": "Работа",
       "title": "初めてのアルバイト",
       "description": "Первая неделя подработки в книжном магазине",
       "order_index": 94,
@@ -12787,7 +12787,7 @@
     {
       "id": "n5_ext_092",
       "level": "N5",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "夏の盆踊り",
       "description": "Вечерний летний праздник в парке с юкатами, музыкой и фонариками",
       "order_index": 95,
@@ -13585,7 +13585,7 @@
     {
       "id": "n5_ext_088",
       "level": "N5",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "京都の小さな旅館",
       "description": "Уютная традиционная гостиница в Киото и утренний чай",
       "order_index": 96,
@@ -14295,7 +14295,7 @@
     {
       "id": "n5_ext_091",
       "level": "N5",
-      "category": "School",
+      "category": "Образование",
       "title": "留学の夢",
       "description": "Вечерний разговор с преподавателем о планах поехать в Японию",
       "order_index": 97,
@@ -15057,7 +15057,7 @@
     {
       "id": "n5_ext_095",
       "level": "N5",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "初めての海と砂浜",
       "description": "Поездка к океану на поезде и встреча заката на пляже",
       "order_index": 98,
@@ -15925,7 +15925,7 @@
     {
       "id": "n5_ext_100",
       "level": "N5",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "新しい一年への目標",
       "description": "Размышления в конце года и планы на будущее",
       "order_index": 99,
@@ -16690,7 +16690,7 @@
     {
       "id": "n5_ext_097",
       "level": "N5",
-      "category": "Work",
+      "category": "Работа",
       "title": "初めての出張",
       "description": "Первая короткая командировка в Осаку на синкансэне",
       "order_index": 100,
@@ -17474,7 +17474,7 @@
     {
       "id": "n4_ext_081",
       "level": "N4",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "荷物の受け取り",
       "description": "Вежливый разговор с курьером о доставке тяжёлой посылки",
       "order_index": 71,
@@ -18030,7 +18030,7 @@
     {
       "id": "n4_ext_074",
       "level": "N4",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "美容院の予約変更",
       "description": "Вежливый телефонный разговор о переносе записи в парикмахерскую",
       "order_index": 72,
@@ -18567,7 +18567,7 @@
     {
       "id": "n4_ext_075",
       "level": "N4",
-      "category": "Work",
+      "category": "Работа",
       "title": "社内会議の準備",
       "description": "Заблаговременная подготовка к совещанию и предотвращение сбоев",
       "order_index": 73,
@@ -19093,7 +19093,7 @@
     {
       "id": "n4_ext_071",
       "level": "N4",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "スマートフォンの整理",
       "description": "Удаление старых фотографий и освобождение памяти телефона",
       "order_index": 74,
@@ -19576,7 +19576,7 @@
     {
       "id": "n4_ext_088",
       "level": "N4",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "図書館の延長手続き",
       "description": "Диалог в библиотеке о продлении книги и рекомендации похожих авторов",
       "order_index": 75,
@@ -20385,7 +20385,7 @@
     {
       "id": "n4_ext_077",
       "level": "N4",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "銭湯のマナー",
       "description": "Правила посещения традиционной японской бани и отдых для души",
       "order_index": 76,
@@ -21004,7 +21004,7 @@
     {
       "id": "n4_ext_083",
       "level": "N4",
-      "category": "School",
+      "category": "Образование",
       "title": "留学の説明会",
       "description": "Подготовка вопросов для встречи о стажировке за границей",
       "order_index": 77,
@@ -21483,7 +21483,7 @@
     {
       "id": "n4_ext_072",
       "level": "N4",
-      "category": "Food",
+      "category": "Еда",
       "title": "初めての味噌作り",
       "description": "Мастер-класс по приготовлению домашнего мисо и терпеливое ожидание",
       "order_index": 78,
@@ -22036,7 +22036,7 @@
     {
       "id": "n4_ext_084",
       "level": "N4",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "お正月の年賀状",
       "description": "Традиция новогодних открыток в эпоху мессенджеров",
       "order_index": 79,
@@ -22570,7 +22570,7 @@
     {
       "id": "n4_ext_082",
       "level": "N4",
-      "category": "Work",
+      "category": "Работа",
       "title": "テレワークの工夫",
       "description": "Как научиться переключаться между работой и отдыхом дома",
       "order_index": 80,
@@ -23080,7 +23080,7 @@
     {
       "id": "n4_ext_078",
       "level": "N4",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "リサイクルショップ",
       "description": "Удачная покупка книжного шкафа и радость обустройства комнаты",
       "order_index": 81,
@@ -23626,7 +23626,7 @@
     {
       "id": "n4_ext_079",
       "level": "N4",
-      "category": "Food",
+      "category": "Еда",
       "title": "季節の野菜",
       "description": "Покупки в овощной лавке и советы от добродушного продавца",
       "order_index": 82,
@@ -24145,7 +24145,7 @@
     {
       "id": "n4_ext_095",
       "level": "N4",
-      "category": "Dialogue",
+      "category": "Диалоги",
       "title": "忘れ物の問い合わせ",
       "description": "Телефонный звонок в службу забытых вещей и счастливая находка",
       "order_index": 83,
@@ -25008,7 +25008,7 @@
     {
       "id": "n4_ext_085",
       "level": "N4",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "自転車の点検",
       "description": "Вовремя замеченная неисправность тормозов и помощь мастера",
       "order_index": 84,
@@ -25593,7 +25593,7 @@
     {
       "id": "n4_ext_076",
       "level": "N4",
-      "category": "School",
+      "category": "Образование",
       "title": "文化祭の模擬店",
       "description": "Подготовка класса к школьному фестивалю и командная работа",
       "order_index": 85,
@@ -26108,7 +26108,7 @@
     {
       "id": "n4_ext_080",
       "level": "N4",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "道に迷った観光客",
       "description": "Помощь туристу у станции и преодоление языкового барьера",
       "order_index": 86,
@@ -26642,7 +26642,7 @@
     {
       "id": "n4_ext_073",
       "level": "N4",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "港町の朝市",
       "description": "Поездка в портовый городок и оживлённый утренний рынок",
       "order_index": 87,
@@ -27229,7 +27229,7 @@
     {
       "id": "n4_ext_093",
       "level": "N4",
-      "category": "Food",
+      "category": "Еда",
       "title": "抹茶スイーツの魅力",
       "description": "Поход с зарубежными друзьями за десертами маття в депатика",
       "order_index": 88,
@@ -28176,7 +28176,7 @@
     {
       "id": "n4_ext_094",
       "level": "N4",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "お寺での座禅体験",
       "description": "Раннее утро в киотском храме и непривычная тишина дзадзэн",
       "order_index": 89,
@@ -29123,7 +29123,7 @@
     {
       "id": "n4_ext_090",
       "level": "N4",
-      "category": "School",
+      "category": "Образование",
       "title": "漢字の覚え方のコツ",
       "description": "Как радикалы превратили скучную зубрёжку иероглифов в логичную игру",
       "order_index": 90,
@@ -29916,7 +29916,7 @@
     {
       "id": "n4_ext_086",
       "level": "N4",
-      "category": "Food",
+      "category": "Еда",
       "title": "カフェのアルバイトとラテアート",
       "description": "Преодоление первых ошибок в кофейне и первый красивый латте-арт",
       "order_index": 91,
@@ -30848,7 +30848,7 @@
     {
       "id": "n4_ext_087",
       "level": "N4",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "山の天気と備えの大切さ",
       "description": "Поход в горы, внезапный туман и урок о важности снаряжения",
       "order_index": 92,
@@ -31775,7 +31775,7 @@
     {
       "id": "n4_ext_097",
       "level": "N4",
-      "category": "School",
+      "category": "Образование",
       "title": "スピーチ大会への挑戦",
       "description": "Подготовка выступления на японском языке и преодоление страха сцены",
       "order_index": 93,
@@ -32692,7 +32692,7 @@
     {
       "id": "n4_ext_100",
       "level": "N4",
-      "category": "Travel",
+      "category": "Путешествия",
       "title": "高原の満天の星空",
       "description": "Поездка в горы, ночь под открытым небом и незабываемый Млечный Путь",
       "order_index": 94,
@@ -33554,7 +33554,7 @@
     {
       "id": "n4_ext_096",
       "level": "N4",
-      "category": "Work",
+      "category": "Работа",
       "title": "健康診断と小さな習慣",
       "description": "Результаты медосмотра и простая привычка ходить пешком после работы",
       "order_index": 95,
@@ -34472,7 +34472,7 @@
     {
       "id": "n4_ext_098",
       "level": "N4",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "風呂敷の知恵とエコ",
       "description": "Традиционный японский платок фуросики и его современная польза",
       "order_index": 96,
@@ -35479,7 +35479,7 @@
     {
       "id": "n4_ext_091",
       "level": "N4",
-      "category": "Culture",
+      "category": "Культура Японии",
       "title": "梅雨の時期の楽しみ方",
       "description": "Сезон дождей в июне: неудобства и тихая красота гортензий",
       "order_index": 97,
@@ -36440,7 +36440,7 @@
     {
       "id": "n4_ext_089",
       "level": "N4",
-      "category": "Work",
+      "category": "Работа",
       "title": "名刺の渡し方と第一印象",
       "description": "Первые уроки делового этикета и как важно внимание к деталям",
       "order_index": 98,
@@ -37323,7 +37323,7 @@
     {
       "id": "n4_ext_092",
       "level": "N4",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "節約と健康のための自炊",
       "description": "Переход от кафе к домашней готовке и система заготовок на неделю",
       "order_index": 99,
@@ -38192,7 +38192,7 @@
     {
       "id": "n4_ext_099",
       "level": "N4",
-      "category": "Daily Life",
+      "category": "Повседневная жизнь",
       "title": "防災グッズの定期チェック",
       "description": "Подготовка к землетрясениям и проверка тревожного рюкзака раз в полгода",
       "order_index": 100,
