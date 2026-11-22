@@ -24,6 +24,12 @@ MISSING_RU_PATHS = [
     Path(
         r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_kana_words_ru.json"
     ),
+    Path(
+        r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_va_ru_1.json"
+    ),
+    Path(
+        r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_va_ru_2.json"
+    ),
 ]
 
 PACK_FILES = [
@@ -302,18 +308,18 @@ def group_tokens(tokens):
 
 
 def resolve_dict_id(group, orig_char_dict, by_word_read, by_word, by_read):
-    # 1. Check if original segments inside this group already had a dict_id
-    for c_idx in range(group["start"], group["end"]):
-        if orig_char_dict[c_idx]:
-            return orig_char_dict[c_idx]
-
     base = group["base"]
     surf = group["surface"]
+    # 1. Prefer exact dictionary match for the full lemma / surface (fixes 変 -> 変わる, 知 -> 知る, etc.)
     if base in by_word:
         return by_word[base]
     if surf in by_word:
         return by_word[surf]
-    # Never fall back to reading-only lookup for pure-kana words (prevents なります -> 鳴る)
+
+    # 2. Fall back to original segment dict_id if no exact full-word match was found
+    for c_idx in range(group["start"], group["end"]):
+        if orig_char_dict[c_idx]:
+            return orig_char_dict[c_idx]
     return None
 
 
@@ -457,9 +463,9 @@ def main():
                 for p in mat["paragraphs"]
             )
             assert new_plain == old_plain, f"Material {mat['id']} plainText changed!"
-            mat["version"] = mat.get("version", 1) + 2
+            mat["version"] = mat.get("version", 1) + 3
 
-        data["pack_version"] = data.get("pack_version", 1) + 2
+        data["pack_version"] = data.get("pack_version", 1) + 3
         with open(pack_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"Updated {pack_path.name} -> pack_version={data['pack_version']}")
@@ -468,7 +474,7 @@ def main():
     manifest_path = ROOT / "content_updates/manifest.json"
     with open(manifest_path, encoding="utf-8") as f:
         manifest = json.load(f)
-    manifest["manifest_version"] = manifest.get("manifest_version", 1) + 3
+    manifest["manifest_version"] = manifest.get("manifest_version", 1) + 4
     pack_versions = {}
     for pack_path in PACK_FILES:
         with open(pack_path, encoding="utf-8") as f:

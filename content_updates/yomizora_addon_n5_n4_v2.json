@@ -1,6 +1,6 @@
 {
   "pack_id": "yomizora_addon_n5_n4_v2",
-  "pack_version": 4,
+  "pack_version": 5,
   "materials": [
     {
       "id": "n5_ext_081",
@@ -9,7 +9,7 @@
       "title": "電話での約束",
       "description": "Телефонный разговор друзей о встрече в субботу",
       "order_index": 71,
-      "version": 6,
+      "version": 7,
       "content_hash": "2dc129f7ad37edbf616d51dbc6bbcdee76062fa0928aefe3001d88c17add48c4",
       "paragraphs": [
         {
@@ -28,7 +28,7 @@
                 {
                   "text": "し",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "、",
@@ -190,12 +190,12 @@
                 {
                   "text": "変",
                   "reading": "か",
-                  "dict_id": "dw_89006eb4d5"
+                  "dict_id": "dh_e56a3d0efe"
                 },
                 {
                   "text": "わりました",
                   "reading": null,
-                  "dict_id": "dw_89006eb4d5"
+                  "dict_id": "dh_e56a3d0efe"
                 },
                 {
                   "text": "。",
@@ -516,7 +516,7 @@
       "title": "図書館の帰り",
       "description": "Разговор друзей после учёбы в библиотеке и планы на ужин",
       "order_index": 72,
-      "version": 6,
+      "version": 7,
       "content_hash": "80e6e7f226992e92d88744b8cee64e7096f705978ded66ca1030d89432a2629c",
       "paragraphs": [
         {
@@ -595,7 +595,7 @@
                 {
                   "text": "そう",
                   "reading": null,
-                  "dict_id": "dc_fbc761d670"
+                  "dict_id": "dh_d669529e98"
                 },
                 {
                   "text": "ですね。",
@@ -827,12 +827,12 @@
                 {
                   "text": "空",
                   "reading": "す",
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "いていた",
                   "reading": null,
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "んです。",
@@ -967,7 +967,7 @@
       "title": "駅までの近道",
       "description": "Новая тихая дорога до станции и утреннее открытие",
       "order_index": 73,
-      "version": 6,
+      "version": 7,
       "content_hash": "25f1ab8029dbe07b06a0ec9a1800ddc33157434b0160cc0766974b2d8e03f1b2",
       "paragraphs": [
         {
@@ -1113,12 +1113,12 @@
                 {
                   "text": "静",
                   "reading": "しず",
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "かで",
                   "reading": null,
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "花",
@@ -1399,7 +1399,7 @@
       "title": "机の上のメモ",
       "description": "Важная привычка записывать поручения на работе",
       "order_index": 74,
-      "version": 6,
+      "version": 7,
       "content_hash": "688cc7a2cb5d250ec3d85112d2dfc80eafa0711cc9b2b9ad3d398950ffc4d56c",
       "paragraphs": [
         {
@@ -1504,12 +1504,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "た",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "とき",
@@ -1638,7 +1638,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -1725,7 +1725,7 @@
                 {
                   "text": "おかげさ",
                   "reading": null,
-                  "dict_id": "dc_8426c447e5"
+                  "dict_id": "dh_88da952acb"
                 },
                 {
                   "text": "まで、",
@@ -1891,7 +1891,7 @@
       "title": "映画館のチケット",
       "description": "Покупка билетов в кинотеатре и выбор мест",
       "order_index": 75,
-      "version": 6,
+      "version": 7,
       "content_hash": "8cfa3408c0921e31e056f0ab8af0e781939a2b85b6920530df5374076be989e4",
       "paragraphs": [
         {
@@ -1923,12 +1923,12 @@
                 {
                   "text": "青",
                   "reading": "あお",
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "空",
@@ -1955,17 +1955,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "願",
                   "reading": "ねが",
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "いします",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "。",
@@ -2060,12 +2060,12 @@
                 {
                   "text": "後",
                   "reading": "うし",
-                  "dict_id": "dw_c73204f71b"
+                  "dict_id": "dh_0f150310cd"
                 },
                 {
                   "text": "ろ",
                   "reading": null,
-                  "dict_id": "dw_c73204f71b"
+                  "dict_id": "dh_0f150310cd"
                 },
                 {
                   "text": "の",
@@ -2121,7 +2121,7 @@
                 {
                   "text": "そう",
                   "reading": null,
-                  "dict_id": "dc_fbc761d670"
+                  "dict_id": "dh_d669529e98"
                 },
                 {
                   "text": "ですね…",
@@ -2130,16 +2130,17 @@
                 {
                   "text": "真",
                   "reading": "ま",
-                  "dict_id": "dw_5083119d8c"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "ん",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "中",
                   "reading": "なか",
-                  "dict_id": "dw_b5898a112a"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "より",
@@ -2158,12 +2159,12 @@
                 {
                   "text": "後",
                   "reading": "うし",
-                  "dict_id": "dw_c73204f71b"
+                  "dict_id": "dh_0f150310cd"
                 },
                 {
                   "text": "ろ",
                   "reading": null,
-                  "dict_id": "dw_c73204f71b"
+                  "dict_id": "dh_0f150310cd"
                 },
                 {
                   "text": "の",
@@ -2181,12 +2182,12 @@
                 {
                   "text": "空",
                   "reading": "あ",
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "いています",
                   "reading": null,
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "か。",
@@ -2233,16 +2234,17 @@
                 {
                   "text": "真",
                   "reading": "ま",
-                  "dict_id": "dw_5083119d8c"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "ん",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "中",
                   "reading": "なか",
-                  "dict_id": "dw_b5898a112a"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "が",
@@ -2251,12 +2253,12 @@
                 {
                   "text": "空",
                   "reading": "あ",
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "いています",
                   "reading": null,
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "よ。",
@@ -2358,17 +2360,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "願",
                   "reading": "ねが",
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "いします",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "！",
@@ -2655,7 +2657,7 @@
       "title": "新しい靴",
       "description": "Покупка удобных кроссовок и первая долгая прогулка в парке",
       "order_index": 76,
-      "version": 6,
+      "version": 7,
       "content_hash": "3d4e07827c4a09981bc3b88cb57cf95b77074704228e1ba49157412dc93c9ecc",
       "paragraphs": [
         {
@@ -2836,7 +2838,7 @@
                 {
                   "text": "白",
                   "reading": "しろ",
-                  "dict_id": "dw_f0fe50f23c"
+                  "dict_id": "dh_c23764748e"
                 },
                 {
                   "text": "に",
@@ -2923,12 +2925,12 @@
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_66fc84905c"
                 },
                 {
                   "text": "かけます",
                   "reading": null,
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_66fc84905c"
                 },
                 {
                   "text": "。",
@@ -2959,7 +2961,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -3108,7 +3110,7 @@
       "title": "バスの中の親切",
       "description": "Поездка в полном автобусе и добрый поступок школьницы",
       "order_index": 77,
-      "version": 6,
+      "version": 7,
       "content_hash": "b650f567f2702eda969ab7af3da7846b0d337443aad0797b85193e52cb3fcf92",
       "paragraphs": [
         {
@@ -3256,12 +3258,12 @@
                 {
                   "text": "バス",
                   "reading": null,
-                  "dict_id": "dk_19800da5f6"
+                  "dict_id": "dh_aaa00fe136"
                 },
                 {
                   "text": "停",
                   "reading": "てい",
-                  "dict_id": "dw_d2194cea11"
+                  "dict_id": "dh_aaa00fe136"
                 },
                 {
                   "text": "から、",
@@ -3644,7 +3646,7 @@
       "title": "朝のりんご",
       "description": "Привычка есть яблоки по утрам и домашний сок от мамы",
       "order_index": 78,
-      "version": 6,
+      "version": 7,
       "content_hash": "866c3652b087a66b7607b241bb897cdde4b2615698a920180e23373c4eaef3b4",
       "paragraphs": [
         {
@@ -3672,12 +3674,12 @@
                 {
                   "text": "赤",
                   "reading": "あか",
-                  "dict_id": "dw_a566fd2e11"
+                  "dict_id": "dh_a1c92ffa4e"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_a566fd2e11"
+                  "dict_id": "dh_a1c92ffa4e"
                 },
                 {
                   "text": "りんご",
@@ -3848,12 +3850,12 @@
                 {
                   "text": "覚",
                   "reading": "さ",
-                  "dict_id": "dw_9e5600b931"
+                  "dict_id": "da_2146a9adf6"
                 },
                 {
                   "text": "めます",
                   "reading": null,
-                  "dict_id": "dw_9e5600b931"
+                  "dict_id": "da_2146a9adf6"
                 },
                 {
                   "text": "。",
@@ -4143,7 +4145,7 @@
       "title": "日本語のノート",
       "description": "Как цветные ручки и примеры помогают учить слова",
       "order_index": 79,
-      "version": 6,
+      "version": 7,
       "content_hash": "47ae7735ddd2ed0e5afe38f6612693f4e97f7b54e2c6bb66d5fe3468fb050fbb",
       "paragraphs": [
         {
@@ -4424,12 +4426,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "かります",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "。",
@@ -4496,7 +4498,7 @@
                 {
                   "text": "すごく",
                   "reading": null,
-                  "dict_id": "dh_f2b69135d1"
+                  "dict_id": "dh_a3dc41fbbb"
                 },
                 {
                   "text": "見",
@@ -4528,7 +4530,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "、",
@@ -4560,12 +4562,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けよう",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "と",
@@ -4692,7 +4694,7 @@
       "title": "なくなったかぎ",
       "description": "Утренняя паника из-за потерянных ключей и неожиданная находка",
       "order_index": 80,
-      "version": 6,
+      "version": 7,
       "content_hash": "aa78ed250d9fd1a7b83420ffd7d66e1508860a63c4d8ae06525bccb93f5c65f1",
       "paragraphs": [
         {
@@ -4766,12 +4768,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_4b4ee324b6"
                 },
                 {
                   "text": "つかりません",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_4b4ee324b6"
                 },
                 {
                   "text": "。",
@@ -4976,7 +4978,7 @@
                 {
                   "text": "しれない",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_73576261b3"
                 },
                 {
                   "text": "」と",
@@ -5055,7 +5057,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "、",
@@ -5203,7 +5205,7 @@
       "title": "お花見のお弁当",
       "description": "Весенний пикник под сакурой с друзьями",
       "order_index": 81,
-      "version": 6,
+      "version": 7,
       "content_hash": "d730a8e3f55d8a7f76af66adf64119a571cd60cb85991a64a3d7cfdd051fa10f",
       "paragraphs": [
         {
@@ -5222,12 +5224,12 @@
                 {
                   "text": "初",
                   "reading": "はじ",
-                  "dict_id": "dw_710540687c"
+                  "dict_id": "dh_0a383198e9"
                 },
                 {
                   "text": "め",
                   "reading": null,
-                  "dict_id": "dw_710540687c"
+                  "dict_id": "dh_0a383198e9"
                 },
                 {
                   "text": "、",
@@ -5345,12 +5347,12 @@
                 {
                   "text": "花",
                   "reading": "はな",
-                  "dict_id": "d_hana"
+                  "dict_id": "dh_bc95a7743d"
                 },
                 {
                   "text": "びら",
                   "reading": null,
-                  "dict_id": "d_hana"
+                  "dict_id": "dh_bc95a7743d"
                 },
                 {
                   "text": "が",
@@ -5523,16 +5525,17 @@
                 {
                   "text": "木",
                   "reading": "き",
-                  "dict_id": "dw_1d9bd925a0"
+                  "dict_id": "dh_9622cef701"
                 },
                 {
                   "text": "の",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_9622cef701"
                 },
                 {
                   "text": "下",
                   "reading": "した",
-                  "dict_id": "dw_765cad7349"
+                  "dict_id": "dh_9622cef701"
                 },
                 {
                   "text": "で",
@@ -5551,12 +5554,12 @@
                 {
                   "text": "ご",
                   "reading": null,
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "飯",
                   "reading": "はん",
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "は、",
@@ -5745,7 +5748,7 @@
       "title": "雨の日の買い物",
       "description": "Дождливый вечер, горячий суп и встреча со знакомым",
       "order_index": 82,
-      "version": 6,
+      "version": 7,
       "content_hash": "b12b679ffd322e18b9bdca99a0a2097fcd6eaa306108e95d2ec02636adf3b105",
       "paragraphs": [
         {
@@ -5793,12 +5796,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めました",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "。",
@@ -5892,7 +5895,7 @@
                 {
                   "text": "しかた",
                   "reading": null,
-                  "dict_id": "dk_763b2d0c7f"
+                  "dict_id": "dh_6790c59edd"
                 },
                 {
                   "text": "が",
@@ -5901,7 +5904,7 @@
                 {
                   "text": "ない",
                   "reading": null,
-                  "dict_id": "dk_763b2d0c7f"
+                  "dict_id": "dh_f17ca3c033"
                 },
                 {
                   "text": "ので、",
@@ -5924,12 +5927,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "の",
@@ -6341,7 +6344,7 @@
       "title": "カレーライス作り",
       "description": "Первый самостоятельный карри и маленькая ошибка с солью",
       "order_index": 83,
-      "version": 6,
+      "version": 7,
       "content_hash": "b4470941fa03e9d065724c71a463b9c740352c87e75eb0831b4e831793cf00c4",
       "paragraphs": [
         {
@@ -6569,12 +6572,12 @@
                 {
                   "text": "広",
                   "reading": "ひろ",
-                  "dict_id": "dw_9e57a5c7a1"
+                  "dict_id": "dh_da1acc7d71"
                 },
                 {
                   "text": "がって",
                   "reading": null,
-                  "dict_id": "dw_9e57a5c7a1"
+                  "dict_id": "dh_da1acc7d71"
                 },
                 {
                   "text": "、",
@@ -6592,12 +6595,12 @@
                 {
                   "text": "空",
                   "reading": "す",
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "いてきました",
                   "reading": null,
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "。",
@@ -6637,12 +6640,12 @@
                 {
                   "text": "まあ",
                   "reading": null,
-                  "dict_id": "dc_d01815a224"
+                  "dict_id": "dh_dc606ef56f"
                 },
                 {
                   "text": "まあ",
                   "reading": null,
-                  "dict_id": "dc_d01815a224"
+                  "dict_id": "dh_dc606ef56f"
                 },
                 {
                   "text": "でした。",
@@ -6688,7 +6691,7 @@
                 {
                   "text": "しれません",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_73576261b3"
                 },
                 {
                   "text": "が、",
@@ -6900,7 +6903,7 @@
       "title": "初めてのテスト",
       "description": "Волнение перед первым экзаменом и поддержка преподавателя",
       "order_index": 84,
-      "version": 6,
+      "version": 7,
       "content_hash": "3735a8c05bfc1c89f1541d693001175d91c00c6bda231042beeb862b892badf3",
       "paragraphs": [
         {
@@ -7020,12 +7023,12 @@
                 {
                   "text": "眠",
                   "reading": "ねむ",
-                  "dict_id": "dw_bc9a19cea5"
+                  "dict_id": "dh_a70aa7cd5f"
                 },
                 {
                   "text": "れません",
                   "reading": null,
-                  "dict_id": "dw_bc9a19cea5"
+                  "dict_id": "dh_a70aa7cd5f"
                 },
                 {
                   "text": "でした。",
@@ -7112,12 +7115,12 @@
                 {
                   "text": "答",
                   "reading": "こた",
-                  "dict_id": "d_kotae"
+                  "dict_id": "dh_4a519eac86"
                 },
                 {
                   "text": "える",
                   "reading": null,
-                  "dict_id": "d_kotae"
+                  "dict_id": "dh_4a519eac86"
                 },
                 {
                   "text": "こと",
@@ -7255,7 +7258,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -7352,7 +7355,7 @@
       "title": "昼休みの散歩",
       "description": "Короткая прогулка в обеденный перерыв для отдыха от компьютера",
       "order_index": 85,
-      "version": 6,
+      "version": 7,
       "content_hash": "7e99ccf5ab641d0db83de8532a832e494b7f76e61993338e726e4ecfe3f08889",
       "paragraphs": [
         {
@@ -7577,12 +7580,12 @@
                 {
                   "text": "青",
                   "reading": "あお",
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "空",
@@ -7899,7 +7902,7 @@
       "title": "お正月の手紙",
       "description": "Новогодняя открытка от бабушки и тёплые воспоминания",
       "order_index": 86,
-      "version": 6,
+      "version": 7,
       "content_hash": "b03c4a51795f6e8a6e440c5674f52aae335f8bef7c9db442cf559ac0098d82c9",
       "paragraphs": [
         {
@@ -7909,12 +7912,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_e29b48dfa1"
+                  "dict_id": "dh_de1a3ac09e"
                 },
                 {
                   "text": "正月",
                   "reading": "しょうがつ",
-                  "dict_id": "dw_e29b48dfa1"
+                  "dict_id": "dh_de1a3ac09e"
                 },
                 {
                   "text": "に、",
@@ -8177,12 +8180,12 @@
                 {
                   "text": "手書",
                   "reading": "てが",
-                  "dict_id": "dw_f710c877b1"
+                  "dict_id": "dh_dc6b74292c"
                 },
                 {
                   "text": "き",
                   "reading": null,
-                  "dict_id": "dw_f710c877b1"
+                  "dict_id": "dh_dc6b74292c"
                 },
                 {
                   "text": "の",
@@ -8260,12 +8263,12 @@
                 {
                   "text": "休",
                   "reading": "やす",
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "み",
                   "reading": null,
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "に",
@@ -8505,7 +8508,7 @@
       "title": "お見舞いの相談",
       "description": "Разговор коллег о подарке для заболевшего товарища",
       "order_index": 87,
-      "version": 6,
+      "version": 7,
       "content_hash": "584bca49586456f8fcbebe5fe60157ba9bceb8e031037978dab4352f32d0aa93",
       "paragraphs": [
         {
@@ -8727,12 +8730,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "て",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "、",
@@ -8750,12 +8753,12 @@
                 {
                   "text": "下",
                   "reading": "さ",
-                  "dict_id": "dw_765cad7349"
+                  "dict_id": "dh_52042a07e7"
                 },
                 {
                   "text": "がった",
                   "reading": null,
-                  "dict_id": "dw_765cad7349"
+                  "dict_id": "dh_52042a07e7"
                 },
                 {
                   "text": "と",
@@ -8782,7 +8785,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "ですね。",
@@ -8866,7 +8869,7 @@
                 {
                   "text": "そう",
                   "reading": null,
-                  "dict_id": "dc_fbc761d670"
+                  "dict_id": "dh_d669529e98"
                 },
                 {
                   "text": "ですね。",
@@ -8888,12 +8891,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_c3a81ced5f"
+                  "dict_id": "dh_838eb314c5"
                 },
                 {
                   "text": "菓子",
                   "reading": "かし",
-                  "dict_id": "dw_c3a81ced5f"
+                  "dict_id": "dh_838eb314c5"
                 },
                 {
                   "text": "より",
@@ -8911,16 +8914,17 @@
                 {
                   "text": "飲",
                   "reading": "の",
-                  "dict_id": "d_nomu"
+                  "dict_id": "dh_41b7e372b2"
                 },
                 {
                   "text": "み",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_41b7e372b2"
                 },
                 {
                   "text": "物",
                   "reading": "もの",
-                  "dict_id": "dw_817f7f659f"
+                  "dict_id": "dh_41b7e372b2"
                 },
                 {
                   "text": "の",
@@ -8947,7 +8951,7 @@
                 {
                   "text": "しれません",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_73576261b3"
                 },
                 {
                   "text": "ね。",
@@ -9264,7 +9268,7 @@
       "title": "思い出のラーメン屋",
       "description": "Маленькая раменная на углу улицы, куда ходят всей семьёй",
       "order_index": 88,
-      "version": 6,
+      "version": 7,
       "content_hash": "6690f5100615e03dd3780840c5081a79907f159822c9b76fc34736504017fc7d",
       "paragraphs": [
         {
@@ -9407,12 +9411,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_d233b069fa"
+                  "dict_id": "dh_f22a2d0019"
                 },
                 {
                   "text": "客",
                   "reading": "きゃく",
-                  "dict_id": "dw_d233b069fa"
+                  "dict_id": "dh_f22a2d0019"
                 },
                 {
                   "text": "さんで",
@@ -9493,12 +9497,12 @@
                 {
                   "text": "熱",
                   "reading": "あつ",
-                  "dict_id": "dw_fcb86feced"
+                  "dict_id": "dw_a944772841"
                 },
                 {
                   "text": "くて",
                   "reading": null,
-                  "dict_id": "dw_fcb86feced"
+                  "dict_id": "dw_a944772841"
                 },
                 {
                   "text": "、",
@@ -9684,7 +9688,7 @@
                 {
                   "text": "つかれ",
                   "reading": null,
-                  "dict_id": "dc_5505485aab"
+                  "dict_id": "dh_1862b259e1"
                 },
                 {
                   "text": "さま",
@@ -9698,12 +9702,12 @@
                 {
                   "text": "明",
                   "reading": "あか",
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "るく",
                   "reading": null,
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "声",
@@ -9791,12 +9795,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "たく",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "なります",
@@ -10106,7 +10110,7 @@
       "title": "犬の散歩と新しい友達",
       "description": "Утренние прогулки с собакой Почи и знакомство с соседями",
       "order_index": 89,
-      "version": 6,
+      "version": 7,
       "content_hash": "8b734849d85705e3b3736ea0311432d4be69fd0a9bb5367f63babf34c9af1548",
       "paragraphs": [
         {
@@ -10438,12 +10442,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "の",
@@ -10670,12 +10674,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しく",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "なりました",
@@ -10949,7 +10953,7 @@
       "title": "初めてのお好み焼き",
       "description": "Ужин с другом в ресторане окономияки и попытка приготовить самому",
       "order_index": 90,
-      "version": 6,
+      "version": 7,
       "content_hash": "f1736c05d6fe310b301203dc85abf9883fc28e092d3c67ecce8972260f9dba45",
       "paragraphs": [
         {
@@ -10998,26 +11002,33 @@
                   "dict_id": "dk_753d4e9b69"
                 },
                 {
-                  "text": "にお",
+                  "text": "に",
                   "reading": null
+                },
+                {
+                  "text": "お",
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "好",
                   "reading": "この",
-                  "dict_id": "dw_9a5449356e"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "み",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "焼",
                   "reading": "や",
-                  "dict_id": "dw_b8143dbd43"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "き",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "屋",
@@ -11090,12 +11101,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "しみ",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "に",
@@ -11130,16 +11141,17 @@
                 {
                   "text": "真",
                   "reading": "ま",
-                  "dict_id": "dw_5083119d8c"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "ん",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "中",
                   "reading": "なか",
-                  "dict_id": "dw_b5898a112a"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "に",
@@ -11148,12 +11160,12 @@
                 {
                   "text": "熱",
                   "reading": "あつ",
-                  "dict_id": "dw_fcb86feced"
+                  "dict_id": "dw_a944772841"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_fcb86feced"
+                  "dict_id": "dw_a944772841"
                 },
                 {
                   "text": "鉄板",
@@ -11300,17 +11312,17 @@
                 {
                   "text": "ひっくり",
                   "reading": null,
-                  "dict_id": "dw_23d66fa818"
+                  "dict_id": "dh_951792d8db"
                 },
                 {
                   "text": "返",
                   "reading": "かえ",
-                  "dict_id": "dw_23d66fa818"
+                  "dict_id": "dh_951792d8db"
                 },
                 {
                   "text": "す",
                   "reading": null,
-                  "dict_id": "dw_23d66fa818"
+                  "dict_id": "dh_951792d8db"
                 },
                 {
                   "text": "とき",
@@ -11353,7 +11365,7 @@
                 {
                   "text": "ほっと",
                   "reading": null,
-                  "dict_id": "dc_ada7b2e318"
+                  "dict_id": "dh_38fa4bc960"
                 },
                 {
                   "text": "しました",
@@ -11437,25 +11449,36 @@
                   "dict_id": "dk_d9f0408fba"
                 },
                 {
-                  "text": "のお",
+                  "text": "の",
                   "reading": null
+                },
+                {
+                  "text": "お",
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "好",
                   "reading": "この",
-                  "dict_id": "dw_9a5449356e"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "み",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "焼",
                   "reading": "や",
-                  "dict_id": "dw_b8143dbd43"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
-                  "text": "きは",
+                  "text": "き",
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
+                },
+                {
+                  "text": "は",
                   "reading": null
                 },
                 {
@@ -11506,7 +11529,7 @@
                 {
                   "text": "おいしかった",
                   "reading": null,
-                  "dict_id": "dk_b86e6e5c49"
+                  "dict_id": "dk_e577ae2f49"
                 },
                 {
                   "text": "ので、",
@@ -11525,12 +11548,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "たい",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "と",
@@ -11830,7 +11853,7 @@
       "title": "ピアノの発表会",
       "description": "Волнение перед школьным концертом и поддержка семьи",
       "order_index": 91,
-      "version": 6,
+      "version": 7,
       "content_hash": "b753f63018a11072e34c1e12d1fac7189b2f1409559ce185539b1f7d9f5df659",
       "paragraphs": [
         {
@@ -12049,12 +12072,12 @@
                 {
                   "text": "上",
                   "reading": "あ",
-                  "dict_id": "dw_4fd89ddc26"
+                  "dict_id": "dw_cfa7ad25a6"
                 },
                 {
                   "text": "がる",
                   "reading": null,
-                  "dict_id": "dw_4fd89ddc26"
+                  "dict_id": "dw_cfa7ad25a6"
                 },
                 {
                   "text": "前",
@@ -12195,12 +12218,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "えました",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "。",
@@ -12241,7 +12264,7 @@
                 {
                   "text": "ほっと",
                   "reading": null,
-                  "dict_id": "dc_ada7b2e318"
+                  "dict_id": "dh_38fa4bc960"
                 },
                 {
                   "text": "しました",
@@ -12423,7 +12446,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "」と",
@@ -12660,7 +12683,7 @@
       "title": "日曜日の大掃除",
       "description": "Генеральная уборка комнаты и неожиданная находка старых вещей",
       "order_index": 92,
-      "version": 6,
+      "version": 7,
       "content_hash": "fc9053ab9f602ad3e6342a2029a61f849f8d8e9ba84e8a06e807908fb12b7fce",
       "paragraphs": [
         {
@@ -12721,12 +12744,12 @@
                 {
                   "text": "気",
                   "reading": "き",
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "づきました",
                   "reading": null,
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "。",
@@ -12806,12 +12829,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めました",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "。",
@@ -12856,12 +12879,12 @@
                 {
                   "text": "開",
                   "reading": "あ",
-                  "dict_id": "dw_1d1293a3e3"
+                  "dict_id": "dh_828ca9e741"
                 },
                 {
                   "text": "けて",
                   "reading": null,
-                  "dict_id": "dw_1d1293a3e3"
+                  "dict_id": "dh_828ca9e741"
                 },
                 {
                   "text": "空気",
@@ -13054,17 +13077,17 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_ac5faab9bd"
                 },
                 {
                   "text": "つけて",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_ac5faab9bd"
                 },
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -13114,12 +13137,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しい",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "写真",
@@ -13278,7 +13301,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -13486,7 +13509,7 @@
       "title": "浅草の休日",
       "description": "Прогулка по историческому району Асакуса и японские сладости",
       "order_index": 93,
-      "version": 6,
+      "version": 7,
       "content_hash": "0857b4d7c5377f5fad5eaa049351b3ab751550b19567803e97b3292372aa270a",
       "paragraphs": [
         {
@@ -13599,12 +13622,12 @@
                 {
                   "text": "赤",
                   "reading": "あか",
-                  "dict_id": "dw_a566fd2e11"
+                  "dict_id": "dh_a1c92ffa4e"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_a566fd2e11"
+                  "dict_id": "dh_a1c92ffa4e"
                 },
                 {
                   "text": "提灯",
@@ -13636,12 +13659,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "えてきます",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "。",
@@ -13855,12 +13878,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しい",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "です。",
@@ -13987,7 +14010,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -13996,7 +14019,7 @@
                 {
                   "text": "おいしかった",
                   "reading": null,
-                  "dict_id": "dk_b86e6e5c49"
+                  "dict_id": "dk_e577ae2f49"
                 },
                 {
                   "text": "です。",
@@ -14023,12 +14046,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_f6e1112a6f"
+                  "dict_id": "dh_fe53caf0c9"
                 },
                 {
                   "text": "寺",
                   "reading": "てら",
-                  "dict_id": "dw_f6e1112a6f"
+                  "dict_id": "dh_fe53caf0c9"
                 },
                 {
                   "text": "で",
@@ -14424,7 +14447,7 @@
       "title": "初めてのアルバイト",
       "description": "Первая неделя подработки в книжном магазине",
       "order_index": 94,
-      "version": 6,
+      "version": 7,
       "content_hash": "7c3c0b000378555668f6359184ecf056e4679039078f273180e59224f807e4f0",
       "paragraphs": [
         {
@@ -14470,12 +14493,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めました",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "。",
@@ -14598,16 +14621,17 @@
                 {
                   "text": "使",
                   "reading": "つか",
-                  "dict_id": "dw_91b55fa823"
+                  "dict_id": "dh_47e6df04bf"
                 },
                 {
                   "text": "い",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_47e6df04bf"
                 },
                 {
                   "text": "方",
                   "reading": "かた",
-                  "dict_id": "dw_09727d9307"
+                  "dict_id": "dh_47e6df04bf"
                 },
                 {
                   "text": "や、",
@@ -14907,7 +14931,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -14934,17 +14958,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_cb5355a0a8"
+                  "dict_id": "dc_0f5420a459"
                 },
                 {
                   "text": "先",
                   "reading": "さき",
-                  "dict_id": "dw_cb5355a0a8"
+                  "dict_id": "dc_0f5420a459"
                 },
                 {
                   "text": "に",
                   "reading": null,
-                  "dict_id": "dw_cb5355a0a8"
+                  "dict_id": "dc_0f5420a459"
                 },
                 {
                   "text": "失礼",
@@ -14982,12 +15006,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しく",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "なりました",
@@ -15256,7 +15280,7 @@
       "title": "夏の盆踊り",
       "description": "Вечерний летний праздник в парке с юкатами, музыкой и фонариками",
       "order_index": 95,
-      "version": 6,
+      "version": 7,
       "content_hash": "4a3f7cb08f4a9ba09e10ddb005850c86b22c6fb57f6f945737fc428830567372",
       "paragraphs": [
         {
@@ -15284,12 +15308,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "の",
@@ -15426,16 +15450,17 @@
                 {
                   "text": "真",
                   "reading": "ま",
-                  "dict_id": "dw_5083119d8c"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "ん",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "中",
                   "reading": "なか",
-                  "dict_id": "dw_b5898a112a"
+                  "dict_id": "dh_aca5ed4ba8"
                 },
                 {
                   "text": "に",
@@ -15481,7 +15506,7 @@
                 {
                   "text": "白",
                   "reading": "しろ",
-                  "dict_id": "dw_f0fe50f23c"
+                  "dict_id": "dh_c23764748e"
                 },
                 {
                   "text": "の",
@@ -15550,12 +15575,12 @@
                 {
                   "text": "子",
                   "reading": "こ",
-                  "dict_id": "dw_e991f6fc0d"
+                  "dict_id": "dh_ff6e89c051"
                 },
                 {
                   "text": "どもたち",
                   "reading": null,
-                  "dict_id": "dw_e991f6fc0d"
+                  "dict_id": "dh_ff6e89c051"
                 },
                 {
                   "text": "が",
@@ -15609,12 +15634,12 @@
                 {
                   "text": "明",
                   "reading": "あか",
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "るい",
                   "reading": null,
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "音楽",
@@ -15628,12 +15653,12 @@
                 {
                   "text": "合",
                   "reading": "あ",
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "わせて",
                   "reading": null,
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "、",
@@ -15836,12 +15861,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しく",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "なりました",
@@ -15887,16 +15912,17 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "い",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "に",
@@ -16183,7 +16209,7 @@
       "title": "京都の小さな旅館",
       "description": "Уютная традиционная гостиница в Киото и утренний чай",
       "order_index": 96,
-      "version": 6,
+      "version": 7,
       "content_hash": "05d474d4eb3da41ceae2da781a9413abab75b82c294df24892eaddc1f0a091c6",
       "paragraphs": [
         {
@@ -16413,12 +16439,12 @@
                 {
                   "text": "静",
                   "reading": "しず",
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "かで",
                   "reading": null,
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "とても",
@@ -16428,20 +16454,22 @@
                 {
                   "text": "落",
                   "reading": "お",
-                  "dict_id": "dw_ebd408a580"
+                  "dict_id": "dh_788b31387d"
                 },
                 {
                   "text": "ち",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_788b31387d"
                 },
                 {
                   "text": "着",
                   "reading": "つ",
-                  "dict_id": "dw_becfab5215"
+                  "dict_id": "dh_788b31387d"
                 },
                 {
                   "text": "く",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_788b31387d"
                 },
                 {
                   "text": "場所",
@@ -16519,12 +16547,12 @@
                 {
                   "text": "ご",
                   "reading": null,
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "飯",
                   "reading": "はん",
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "を",
@@ -16616,12 +16644,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_c776c517b2"
                 },
                 {
                   "text": "しかけてくれました",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_c776c517b2"
                 },
                 {
                   "text": "。",
@@ -17000,7 +17028,7 @@
       "title": "留学の夢",
       "description": "Вечерний разговор с преподавателем о планах поехать в Японию",
       "order_index": 97,
-      "version": 6,
+      "version": 7,
       "content_hash": "4c88980fb97215111ebe84b6b6a07466aabc2a913787a3f2b92bab98b3dae5fc",
       "paragraphs": [
         {
@@ -17542,12 +17570,12 @@
                 {
                   "text": "その",
                   "reading": null,
-                  "dict_id": "dk_01cdb6ffe5"
+                  "dict_id": "dh_19216562af"
                 },
                 {
                   "text": "ため",
                   "reading": null,
-                  "dict_id": "dk_01cdb6ffe5"
+                  "dict_id": "dh_5035062139"
                 },
                 {
                   "text": "に、",
@@ -17876,7 +17904,7 @@
       "title": "初めての海と砂浜",
       "description": "Поездка к океану на поезде и встреча заката на пляже",
       "order_index": 98,
-      "version": 6,
+      "version": 7,
       "content_hash": "76148f7d39845507866ffd27bba4169e951e59b373a92677f20784013233dd14",
       "paragraphs": [
         {
@@ -18150,12 +18178,12 @@
                 {
                   "text": "青",
                   "reading": "あお",
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "くて",
                   "reading": null,
-                  "dict_id": "dw_7ec53e7a2f"
+                  "dict_id": "dh_f50610bd7e"
                 },
                 {
                   "text": "広",
@@ -18179,12 +18207,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "えた",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "とき",
@@ -18198,12 +18226,12 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "わず",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "大",
@@ -18327,12 +18355,12 @@
                 {
                   "text": "当",
                   "reading": "あ",
-                  "dict_id": "dw_25812e823f"
+                  "dict_id": "dh_b9d2b417c1"
                 },
                 {
                   "text": "たって",
                   "reading": null,
-                  "dict_id": "dw_25812e823f"
+                  "dict_id": "dh_b9d2b417c1"
                 },
                 {
                   "text": "、",
@@ -18346,7 +18374,7 @@
                 {
                   "text": "くすぐったかった",
                   "reading": null,
-                  "dict_id": "dk_4565df324f"
+                  "dict_id": "dh_819cd043ee"
                 },
                 {
                   "text": "です。",
@@ -18544,12 +18572,12 @@
                 {
                   "text": "静",
                   "reading": "しず",
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "か",
                   "reading": null,
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "に",
@@ -18576,7 +18604,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -18883,7 +18911,7 @@
       "title": "新しい一年への目標",
       "description": "Размышления в конце года и планы на будущее",
       "order_index": 99,
-      "version": 6,
+      "version": 7,
       "content_hash": "4f7353d3f48b8a62917eb07f6ec9b2dff67545f0b42c999c9a6f925bbe8cb8d0",
       "paragraphs": [
         {
@@ -19075,12 +19103,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めました",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "。",
@@ -19214,12 +19242,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けています",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "。",
@@ -19297,12 +19325,12 @@
                 {
                   "text": "読",
                   "reading": "よ",
-                  "dict_id": "d_yomu"
+                  "dict_id": "dh_91e6a7e80b"
                 },
                 {
                   "text": "める",
                   "reading": null,
-                  "dict_id": "d_yomu"
+                  "dict_id": "dh_91e6a7e80b"
                 },
                 {
                   "text": "文章",
@@ -19447,7 +19475,7 @@
                 {
                   "text": "おかげ",
                   "reading": null,
-                  "dict_id": "dc_8426c447e5"
+                  "dict_id": "dh_88da952acb"
                 },
                 {
                   "text": "さまで",
@@ -19465,12 +19493,12 @@
                 {
                   "text": "過",
                   "reading": "す",
-                  "dict_id": "dw_248e3d9e31"
+                  "dict_id": "dh_fbd9b3a8a8"
                 },
                 {
                   "text": "ごせた",
                   "reading": null,
-                  "dict_id": "dw_248e3d9e31"
+                  "dict_id": "dh_fbd9b3a8a8"
                 },
                 {
                   "text": "今年",
@@ -19785,7 +19813,7 @@
       "title": "初めての出張",
       "description": "Первая короткая командировка в Осаку на синкансэне",
       "order_index": 100,
-      "version": 6,
+      "version": 7,
       "content_hash": "ee16b51d19a824fd5ca5c144be5dad8c8c3696e2e4cdf8b41a71d06956b835cf",
       "paragraphs": [
         {
@@ -19985,12 +20013,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "えて",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "、",
@@ -20241,12 +20269,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_d21c8505f7"
                 },
                 {
                   "text": "せる",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_d21c8505f7"
                 },
                 {
                   "text": "ように",
@@ -20350,7 +20378,7 @@
                 {
                   "text": "つかれ",
                   "reading": null,
-                  "dict_id": "dc_5505485aab"
+                  "dict_id": "dh_1862b259e1"
                 },
                 {
                   "text": "さま",
@@ -20390,24 +20418,31 @@
                 },
                 {
                   "text": "お",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "好",
                   "reading": "この",
-                  "dict_id": "dw_9a5449356e"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "み",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
                   "text": "焼",
                   "reading": "や",
-                  "dict_id": "dw_b8143dbd43"
+                  "dict_id": "dh_c645f59f5c"
                 },
                 {
-                  "text": "きを",
+                  "text": "き",
+                  "reading": null,
+                  "dict_id": "dh_c645f59f5c"
+                },
+                {
+                  "text": "を",
                   "reading": null
                 },
                 {
@@ -20426,7 +20461,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -20704,7 +20739,7 @@
       "title": "荷物の受け取り",
       "description": "Вежливый разговор с курьером о доставке тяжёлой посылки",
       "order_index": 71,
-      "version": 6,
+      "version": 7,
       "content_hash": "769e1f13db36514b16882b9b080bfd77c826389655c4bb49e62a7f15dc030878",
       "paragraphs": [
         {
@@ -20814,7 +20849,7 @@
                 {
                   "text": "つかれさ",
                   "reading": null,
-                  "dict_id": "dc_5505485aab"
+                  "dict_id": "dh_1862b259e1"
                 },
                 {
                   "text": "まで",
@@ -20965,12 +21000,12 @@
                 {
                   "text": "預",
                   "reading": "あず",
-                  "dict_id": "dw_5c9a8721df"
+                  "dict_id": "dh_56ad061df5"
                 },
                 {
                   "text": "かり",
                   "reading": null,
-                  "dict_id": "dw_5c9a8721df"
+                  "dict_id": "dh_56ad061df5"
                 },
                 {
                   "text": "した",
@@ -21137,12 +21172,12 @@
                 {
                   "text": "書",
                   "reading": "か",
-                  "dict_id": "d_kaku"
+                  "dict_id": "dh_c9c4a1c82a"
                 },
                 {
                   "text": "けました",
                   "reading": null,
-                  "dict_id": "d_kaku"
+                  "dict_id": "dh_c9c4a1c82a"
                 },
                 {
                   "text": "。",
@@ -21191,7 +21226,7 @@
                 {
                   "text": "ありがとう",
                   "reading": null,
-                  "dict_id": "dk_94f49c978d"
+                  "dict_id": "dh_534b796a04"
                 },
                 {
                   "text": "ございます。",
@@ -21425,7 +21460,7 @@
       "title": "美容院の予約変更",
       "description": "Вежливый телефонный разговор о переносе записи в парикмахерскую",
       "order_index": 72,
-      "version": 6,
+      "version": 7,
       "content_hash": "6626835861807e6b987c20de9a9bdbbd0e8a2878510daa026fe834bc5e4b6724",
       "paragraphs": [
         {
@@ -21449,7 +21484,7 @@
                 {
                   "text": "ありがとう",
                   "reading": null,
-                  "dict_id": "dk_94f49c978d"
+                  "dict_id": "dh_534b796a04"
                 },
                 {
                   "text": "ございます。",
@@ -21720,12 +21755,12 @@
                 {
                   "text": "空",
                   "reading": "あ",
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "いています",
                   "reading": null,
-                  "dict_id": "d_sora"
+                  "dict_id": "dw_747eb648a9"
                 },
                 {
                   "text": "か。",
@@ -21759,17 +21794,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "待",
                   "reading": "ま",
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "ち",
                   "reading": null,
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "ください",
@@ -21871,7 +21906,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "！",
@@ -21903,17 +21938,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "願",
                   "reading": "ねが",
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "いします",
                   "reading": null,
-                  "dict_id": "dw_db809a6aed"
+                  "dict_id": "dh_9241efd6c8"
                 },
                 {
                   "text": "。",
@@ -21941,7 +21976,7 @@
                 {
                   "text": "ありがとう",
                   "reading": null,
-                  "dict_id": "dk_94f49c978d"
+                  "dict_id": "dh_534b796a04"
                 },
                 {
                   "text": "ございます。",
@@ -22068,7 +22103,7 @@
       "title": "社内会議の準備",
       "description": "Заблаговременная подготовка к совещанию и предотвращение сбоев",
       "order_index": 73,
-      "version": 6,
+      "version": 7,
       "content_hash": "4256b0af54c9c6eefd74aa6d9e70fbcdcab53ca18540fd783e2481ec1133e667",
       "paragraphs": [
         {
@@ -22155,12 +22190,12 @@
                 {
                   "text": "並",
                   "reading": "なら",
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "べておきました",
                   "reading": null,
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "。",
@@ -22209,12 +22244,12 @@
                 {
                   "text": "足",
                   "reading": "た",
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_aebcf13ea7"
                 },
                 {
                   "text": "りなくて",
                   "reading": null,
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_aebcf13ea7"
                 },
                 {
                   "text": "慌",
@@ -22255,7 +22290,7 @@
                 {
                   "text": "念",
                   "reading": "ねん",
-                  "dict_id": "dw_7cef9e1ba6"
+                  "dict_id": "dh_affa9707a1"
                 },
                 {
                   "text": "の",
@@ -22713,7 +22748,7 @@
       "title": "スマートフォンの整理",
       "description": "Удаление старых фотографий и освобождение памяти телефона",
       "order_index": 74,
-      "version": 6,
+      "version": 7,
       "content_hash": "87c251f579fa05cbbd66fafc521f5373cf233c29429bce4c06b26bf1d0b910da",
       "paragraphs": [
         {
@@ -22732,7 +22767,7 @@
                 {
                   "text": "スマート",
                   "reading": null,
-                  "dict_id": "dk_3715a78541"
+                  "dict_id": "da_c8f8a057ab"
                 },
                 {
                   "text": "フォン",
@@ -22783,12 +22818,12 @@
                 {
                   "text": "足",
                   "reading": "た",
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_aebcf13ea7"
                 },
                 {
                   "text": "りなく",
                   "reading": null,
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_aebcf13ea7"
                 },
                 {
                   "text": "なってしまいました",
@@ -23132,7 +23167,7 @@
                 {
                   "text": "ほっと",
                   "reading": null,
-                  "dict_id": "dc_ada7b2e318"
+                  "dict_id": "dh_38fa4bc960"
                 },
                 {
                   "text": "しました",
@@ -23321,7 +23356,7 @@
       "title": "図書館の延長手続き",
       "description": "Диалог в библиотеке о продлении книги и рекомендации похожих авторов",
       "order_index": 75,
-      "version": 6,
+      "version": 7,
       "content_hash": "a29db86d0672c4826810de4a7107636e304b56e44263e593f0cd3031bb799cab",
       "paragraphs": [
         {
@@ -23490,12 +23525,12 @@
                 {
                   "text": "預",
                   "reading": "あず",
-                  "dict_id": "dw_5c9a8721df"
+                  "dict_id": "dh_56ad061df5"
                 },
                 {
                   "text": "かり",
                   "reading": null,
-                  "dict_id": "dw_5c9a8721df"
+                  "dict_id": "dh_56ad061df5"
                 },
                 {
                   "text": "します",
@@ -23614,7 +23649,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "！",
@@ -23679,12 +23714,12 @@
                 {
                   "text": "急",
                   "reading": "いそ",
-                  "dict_id": "dw_ad16dfb430"
+                  "dict_id": "dw_b015f076e4"
                 },
                 {
                   "text": "いで",
                   "reading": null,
-                  "dict_id": "dw_ad16dfb430"
+                  "dict_id": "dw_b015f076e4"
                 },
                 {
                   "text": "読",
@@ -23750,12 +23785,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "しみ",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "ですね。",
@@ -23986,7 +24021,7 @@
                 {
                   "text": "ありがとう",
                   "reading": null,
-                  "dict_id": "dk_94f49c978d"
+                  "dict_id": "dh_534b796a04"
                 },
                 {
                   "text": "ございます。",
@@ -24278,7 +24313,7 @@
       "title": "銭湯のマナー",
       "description": "Правила посещения традиционной японской бани и отдых для души",
       "order_index": 76,
-      "version": 6,
+      "version": 7,
       "content_hash": "05fdd1ab389a062de4b2f0a0a9e24961a289558e31e9ddcdef9f27de3ffe96d4",
       "paragraphs": [
         {
@@ -24353,12 +24388,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "からなくて",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "緊張",
@@ -24550,12 +24585,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_62fea13c8b"
+                  "dict_id": "dh_b1b1bd4fc2"
                 },
                 {
                   "text": "湯",
                   "reading": "ゆ",
-                  "dict_id": "dw_62fea13c8b"
+                  "dict_id": "dh_b1b1bd4fc2"
                 },
                 {
                   "text": "の",
@@ -24729,12 +24764,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_62fea13c8b"
+                  "dict_id": "dh_b1b1bd4fc2"
                 },
                 {
                   "text": "湯",
                   "reading": "ゆ",
-                  "dict_id": "dw_62fea13c8b"
+                  "dict_id": "dh_b1b1bd4fc2"
                 },
                 {
                   "text": "に",
@@ -24780,12 +24815,12 @@
                 {
                   "text": "温",
                   "reading": "あたた",
-                  "dict_id": "dw_083e4c22df"
+                  "dict_id": "dh_680bf53dee"
                 },
                 {
                   "text": "まります",
                   "reading": null,
-                  "dict_id": "dw_083e4c22df"
+                  "dict_id": "dh_680bf53dee"
                 },
                 {
                   "text": "。",
@@ -24798,12 +24833,12 @@
                 {
                   "text": "帰",
                   "reading": "かえ",
-                  "dict_id": "d_kaeru"
+                  "dict_id": "db_45b70c3b8e"
                 },
                 {
                   "text": "り",
                   "reading": null,
-                  "dict_id": "d_kaeru"
+                  "dict_id": "db_45b70c3b8e"
                 },
                 {
                   "text": "に",
@@ -25000,7 +25035,7 @@
       "title": "留学の説明会",
       "description": "Подготовка вопросов для встречи о стажировке за границей",
       "order_index": 77,
-      "version": 6,
+      "version": 7,
       "content_hash": "52db5caeb28a69b4ec9e9b3ff723f0fb21254562cb2d044f093f6e1ef8e7799a",
       "paragraphs": [
         {
@@ -25045,12 +25080,12 @@
                 {
                   "text": "開",
                   "reading": "ひら",
-                  "dict_id": "dw_da2db45dd3"
+                  "dict_id": "dw_1d1293a3e3"
                 },
                 {
                   "text": "かれる",
                   "reading": null,
-                  "dict_id": "dw_da2db45dd3"
+                  "dict_id": "dw_1d1293a3e3"
                 },
                 {
                   "text": "そう",
@@ -25328,12 +25363,12 @@
                 {
                   "text": "聞",
                   "reading": "き",
-                  "dict_id": "d_kiku"
+                  "dict_id": "dh_74df8a6d0c"
                 },
                 {
                   "text": "けるらしい",
                   "reading": null,
-                  "dict_id": "d_kiku"
+                  "dict_id": "dh_74df8a6d0c"
                 },
                 {
                   "text": "ので、",
@@ -25552,7 +25587,7 @@
       "title": "初めての味噌作り",
       "description": "Мастер-класс по приготовлению домашнего мисо и терпеливое ожидание",
       "order_index": 78,
-      "version": 6,
+      "version": 7,
       "content_hash": "97f7c0c0619b249d562cff008247b60d7ce5dcfa85c7595e1732e4eda932677c",
       "paragraphs": [
         {
@@ -25869,12 +25904,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "し",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "ながら",
@@ -25902,12 +25937,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しかった",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "です。",
@@ -26079,12 +26114,12 @@
                 {
                   "text": "開",
                   "reading": "あ",
-                  "dict_id": "dw_1d1293a3e3"
+                  "dict_id": "dh_828ca9e741"
                 },
                 {
                   "text": "ける",
                   "reading": null,
-                  "dict_id": "dw_1d1293a3e3"
+                  "dict_id": "dh_828ca9e741"
                 },
                 {
                   "text": "のが",
@@ -26102,12 +26137,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "しみ",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "です。",
@@ -26252,7 +26287,7 @@
       "title": "お正月の年賀状",
       "description": "Традиция новогодних открыток в эпоху мессенджеров",
       "order_index": 79,
-      "version": 6,
+      "version": 7,
       "content_hash": "19b53817e84864d04f99c0c27a43f2c383635814ffd25bcd5043a0d28afdca9c",
       "paragraphs": [
         {
@@ -26357,12 +26392,12 @@
                 {
                   "text": "済",
                   "reading": "す",
-                  "dict_id": "dw_8ccce1a728"
+                  "dict_id": "dh_2dd4a9910a"
                 },
                 {
                   "text": "ませる",
                   "reading": null,
-                  "dict_id": "dw_8ccce1a728"
+                  "dict_id": "dh_2dd4a9910a"
                 },
                 {
                   "text": "人",
@@ -26390,12 +26425,12 @@
                 {
                   "text": "手書",
                   "reading": "てが",
-                  "dict_id": "dw_f710c877b1"
+                  "dict_id": "dh_dc6b74292c"
                 },
                 {
                   "text": "き",
                   "reading": null,
-                  "dict_id": "dw_f710c877b1"
+                  "dict_id": "dh_dc6b74292c"
                 },
                 {
                   "text": "の",
@@ -26478,22 +26513,22 @@
                 {
                   "text": "会",
                   "reading": "あ",
-                  "dict_id": "d_au"
+                  "dict_id": "dh_17a28bd839"
                 },
                 {
                   "text": "えない",
                   "reading": null,
-                  "dict_id": "d_au"
+                  "dict_id": "dh_17a28bd839"
                 },
                 {
                   "text": "遠",
                   "reading": "とお",
-                  "dict_id": "dw_17aced3c66"
+                  "dict_id": "dh_cd89d78338"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_17aced3c66"
+                  "dict_id": "dh_cd89d78338"
                 },
                 {
                   "text": "の",
@@ -26664,12 +26699,12 @@
                 {
                   "text": "届",
                   "reading": "とど",
-                  "dict_id": "dw_07bd67eb2f"
+                  "dict_id": "dh_829e33739c"
                 },
                 {
                   "text": "けてくれます",
                   "reading": null,
-                  "dict_id": "dw_07bd67eb2f"
+                  "dict_id": "dh_829e33739c"
                 },
                 {
                   "text": "。",
@@ -26913,7 +26948,7 @@
       "title": "テレワークの工夫",
       "description": "Как научиться переключаться между работой и отдыхом дома",
       "order_index": 80,
-      "version": 6,
+      "version": 7,
       "content_hash": "35021d1577417d70511a55cd7530060ad6e16093b459f9d0b863a0a5431218bd",
       "paragraphs": [
         {
@@ -27067,12 +27102,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けてしまっ",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "たり",
@@ -27574,7 +27609,7 @@
       "title": "リサイクルショップ",
       "description": "Удачная покупка книжного шкафа и радость обустройства комнаты",
       "order_index": 81,
-      "version": 6,
+      "version": 7,
       "content_hash": "9210cec9412d485cd2ed6964829a1bc5a71f0477e0f1eff1dcc6ecd1cda151e7",
       "paragraphs": [
         {
@@ -27630,12 +27665,12 @@
                 {
                   "text": "足",
                   "reading": "た",
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_795a88a50f"
                 },
                 {
                   "text": "りません",
                   "reading": null,
-                  "dict_id": "dw_8de034b856"
+                  "dict_id": "dh_795a88a50f"
                 },
                 {
                   "text": "。",
@@ -27799,12 +27834,12 @@
                 {
                   "text": "リサイクル",
                   "reading": null,
-                  "dict_id": "dk_36703114f1"
+                  "dict_id": "dh_a4e5eb98ed"
                 },
                 {
                   "text": "ショップ",
                   "reading": null,
-                  "dict_id": "dk_36703114f1"
+                  "dict_id": "dh_e33d655378"
                 },
                 {
                   "text": "を",
@@ -27813,12 +27848,12 @@
                 {
                   "text": "覗",
                   "reading": "のぞ",
-                  "dict_id": "dw_4c3f5270b0"
+                  "dict_id": "dh_f11fe77d78"
                 },
                 {
                   "text": "いてみました",
                   "reading": null,
-                  "dict_id": "dw_4c3f5270b0"
+                  "dict_id": "dh_f11fe77d78"
                 },
                 {
                   "text": "。",
@@ -27911,7 +27946,7 @@
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -27965,12 +28000,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_4b4ee324b6"
                 },
                 {
                   "text": "つかる",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_4b4ee324b6"
                 },
                 {
                   "text": "とは",
@@ -28067,12 +28102,12 @@
                 {
                   "text": "並",
                   "reading": "なら",
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "べたら",
                   "reading": null,
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "、",
@@ -28269,7 +28304,7 @@
       "title": "季節の野菜",
       "description": "Покупки в овощной лавке и советы от добродушного продавца",
       "order_index": 82,
-      "version": 6,
+      "version": 7,
       "content_hash": "a5edde541e46f89f15c989ede3bbcea66fb00591bdbc035b4a3abbb0f769a5f7",
       "paragraphs": [
         {
@@ -28436,12 +28471,12 @@
                 {
                   "text": "先",
                   "reading": "せん",
-                  "dict_id": "dw_cb5355a0a8"
+                  "dict_id": "dw_07c70ed23f"
                 },
                 {
                   "text": "週",
                   "reading": "しゅう",
-                  "dict_id": "dw_cb5355a0a8"
+                  "dict_id": "dw_07c70ed23f"
                 },
                 {
                   "text": "は",
@@ -28626,22 +28661,22 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "わず",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "ご",
                   "reading": null,
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "飯",
                   "reading": "はん",
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "をおかわり",
@@ -28655,7 +28690,7 @@
                 {
                   "text": "なる",
                   "reading": null,
-                  "dict_id": "dc_2e1550a3f1"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "ほど",
@@ -28664,7 +28699,7 @@
                 {
                   "text": "おいしかった",
                   "reading": null,
-                  "dict_id": "dk_b86e6e5c49"
+                  "dict_id": "dk_e577ae2f49"
                 },
                 {
                   "text": "です。",
@@ -28737,12 +28772,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "しくて",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "d_tanoshii"
                 },
                 {
                   "text": "通",
@@ -28757,12 +28792,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けています",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "。",
@@ -28904,7 +28939,7 @@
       "title": "忘れ物の問い合わせ",
       "description": "Телефонный звонок в службу забытых вещей и счастливая находка",
       "order_index": 83,
-      "version": 6,
+      "version": 7,
       "content_hash": "0ffa211e264313b3115217a4f6252ec8947033d18e16a466ef7dd0c2e1437148",
       "paragraphs": [
         {
@@ -28983,7 +29018,7 @@
                 {
                   "text": "し",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "、",
@@ -29211,12 +29246,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "かれ",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "ば",
@@ -29355,16 +29390,17 @@
                 {
                   "text": "取",
                   "reading": "と",
-                  "dict_id": "dw_7d46a76f2d"
+                  "dict_id": "dh_74913f7e9d"
                 },
                 {
                   "text": "っ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_74913f7e9d"
                 },
                 {
                   "text": "手",
                   "reading": "て",
-                  "dict_id": "dw_124a5c95fd"
+                  "dict_id": "dh_74913f7e9d"
                 },
                 {
                   "text": "が",
@@ -29458,17 +29494,17 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "待",
                   "reading": "ま",
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "ち",
                   "reading": null,
-                  "dict_id": "d_matsu"
+                  "dict_id": "dh_c1e4cfbf29"
                 },
                 {
                   "text": "ください",
@@ -29639,7 +29675,7 @@
                 {
                   "text": "ほっと",
                   "reading": null,
-                  "dict_id": "dc_ada7b2e318"
+                  "dict_id": "dh_38fa4bc960"
                 },
                 {
                   "text": "しました",
@@ -29958,7 +29994,7 @@
       "title": "自転車の点検",
       "description": "Вовремя замеченная неисправность тормозов и помощь мастера",
       "order_index": 84,
-      "version": 6,
+      "version": 7,
       "content_hash": "671c2d21c9fb0b64e1b9d94d7768a7c0db0c3d070264ebcb7d8ff81d4e992bd8",
       "paragraphs": [
         {
@@ -29995,12 +30031,12 @@
                 {
                   "text": "効",
                   "reading": "き",
-                  "dict_id": "dw_e0ff97b3d7"
+                  "dict_id": "dh_ef304c4b20"
                 },
                 {
                   "text": "き",
                   "reading": null,
-                  "dict_id": "dw_e0ff97b3d7"
+                  "dict_id": "dh_ef304c4b20"
                 },
                 {
                   "text": "が",
@@ -30083,7 +30119,7 @@
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dk_c36f889c17"
+                  "dict_id": "d_omou"
                 },
                 {
                   "text": "つつ、",
@@ -30218,17 +30254,17 @@
                 {
                   "text": "すり",
                   "reading": null,
-                  "dict_id": "dw_c1727e5e44"
+                  "dict_id": "dh_c852b57628"
                 },
                 {
                   "text": "減",
                   "reading": "へ",
-                  "dict_id": "dw_c1727e5e44"
+                  "dict_id": "dh_c852b57628"
                 },
                 {
                   "text": "っていて",
                   "reading": null,
-                  "dict_id": "dw_c1727e5e44"
+                  "dict_id": "dh_c852b57628"
                 },
                 {
                   "text": "、",
@@ -30260,12 +30296,12 @@
                 {
                   "text": "抜",
                   "reading": "ぬ",
-                  "dict_id": "dw_5f798ac10a"
+                  "dict_id": "dh_0da79e001e"
                 },
                 {
                   "text": "けていた",
                   "reading": null,
-                  "dict_id": "dw_5f798ac10a"
+                  "dict_id": "dh_0da79e001e"
                 },
                 {
                   "text": "そう",
@@ -30287,12 +30323,12 @@
                 {
                   "text": "早",
                   "reading": "はや",
-                  "dict_id": "dw_fa2cf841fe"
+                  "dict_id": "dh_5b638302ad"
                 },
                 {
                   "text": "め",
                   "reading": null,
-                  "dict_id": "dw_fa2cf841fe"
+                  "dict_id": "dh_5b638302ad"
                 },
                 {
                   "text": "に",
@@ -30301,12 +30337,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "て",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "正解",
@@ -30339,7 +30375,7 @@
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -30408,12 +30444,12 @@
                 {
                   "text": "走",
                   "reading": "はし",
-                  "dict_id": "d_hashiru"
+                  "dict_id": "dh_d374a1f3ba"
                 },
                 {
                   "text": "れる",
                   "reading": null,
-                  "dict_id": "d_hashiru"
+                  "dict_id": "dh_d374a1f3ba"
                 },
                 {
                   "text": "ように",
@@ -30435,7 +30471,7 @@
                 {
                   "text": "念",
                   "reading": "ねん",
-                  "dict_id": "dw_7cef9e1ba6"
+                  "dict_id": "dh_affa9707a1"
                 },
                 {
                   "text": "の",
@@ -30469,7 +30505,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "です。",
@@ -30651,7 +30687,7 @@
       "title": "文化祭の模擬店",
       "description": "Подготовка класса к школьному фестивалю и командная работа",
       "order_index": 85,
-      "version": 6,
+      "version": 7,
       "content_hash": "f8b9030fd753c1186d09900a77cffeaa390bbeae9d3ad8f71b21d7261f346a0f",
       "paragraphs": [
         {
@@ -30939,16 +30975,12 @@
                 {
                   "text": "焼",
                   "reading": "や",
-                  "dict_id": "dw_b8143dbd43"
+                  "dict_id": "dh_1f8a1fc3c2"
                 },
                 {
-                  "text": "き",
-                  "reading": null
-                },
-                {
-                  "text": "そば",
+                  "text": "きそば",
                   "reading": null,
-                  "dict_id": "dk_ea88ab205a"
+                  "dict_id": "dh_1f8a1fc3c2"
                 },
                 {
                   "text": "に",
@@ -31020,12 +31052,12 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_c704f59995"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_c704f59995"
                 },
                 {
                   "text": "の",
@@ -31058,7 +31090,7 @@
                 {
                   "text": "ほっと",
                   "reading": null,
-                  "dict_id": "dc_ada7b2e318"
+                  "dict_id": "dh_38fa4bc960"
                 },
                 {
                   "text": "しました",
@@ -31282,7 +31314,7 @@
       "title": "道に迷った観光客",
       "description": "Помощь туристу у станции и преодоление языкового барьера",
       "order_index": 86,
-      "version": 6,
+      "version": 7,
       "content_hash": "7e1348f22438c580bf0fc24755654f83b0464a2f522562d91cc921314b5ae418",
       "paragraphs": [
         {
@@ -31392,12 +31424,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_c776c517b2"
                 },
                 {
                   "text": "しかけられました",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "dh_c776c517b2"
                 },
                 {
                   "text": "。",
@@ -31410,12 +31442,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "の",
@@ -31451,12 +31483,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "からない",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "ようでした。",
@@ -31645,12 +31677,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "かり",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "にくい",
@@ -31751,12 +31783,12 @@
                 {
                   "text": "助",
                   "reading": "たす",
-                  "dict_id": "dw_56b36b5ff7"
+                  "dict_id": "dh_0923f8a8b9"
                 },
                 {
                   "text": "かりました",
                   "reading": null,
-                  "dict_id": "dw_56b36b5ff7"
+                  "dict_id": "dh_0923f8a8b9"
                 },
                 {
                   "text": "！",
@@ -31929,7 +31961,7 @@
       "title": "港町の朝市",
       "description": "Поездка в портовый городок и оживлённый утренний рынок",
       "order_index": 87,
-      "version": 6,
+      "version": 7,
       "content_hash": "a4eed26f284005bef00d5604a2e3581fcc354bc604ce67d4913adc7850a924f6",
       "paragraphs": [
         {
@@ -31962,12 +31994,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "の",
@@ -32026,12 +32058,12 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "まで",
@@ -32040,12 +32072,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "た",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "のだからと、",
@@ -32146,12 +32178,12 @@
                 {
                   "text": "明",
                   "reading": "あ",
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "るく",
                   "reading": null,
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "なり",
@@ -32161,12 +32193,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めた",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "ばかりなのに、",
@@ -32226,7 +32258,7 @@
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -32455,7 +32487,7 @@
                 {
                   "text": "ほんとう",
                   "reading": null,
-                  "dict_id": "dc_98c1a00cbb"
+                  "dict_id": "dh_74270d276b"
                 },
                 {
                   "text": "に",
@@ -32464,7 +32496,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "です。",
@@ -32624,7 +32656,7 @@
       "title": "抹茶スイーツの魅力",
       "description": "Поход с зарубежными друзьями за десертами маття в депатика",
       "order_index": 88,
-      "version": 6,
+      "version": 7,
       "content_hash": "c462445fd198de8fa71f90401c99745132936e4954d27f167ea4e1db44abcc3f",
       "paragraphs": [
         {
@@ -32666,12 +32698,12 @@
                 {
                   "text": "色",
                   "reading": "いろ",
-                  "dict_id": "dw_32f7cfd56c"
+                  "dict_id": "dh_baa4dff0d9"
                 },
                 {
                   "text": "とりどり",
                   "reading": null,
-                  "dict_id": "dw_32f7cfd56c"
+                  "dict_id": "dh_baa4dff0d9"
                 },
                 {
                   "text": "の",
@@ -32933,12 +32965,12 @@
                 {
                   "text": "香",
                   "reading": "かお",
-                  "dict_id": "dw_90fe2f3191"
+                  "dict_id": "dh_d01aa9505e"
                 },
                 {
                   "text": "り",
                   "reading": null,
-                  "dict_id": "dw_90fe2f3191"
+                  "dict_id": "dh_d01aa9505e"
                 },
                 {
                   "text": "が",
@@ -33014,12 +33046,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "た",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "友達",
@@ -33047,12 +33079,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "た",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "から、",
@@ -33217,12 +33249,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_ba5e1a65fa"
+                  "dict_id": "d_ocha"
                 },
                 {
                   "text": "茶",
                   "reading": "ちゃ",
-                  "dict_id": "dw_ba5e1a65fa"
+                  "dict_id": "d_ocha"
                 },
                 {
                   "text": "が",
@@ -33231,12 +33263,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_c3a81ced5f"
+                  "dict_id": "dh_838eb314c5"
                 },
                 {
                   "text": "菓子",
                   "reading": "かし",
-                  "dict_id": "dw_c3a81ced5f"
+                  "dict_id": "dh_838eb314c5"
                 },
                 {
                   "text": "と",
@@ -33341,7 +33373,7 @@
                 {
                   "text": "すごく",
                   "reading": null,
-                  "dict_id": "dh_f2b69135d1"
+                  "dict_id": "dh_a3dc41fbbb"
                 },
                 {
                   "text": "気",
@@ -33714,7 +33746,7 @@
       "title": "お寺での座禅体験",
       "description": "Раннее утро в киотском храме и непривычная тишина дзадзэн",
       "order_index": 89,
-      "version": 6,
+      "version": 7,
       "content_hash": "531fc0e8e9133645c8c91cd1d67d282d0b35831b23e7f75ea1edd4874a0261fc",
       "paragraphs": [
         {
@@ -33821,22 +33853,22 @@
                 {
                   "text": "開",
                   "reading": "ひら",
-                  "dict_id": "dw_da2db45dd3"
+                  "dict_id": "dw_1d1293a3e3"
                 },
                 {
                   "text": "かれる",
                   "reading": null,
-                  "dict_id": "dw_da2db45dd3"
+                  "dict_id": "dw_1d1293a3e3"
                 },
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_f6e1112a6f"
+                  "dict_id": "dh_fe53caf0c9"
                 },
                 {
                   "text": "寺",
                   "reading": "てら",
-                  "dict_id": "dw_f6e1112a6f"
+                  "dict_id": "dh_fe53caf0c9"
                 },
                 {
                   "text": "の",
@@ -34046,12 +34078,12 @@
                 {
                   "text": "静",
                   "reading": "しず",
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "か",
                   "reading": null,
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "に",
@@ -34131,12 +34163,12 @@
                 {
                   "text": "ご",
                   "reading": null,
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "飯",
                   "reading": "はん",
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "の",
@@ -34260,16 +34292,17 @@
                 {
                   "text": "風",
                   "reading": "かぜ",
-                  "dict_id": "d_kaze"
+                  "dict_id": "dh_9b7b48941f"
                 },
                 {
                   "text": "の",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_9b7b48941f"
                 },
                 {
                   "text": "音",
                   "reading": "おと",
-                  "dict_id": "dw_432d97c53e"
+                  "dict_id": "dh_9b7b48941f"
                 },
                 {
                   "text": "だけが",
@@ -34278,12 +34311,12 @@
                 {
                   "text": "聞",
                   "reading": "き",
-                  "dict_id": "d_kiku"
+                  "dict_id": "dh_4fb5121f53"
                 },
                 {
                   "text": "こえる",
                   "reading": null,
-                  "dict_id": "d_kiku"
+                  "dict_id": "dh_4fb5121f53"
                 },
                 {
                   "text": "ように",
@@ -34446,12 +34479,12 @@
                 {
                   "text": "静",
                   "reading": "しず",
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "か",
                   "reading": null,
-                  "dict_id": "d_shizuka"
+                  "dict_id": "dh_d77a8a97bb"
                 },
                 {
                   "text": "に",
@@ -34493,12 +34526,12 @@
                 {
                   "text": "気",
                   "reading": "き",
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "づきました",
                   "reading": null,
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "。",
@@ -34835,7 +34868,7 @@
       "title": "漢字の覚え方のコツ",
       "description": "Как радикалы превратили скучную зубрёжку иероглифов в логичную игру",
       "order_index": 90,
-      "version": 6,
+      "version": 7,
       "content_hash": "c3b2e5f6ed37d3fdbf1e14197d1ca405dbdd2ac422cb1d3a0ffdc5e8624402a7",
       "paragraphs": [
         {
@@ -34863,12 +34896,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けていく",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "うち",
@@ -35610,12 +35643,12 @@
                 {
                   "text": "読",
                   "reading": "よ",
-                  "dict_id": "d_yomu"
+                  "dict_id": "dh_91e6a7e80b"
                 },
                 {
                   "text": "める",
                   "reading": null,
-                  "dict_id": "d_yomu"
+                  "dict_id": "dh_91e6a7e80b"
                 },
                 {
                   "text": "！",
@@ -35632,12 +35665,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "しみ",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_debe31d8d5"
                 },
                 {
                   "text": "が",
@@ -35909,7 +35942,7 @@
       "title": "カフェのアルバイトとラテアート",
       "description": "Преодоление первых ошибок в кофейне и первый красивый латте-арт",
       "order_index": 91,
-      "version": 6,
+      "version": 7,
       "content_hash": "73a604c9510e89e19ddea246c0eabd8f3faa6bd91005ec95235bd75eb49a28f8",
       "paragraphs": [
         {
@@ -35965,12 +35998,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めました",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "。",
@@ -35992,12 +36025,12 @@
                 {
                   "text": "香",
                   "reading": "かお",
-                  "dict_id": "dw_90fe2f3191"
+                  "dict_id": "dh_d01aa9505e"
                 },
                 {
                   "text": "り",
                   "reading": null,
-                  "dict_id": "dw_90fe2f3191"
+                  "dict_id": "dh_d01aa9505e"
                 },
                 {
                   "text": "に",
@@ -36040,12 +36073,12 @@
                 {
                   "text": "憧",
                   "reading": "あこが",
-                  "dict_id": "dw_c038e291c4"
+                  "dict_id": "dh_f9f3034ca5"
                 },
                 {
                   "text": "れていた",
                   "reading": null,
-                  "dict_id": "dw_c038e291c4"
+                  "dict_id": "dh_f9f3034ca5"
                 },
                 {
                   "text": "のです。",
@@ -36190,7 +36223,7 @@
                 {
                   "text": "がっかり",
                   "reading": null,
-                  "dict_id": "dc_6d4f0e0af0"
+                  "dict_id": "dh_c7ce1adda4"
                 },
                 {
                   "text": "していました",
@@ -36254,12 +36287,12 @@
                 {
                   "text": "なんとか",
                   "reading": null,
-                  "dict_id": "dc_51ee4e5e0c"
+                  "dict_id": "dh_8114e4da69"
                 },
                 {
                   "text": "なる",
                   "reading": null,
-                  "dict_id": "dc_51ee4e5e0c"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "から",
@@ -36358,7 +36391,7 @@
                 {
                   "text": "つかめてきて",
                   "reading": null,
-                  "dict_id": "dk_5b842bdab3"
+                  "dict_id": "dh_c3db50f6dd"
                 },
                 {
                   "text": "、",
@@ -36495,12 +36528,12 @@
                 {
                   "text": "描",
                   "reading": "か",
-                  "dict_id": "dw_601876c4c5"
+                  "dict_id": "dh_77251ce49f"
                 },
                 {
                   "text": "けました",
                   "reading": null,
-                  "dict_id": "dw_601876c4c5"
+                  "dict_id": "dh_77251ce49f"
                 },
                 {
                   "text": "。",
@@ -36563,7 +36596,7 @@
                 {
                   "text": "もらえた",
                   "reading": null,
-                  "dict_id": "dk_142e26dab5"
+                  "dict_id": "dh_32944d7284"
                 },
                 {
                   "text": "瞬間",
@@ -36960,7 +36993,7 @@
       "title": "山の天気と備えの大切さ",
       "description": "Поход в горы, внезапный туман и урок о важности снаряжения",
       "order_index": 92,
-      "version": 6,
+      "version": 7,
       "content_hash": "d989e4c35ae5f30b2862f6abf1a75a4bf62d3bfdf666755d0b30f94059340d69",
       "paragraphs": [
         {
@@ -36992,12 +37025,12 @@
                 {
                   "text": "変",
                   "reading": "か",
-                  "dict_id": "dw_89006eb4d5"
+                  "dict_id": "dh_e56a3d0efe"
                 },
                 {
                   "text": "わり",
                   "reading": null,
-                  "dict_id": "dw_89006eb4d5"
+                  "dict_id": "dh_e56a3d0efe"
                 },
                 {
                   "text": "やすい",
@@ -37363,12 +37396,12 @@
                 {
                   "text": "始",
                   "reading": "はじ",
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "めた",
                   "reading": null,
-                  "dict_id": "dw_24d46023ab"
+                  "dict_id": "dh_d5d968be04"
                 },
                 {
                   "text": "のです。",
@@ -37412,12 +37445,12 @@
                 {
                   "text": "下",
                   "reading": "さ",
-                  "dict_id": "dw_765cad7349"
+                  "dict_id": "dh_52042a07e7"
                 },
                 {
                   "text": "がり",
                   "reading": null,
-                  "dict_id": "dw_765cad7349"
+                  "dict_id": "dh_52042a07e7"
                 },
                 {
                   "text": "、",
@@ -37490,12 +37523,12 @@
                 {
                   "text": "来",
                   "reading": "き",
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "ていたら",
                   "reading": null,
-                  "dict_id": "dw_c2415aeb3f"
+                  "dict_id": "d_kuru"
                 },
                 {
                   "text": "、",
@@ -37555,7 +37588,7 @@
                 {
                   "text": "念",
                   "reading": "ねん",
-                  "dict_id": "dw_7cef9e1ba6"
+                  "dict_id": "dh_affa9707a1"
                 },
                 {
                   "text": "の",
@@ -38076,7 +38109,7 @@
       "title": "スピーチ大会への挑戦",
       "description": "Подготовка выступления на японском языке и преодоление страха сцены",
       "order_index": 93,
-      "version": 6,
+      "version": 7,
       "content_hash": "5c878dd32e1b58828bf2e08a5d1c462c1fef82fd3f4253ad76864d1675e756e8",
       "paragraphs": [
         {
@@ -38219,12 +38252,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "す",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "なんて",
@@ -38465,12 +38498,12 @@
                 {
                   "text": "話",
                   "reading": "はな",
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "そう",
                   "reading": null,
-                  "dict_id": "dw_ba57c4477b"
+                  "dict_id": "d_hanasu"
                 },
                 {
                   "text": "と",
@@ -38555,7 +38588,7 @@
                 {
                   "text": "スマート",
                   "reading": null,
-                  "dict_id": "dk_3715a78541"
+                  "dict_id": "da_c8f8a057ab"
                 },
                 {
                   "text": "フォン",
@@ -38619,12 +38652,12 @@
                 {
                   "text": "直",
                   "reading": "なお",
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "しています",
                   "reading": null,
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "。",
@@ -38697,12 +38730,12 @@
                 {
                   "text": "直",
                   "reading": "なお",
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "せ",
                   "reading": null,
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "ば",
@@ -38725,12 +38758,12 @@
                 {
                   "text": "分",
                   "reading": "わ",
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "かります",
                   "reading": null,
-                  "dict_id": "dw_a311455cc7"
+                  "dict_id": "dw_a5a4bcfd3d"
                 },
                 {
                   "text": "。",
@@ -38770,7 +38803,7 @@
                 {
                   "text": "しれません",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_73576261b3"
                 },
                 {
                   "text": "が、",
@@ -38825,12 +38858,12 @@
                 {
                   "text": "込",
                   "reading": "こ",
-                  "dict_id": "dw_6ecb5e255a"
+                  "dict_id": "dh_ec9793809d"
                 },
                 {
                   "text": "めて",
                   "reading": null,
-                  "dict_id": "dw_6ecb5e255a"
+                  "dict_id": "dh_ec9793809d"
                 },
                 {
                   "text": "伝",
@@ -39151,7 +39184,7 @@
       "title": "高原の満天の星空",
       "description": "Поездка в горы, ночь под открытым небом и незабываемый Млечный Путь",
       "order_index": 94,
-      "version": 6,
+      "version": 7,
       "content_hash": "d7ff25db83c28aa03d45ac2b699ef267b8074e17553800aa17acd2b5e71cf3fa",
       "paragraphs": [
         {
@@ -39252,12 +39285,12 @@
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_66fc84905c"
                 },
                 {
                   "text": "かけました",
                   "reading": null,
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_66fc84905c"
                 },
                 {
                   "text": "。",
@@ -39530,12 +39563,12 @@
                 {
                   "text": "広",
                   "reading": "ひろ",
-                  "dict_id": "dw_9e57a5c7a1"
+                  "dict_id": "dh_da1acc7d71"
                 },
                 {
                   "text": "がっていて",
                   "reading": null,
-                  "dict_id": "dw_9e57a5c7a1"
+                  "dict_id": "dh_da1acc7d71"
                 },
                 {
                   "text": "、",
@@ -39544,12 +39577,12 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "わず",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "息",
@@ -39589,12 +39622,12 @@
                 {
                   "text": "明",
                   "reading": "あ",
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "る",
                   "reading": null,
-                  "dict_id": "dw_ec82635f49"
+                  "dict_id": "dw_38b3dc2304"
                 },
                 {
                   "text": "すぎる",
@@ -39627,12 +39660,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "えません",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "が、",
@@ -39674,12 +39707,12 @@
                 {
                   "text": "見",
                   "reading": "み",
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "える",
                   "reading": null,
-                  "dict_id": "d_miru"
+                  "dict_id": "dh_d9fb62e684"
                 },
                 {
                   "text": "のです。",
@@ -39861,16 +39894,17 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "い",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "dw_2e00ff484b"
+                  "dict_id": "dh_79c19db5c8"
                 },
                 {
                   "text": "です。",
@@ -40193,7 +40227,7 @@
       "title": "健康診断と小さな習慣",
       "description": "Результаты медосмотра и простая привычка ходить пешком после работы",
       "order_index": 95,
-      "version": 6,
+      "version": 7,
       "content_hash": "dc4c3ce88e2e5cc1fe51396bfb5358d3f6f1fd88992e1afb0661f3228f4c8760",
       "paragraphs": [
         {
@@ -40249,12 +40283,12 @@
                 {
                   "text": "返",
                   "reading": "かえ",
-                  "dict_id": "dw_23d66fa818"
+                  "dict_id": "dh_12ce9dac30"
                 },
                 {
                   "text": "ってきました",
                   "reading": null,
-                  "dict_id": "dw_23d66fa818"
+                  "dict_id": "dh_12ce9dac30"
                 },
                 {
                   "text": "。",
@@ -40434,12 +40468,12 @@
                 {
                   "text": "休",
                   "reading": "やす",
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "み",
                   "reading": null,
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "の",
@@ -40613,12 +40647,12 @@
                 {
                   "text": "帰",
                   "reading": "かえ",
-                  "dict_id": "d_kaeru"
+                  "dict_id": "db_45b70c3b8e"
                 },
                 {
                   "text": "り",
                   "reading": null,
-                  "dict_id": "d_kaeru"
+                  "dict_id": "db_45b70c3b8e"
                 },
                 {
                   "text": "の",
@@ -40828,12 +40862,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けた",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "ところ",
@@ -40856,12 +40890,12 @@
                 {
                   "text": "上",
                   "reading": "のぼ",
-                  "dict_id": "dw_4fd89ddc26"
+                  "dict_id": "dh_27774f2aa4"
                 },
                 {
                   "text": "る",
                   "reading": null,
-                  "dict_id": "dw_4fd89ddc26"
+                  "dict_id": "dh_27774f2aa4"
                 },
                 {
                   "text": "のが",
@@ -40902,12 +40936,12 @@
                 {
                   "text": "眠",
                   "reading": "ねむ",
-                  "dict_id": "dw_bc9a19cea5"
+                  "dict_id": "dh_a70aa7cd5f"
                 },
                 {
                   "text": "れる",
                   "reading": null,
-                  "dict_id": "dw_bc9a19cea5"
+                  "dict_id": "dh_a70aa7cd5f"
                 },
                 {
                   "text": "ように",
@@ -40948,12 +40982,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "ける",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "こと",
@@ -41314,7 +41348,7 @@
       "title": "風呂敷の知恵とエコ",
       "description": "Традиционный японский платок фуросики и его современная польза",
       "order_index": 96,
-      "version": 6,
+      "version": 7,
       "content_hash": "6882b91f0f397e23ef02f91f4b66f23dd4dc7976faa412218f811b4f63f30f40",
       "paragraphs": [
         {
@@ -41350,12 +41384,12 @@
                 {
                   "text": "四角",
                   "reading": "しかく",
-                  "dict_id": "dw_413221b012"
+                  "dict_id": "dh_58f0a25aa0"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_413221b012"
+                  "dict_id": "dh_58f0a25aa0"
                 },
                 {
                   "text": "布",
@@ -41534,12 +41568,12 @@
                 {
                   "text": "四角",
                   "reading": "しかく",
-                  "dict_id": "dw_413221b012"
+                  "dict_id": "dh_58f0a25aa0"
                 },
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "dw_413221b012"
+                  "dict_id": "dh_58f0a25aa0"
                 },
                 {
                   "text": "箱",
@@ -41613,12 +41647,12 @@
                 {
                   "text": "合",
                   "reading": "あ",
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "わせて",
                   "reading": null,
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "しっかり",
@@ -41790,12 +41824,12 @@
                 {
                   "text": "畳",
                   "reading": "たた",
-                  "dict_id": "dw_7f80498084"
+                  "dict_id": "dh_be81e11d04"
                 },
                 {
                   "text": "んで",
                   "reading": null,
-                  "dict_id": "dw_7f80498084"
+                  "dict_id": "dh_be81e11d04"
                 },
                 {
                   "text": "ポケット",
@@ -41865,12 +41899,12 @@
                 {
                   "text": "エコ",
                   "reading": null,
-                  "dict_id": "dk_cb84cc40fd"
+                  "dict_id": "da_6f855151ae"
                 },
                 {
                   "text": "バッグ",
                   "reading": null,
-                  "dict_id": "dk_cb84cc40fd"
+                  "dict_id": "dk_18aceae8df"
                 },
                 {
                   "text": "としても",
@@ -41961,12 +41995,12 @@
                 {
                   "text": "一",
                   "reading": "ひと",
-                  "dict_id": "dw_7c04acf14d"
+                  "dict_id": "dh_d0d563daf9"
                 },
                 {
                   "text": "つ",
                   "reading": null,
-                  "dict_id": "dw_7c04acf14d"
+                  "dict_id": "dh_d0d563daf9"
                 },
                 {
                   "text": "買",
@@ -42080,16 +42114,17 @@
                 {
                   "text": "買",
                   "reading": "か",
-                  "dict_id": "d_kau"
+                  "dict_id": "dh_b7ef783f25"
                 },
                 {
                   "text": "い",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_b7ef783f25"
                 },
                 {
                   "text": "物",
                   "reading": "もの",
-                  "dict_id": "dw_817f7f659f"
+                  "dict_id": "dh_b7ef783f25"
                 },
                 {
                   "text": "に",
@@ -42469,7 +42504,7 @@
       "title": "梅雨の時期の楽しみ方",
       "description": "Сезон дождей в июне: неудобства и тихая красота гортензий",
       "order_index": 97,
-      "version": 6,
+      "version": 7,
       "content_hash": "a98a2093f3f6e4678771a2691b1f37ad33afe12b166168e9e4c5805caf29bb1b",
       "paragraphs": [
         {
@@ -42506,12 +42541,12 @@
                 {
                   "text": "多",
                   "reading": "おお",
-                  "dict_id": "dw_c300957bd5"
+                  "dict_id": "dh_95f876f54b"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_c300957bd5"
+                  "dict_id": "dh_95f876f54b"
                 },
                 {
                   "text": "の",
@@ -42815,12 +42850,12 @@
                 {
                   "text": "楽",
                   "reading": "たの",
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_75bf44c63e"
                 },
                 {
                   "text": "しみ",
                   "reading": null,
-                  "dict_id": "dw_20ab890426"
+                  "dict_id": "dh_75bf44c63e"
                 },
                 {
                   "text": "方",
@@ -42916,12 +42951,12 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "わず",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dc_b4d04cf191"
                 },
                 {
                   "text": "足",
@@ -42935,12 +42970,12 @@
                 {
                   "text": "止",
                   "reading": "と",
-                  "dict_id": "dw_f678befcb3"
+                  "dict_id": "dh_d52954238e"
                 },
                 {
                   "text": "めて",
                   "reading": null,
-                  "dict_id": "dw_f678befcb3"
+                  "dict_id": "dh_d52954238e"
                 },
                 {
                   "text": "見",
@@ -42990,12 +43025,12 @@
                 {
                   "text": "花",
                   "reading": "はな",
-                  "dict_id": "d_hana"
+                  "dict_id": "dh_bc95a7743d"
                 },
                 {
                   "text": "びら",
                   "reading": null,
-                  "dict_id": "d_hana"
+                  "dict_id": "dh_bc95a7743d"
                 },
                 {
                   "text": "に",
@@ -43065,7 +43100,7 @@
                 {
                   "text": "しれません",
                   "reading": null,
-                  "dict_id": "dk_bb9774b9d6"
+                  "dict_id": "dh_73576261b3"
                 },
                 {
                   "text": "。",
@@ -43085,25 +43120,36 @@
                   "dict_id": "dk_bc38295b4c"
                 },
                 {
-                  "text": "、お",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "お",
+                  "reading": null,
+                  "dict_id": "dh_841514fa20"
                 },
                 {
                   "text": "気",
                   "reading": "き",
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_841514fa20"
                 },
                 {
                   "text": "に",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_841514fa20"
                 },
                 {
                   "text": "入",
                   "reading": "い",
-                  "dict_id": "dw_eff0273cfd"
+                  "dict_id": "dh_841514fa20"
                 },
                 {
-                  "text": "りの",
+                  "text": "り",
+                  "reading": null,
+                  "dict_id": "dh_841514fa20"
+                },
+                {
+                  "text": "の",
                   "reading": null
                 },
                 {
@@ -43155,12 +43201,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_ba5e1a65fa"
+                  "dict_id": "d_ocha"
                 },
                 {
                   "text": "茶",
                   "reading": "ちゃ",
-                  "dict_id": "dw_ba5e1a65fa"
+                  "dict_id": "d_ocha"
                 },
                 {
                   "text": "を",
@@ -43242,12 +43288,12 @@
                 {
                   "text": "思",
                   "reading": "おも",
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_01c5c1bcdd"
                 },
                 {
                   "text": "える",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dh_01c5c1bcdd"
                 },
                 {
                   "text": "ように",
@@ -43585,7 +43631,7 @@
       "title": "名刺の渡し方と第一印象",
       "description": "Первые уроки делового этикета и как важно внимание к деталям",
       "order_index": 98,
-      "version": 6,
+      "version": 7,
       "content_hash": "685bb255c7d7233f38c12f33178075fadbd82f233f3e0d5984a5dea4eb9686a1",
       "paragraphs": [
         {
@@ -43664,12 +43710,12 @@
                 {
                   "text": "ビジネス",
                   "reading": null,
-                  "dict_id": "dk_5ec7d577ea"
+                  "dict_id": "da_a776655ef3"
                 },
                 {
                   "text": "マナー",
                   "reading": null,
-                  "dict_id": "dk_5ec7d577ea"
+                  "dict_id": "dk_b2f7d5fad5"
                 },
                 {
                   "text": "は「",
@@ -43779,7 +43825,7 @@
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -43823,20 +43869,22 @@
                 {
                   "text": "受",
                   "reading": "う",
-                  "dict_id": "dw_d0e267272b"
+                  "dict_id": "dh_d8e53f285c"
                 },
                 {
                   "text": "け",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_d8e53f285c"
                 },
                 {
                   "text": "取",
                   "reading": "と",
-                  "dict_id": "dw_7d46a76f2d"
+                  "dict_id": "dh_d8e53f285c"
                 },
                 {
                   "text": "る",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_d8e53f285c"
                 },
                 {
                   "text": "とき",
@@ -43911,12 +43959,12 @@
                 {
                   "text": "お",
                   "reading": null,
-                  "dict_id": "dw_37d90d8bc7"
+                  "dict_id": "dh_efb017ca50"
                 },
                 {
                   "text": "辞儀",
                   "reading": "じぎ",
-                  "dict_id": "dw_37d90d8bc7"
+                  "dict_id": "dh_efb017ca50"
                 },
                 {
                   "text": "を",
@@ -44141,12 +44189,12 @@
                 {
                   "text": "並",
                   "reading": "なら",
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "べておく",
                   "reading": null,
-                  "dict_id": "dw_ece483d42d"
+                  "dict_id": "dh_db67a39a20"
                 },
                 {
                   "text": "のが",
@@ -44643,7 +44691,7 @@
       "title": "節約と健康のための自炊",
       "description": "Переход от кафе к домашней готовке и система заготовок на неделю",
       "order_index": 99,
-      "version": 6,
+      "version": 7,
       "content_hash": "66b26d4918688376d68306da07e79d076de337e5a4b66a3e1c956aa7e7255b0c",
       "paragraphs": [
         {
@@ -44736,7 +44784,7 @@
                 {
                   "text": "びっくりしました",
                   "reading": null,
-                  "dict_id": "dc_facbd3aa50"
+                  "dict_id": "dh_124b9e3910"
                 },
                 {
                   "text": "。",
@@ -45017,12 +45065,12 @@
                 {
                   "text": "立",
                   "reading": "た",
-                  "dict_id": "dw_ae0d2cf0ed"
+                  "dict_id": "dh_946d5f23c8"
                 },
                 {
                   "text": "てました",
                   "reading": null,
-                  "dict_id": "dw_ae0d2cf0ed"
+                  "dict_id": "dh_946d5f23c8"
                 },
                 {
                   "text": "。",
@@ -45173,12 +45221,12 @@
                 {
                   "text": "温",
                   "reading": "あたた",
-                  "dict_id": "dw_083e4c22df"
+                  "dict_id": "dh_1ef0abbfd3"
                 },
                 {
                   "text": "める",
                   "reading": null,
-                  "dict_id": "dw_083e4c22df"
+                  "dict_id": "dh_1ef0abbfd3"
                 },
                 {
                   "text": "だけで",
@@ -45220,12 +45268,12 @@
                 {
                   "text": "ご",
                   "reading": null,
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "飯",
                   "reading": "はん",
-                  "dict_id": "dw_6b0cc02309"
+                  "dict_id": "d_gohan"
                 },
                 {
                   "text": "が",
@@ -45260,12 +45308,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けてみた",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "結果",
@@ -45293,22 +45341,22 @@
                 {
                   "text": "近",
                   "reading": "ちか",
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "く",
                   "reading": null,
-                  "dict_id": "dw_927d4816c1"
+                  "dict_id": "dh_922160a3ad"
                 },
                 {
                   "text": "減",
                   "reading": "へ",
-                  "dict_id": "dw_c1727e5e44"
+                  "dict_id": "dh_d78d407d5e"
                 },
                 {
                   "text": "った",
                   "reading": null,
-                  "dict_id": "dw_c1727e5e44"
+                  "dict_id": "dh_d78d407d5e"
                 },
                 {
                   "text": "だけでなく、",
@@ -45399,12 +45447,12 @@
                 {
                   "text": "続",
                   "reading": "つづ",
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "けていきたい",
                   "reading": null,
-                  "dict_id": "dw_c29723f0c8"
+                  "dict_id": "dh_ba4df65478"
                 },
                 {
                   "text": "です。",
@@ -45708,7 +45756,7 @@
       "title": "防災グッズの定期チェック",
       "description": "Подготовка к землетрясениям и проверка тревожного рюкзака раз в полгода",
       "order_index": 100,
-      "version": 6,
+      "version": 7,
       "content_hash": "e3a7262050a1519a9fe5886af410eb16b1a02adde61ac394dba0696f8d0d67de",
       "paragraphs": [
         {
@@ -45914,12 +45962,12 @@
                 {
                   "text": "欠",
                   "reading": "か",
-                  "dict_id": "dw_0966f37104"
+                  "dict_id": "dh_a5fbe11add"
                 },
                 {
                   "text": "かせません",
                   "reading": null,
-                  "dict_id": "dw_0966f37104"
+                  "dict_id": "dh_a5fbe11add"
                 },
                 {
                   "text": "。",
@@ -45962,12 +46010,12 @@
                 {
                   "text": "休",
                   "reading": "やす",
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "み",
                   "reading": null,
-                  "dict_id": "d_yasumu"
+                  "dict_id": "dh_b96c2d2560"
                 },
                 {
                   "text": "の",
@@ -46112,12 +46160,12 @@
                 {
                   "text": "切",
                   "reading": "き",
-                  "dict_id": "dw_c10252bc38"
+                  "dict_id": "dh_82f2f466f5"
                 },
                 {
                   "text": "れる",
                   "reading": null,
-                  "dict_id": "dw_c10252bc38"
+                  "dict_id": "dh_82f2f466f5"
                 },
                 {
                   "text": "こと",
@@ -46131,12 +46179,12 @@
                 {
                   "text": "気",
                   "reading": "き",
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "づきました",
                   "reading": null,
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dh_2a6dc578b8"
                 },
                 {
                   "text": "。",
@@ -46176,7 +46224,7 @@
                 {
                   "text": "よかった",
                   "reading": null,
-                  "dict_id": "dc_366402ad58"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "」と",
@@ -46289,12 +46337,12 @@
                 {
                   "text": "直",
                   "reading": "なお",
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "す",
                   "reading": null,
-                  "dict_id": "dw_935e1dad40"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
                   "text": "こと",
@@ -46390,12 +46438,12 @@
                 {
                   "text": "合",
                   "reading": "あ",
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "わせて",
                   "reading": null,
-                  "dict_id": "dw_0f92e653f9"
+                  "dict_id": "dh_e1e57e7c69"
                 },
                 {
                   "text": "薄",
