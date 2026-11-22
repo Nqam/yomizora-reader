@@ -1,5 +1,7 @@
 package com.yomizora.reader.ui.navigation
 
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AutoStories
@@ -97,6 +99,10 @@ fun YomizoraNavHost() {
         NavHost(
             navController = navController,
             startDestination = "home",
+            enterTransition = { EnterTransition.None },
+            exitTransition = { ExitTransition.None },
+            popEnterTransition = { EnterTransition.None },
+            popExitTransition = { ExitTransition.None },
             modifier = Modifier.padding(innerPadding)
         ) {
             composable("home") {
