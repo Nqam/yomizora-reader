@@ -1,5 +1,6 @@
 package com.yomizora.reader.ui.settings
 
+import android.speech.tts.TextToSpeech
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.BorderStroke
@@ -17,9 +18,11 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.VolumeUp
 import androidx.compose.material.icons.rounded.Backup
 import androidx.compose.material.icons.rounded.CloudDownload
 import androidx.compose.material.icons.rounded.DeleteOutline
+import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.Edit
 import androidx.compose.material.icons.rounded.PersonAdd
 import androidx.compose.material.icons.rounded.RestartAlt
@@ -48,11 +51,18 @@ import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.platform.LocalContext
+import com.yomizora.reader.ui.components.JapaneseVoiceOption
+import com.yomizora.reader.ui.components.applyJapaneseTtsSettings
+import com.yomizora.reader.ui.components.listJapaneseVoices
+import com.yomizora.reader.ui.components.openInstallTtsData
+import java.util.Locale
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -87,6 +97,26 @@ fun SettingsScreen(
     var deletingProfile by remember { mutableStateOf<UserProfile?>(null) }
     var profileNameInput by remember { mutableStateOf("") }
     val snackbarHostState = remember { SnackbarHostState() }
+    val context = LocalContext.current
+
+    var ttsEngine by remember { mutableStateOf<TextToSpeech?>(null) }
+    var ttsAvailable by remember { mutableStateOf(false) }
+    var japaneseVoices by remember { mutableStateOf<List<JapaneseVoiceOption>>(emptyList()) }
+
+    DisposableEffect(context) {
+        var engine: TextToSpeech? = null
+        engine = TextToSpeech(context) { status ->
+            if (status == TextToSpeech.SUCCESS) {
+                ttsAvailable = engine?.applyJapaneseTtsSettings(settings) == true
+                japaneseVoices = engine?.listJapaneseVoices().orEmpty()
+            }
+        }
+        ttsEngine = engine
+        onDispose {
+            engine.stop()
+            engine.shutdown()
+        }
+    }
 
     val backupLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.CreateDocument("application/json")
@@ -277,6 +307,108 @@ fun SettingsScreen(
                                 Text(label)
                             }
                         }
+                    }
+                }
+            }
+
+            item {
+                SettingsSectionCard(title = "Озвучка текста (TTS)") {
+                    val hasOfflineVoice = japaneseVoices.any { it.isOffline }
+                    Text(
+                        text = when {
+                            ttsAvailable && hasOfflineVoice ->
+                                "Японский голос готов (доступен офлайн-режим без интернета)."
+                            ttsAvailable ->
+                                "Японский голос активен. Для работы без интернета установите офлайн-пакет."
+                            else ->
+                                "Японский голосовой пакет не найден на устройстве."
+                        },
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    OutlinedButton(
+                        onClick = { openInstallTtsData(context) },
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(Icons.Rounded.Download, contentDescription = null)
+                        Spacer(Modifier.width(8.dp))
+                        Text("Установить японский пакет (офлайн)")
+                    }
+                    Spacer(Modifier.height(10.dp))
+                    Text(
+                        text = "Скорость речи: ${String.format(Locale.US, "%.2fx", settings.ttsSpeechRate)}",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    Slider(
+                        value = settings.ttsSpeechRate,
+                        onValueChange = viewModel::setTtsSpeechRate,
+                        valueRange = 0.5f..1.6f
+                    )
+                    Text(
+                        text = "Тембр голоса: ${String.format(Locale.US, "%.2fx", settings.ttsPitch)}",
+                        style = MaterialTheme.typography.bodyMedium
+                    )
+                    Slider(
+                        value = settings.ttsPitch,
+                        onValueChange = viewModel::setTtsPitch,
+                        valueRange = 0.75f..1.35f
+                    )
+                    if (japaneseVoices.isNotEmpty()) {
+                        Spacer(Modifier.height(6.dp))
+                        Text(
+                            text = "Выбор голоса",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clickable { viewModel.setTtsVoiceName(null) }
+                                .padding(vertical = 4.dp)
+                        ) {
+                            RadioButton(
+                                selected = settings.ttsVoiceName == null,
+                                onClick = { viewModel.setTtsVoiceName(null) }
+                            )
+                            Text("Авто (приоритет офлайн-голоса)", style = MaterialTheme.typography.bodyMedium)
+                        }
+                        japaneseVoices.take(6).forEach { voiceOpt ->
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .clickable { viewModel.setTtsVoiceName(voiceOpt.name) }
+                                    .padding(vertical = 2.dp)
+                            ) {
+                                RadioButton(
+                                    selected = settings.ttsVoiceName == voiceOpt.name,
+                                    onClick = { viewModel.setTtsVoiceName(voiceOpt.name) }
+                                )
+                                Text(voiceOpt.label, style = MaterialTheme.typography.bodyMedium)
+                            }
+                        }
+                    }
+                    Spacer(Modifier.height(8.dp))
+                    Button(
+                        onClick = {
+                            ttsEngine?.applyJapaneseTtsSettings(settings)
+                            ttsEngine?.speak(
+                                "こんにちは。日本語の読み上げテストです。",
+                                TextToSpeech.QUEUE_FLUSH,
+                                null,
+                                "tts_preview"
+                            )
+                        },
+                        enabled = ttsAvailable,
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(Icons.AutoMirrored.Rounded.VolumeUp, contentDescription = null)
+                        Spacer(Modifier.width(8.dp))
+                        Text("Проверить голос")
                     }
                 }
             }

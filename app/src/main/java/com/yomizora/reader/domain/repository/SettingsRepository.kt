@@ -14,5 +14,8 @@ interface SettingsRepository {
     suspend fun setProgressiveFurigana(enabled: Boolean)
     suspend fun setDisplayMode(mode: TextDisplayMode)
     suspend fun setThemeMode(mode: ThemeMode)
+    suspend fun setTtsSpeechRate(rate: Float)
+    suspend fun setTtsPitch(pitch: Float)
+    suspend fun setTtsVoiceName(voiceName: String?)
     suspend fun setActiveProfileId(profileId: String)
 }

@@ -212,6 +212,18 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch { settingsRepository.setThemeMode(mode) }
     }
 
+    fun setTtsSpeechRate(rate: Float) {
+        viewModelScope.launch { settingsRepository.setTtsSpeechRate(rate) }
+    }
+
+    fun setTtsPitch(pitch: Float) {
+        viewModelScope.launch { settingsRepository.setTtsPitch(pitch) }
+    }
+
+    fun setTtsVoiceName(voiceName: String?) {
+        viewModelScope.launch { settingsRepository.setTtsVoiceName(voiceName) }
+    }
+
     fun resetProgress(level: JlptLevel) {
         viewModelScope.launch {
             progressRepository.resetLevelProgress(level)

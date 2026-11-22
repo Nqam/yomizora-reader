@@ -1,6 +1,7 @@
 package com.yomizora.reader.ui.reading
 
 import android.speech.tts.TextToSpeech
+import android.speech.tts.UtteranceProgressListener
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -75,6 +76,8 @@ import com.yomizora.reader.domain.model.ReaderSettings
 import com.yomizora.reader.domain.model.TextDisplayMode
 import com.yomizora.reader.domain.model.ThemeMode
 import com.yomizora.reader.ui.components.FuriganaParagraph
+import com.yomizora.reader.ui.components.applyJapaneseTtsSettings
+import com.yomizora.reader.ui.components.openInstallTtsData
 import kotlinx.coroutines.delay
 import java.util.Locale
 
@@ -93,6 +96,7 @@ fun ReadingScreen(
 
     val context = LocalContext.current
     var ttsAvailable by remember { mutableStateOf(false) }
+    var ttsInitialized by remember { mutableStateOf(false) }
     var isSpeaking by remember { mutableStateOf(false) }
     var tts by remember { mutableStateOf<TextToSpeech?>(null) }
 
@@ -100,15 +104,41 @@ fun ReadingScreen(
         var engine: TextToSpeech? = null
         engine = TextToSpeech(context) { status ->
             if (status == TextToSpeech.SUCCESS) {
-                val res = engine?.setLanguage(Locale.JAPANESE)
-                ttsAvailable = res != TextToSpeech.LANG_MISSING_DATA &&
-                    res != TextToSpeech.LANG_NOT_SUPPORTED
+                engine?.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
+                    override fun onStart(utteranceId: String?) {}
+                    override fun onDone(utteranceId: String?) {
+                        if (utteranceId?.endsWith("_last") == true) {
+                            isSpeaking = false
+                        }
+                    }
+
+                    @Deprecated("Deprecated in Java")
+                    override fun onError(utteranceId: String?) {
+                        isSpeaking = false
+                    }
+
+                    override fun onError(utteranceId: String?, errorCode: Int) {
+                        isSpeaking = false
+                    }
+
+                    override fun onStop(utteranceId: String?, interrupted: Boolean) {
+                        isSpeaking = false
+                    }
+                })
+                ttsAvailable = engine?.applyJapaneseTtsSettings(settings) == true
+                ttsInitialized = true
             }
         }
         tts = engine
         onDispose {
             engine.stop()
             engine.shutdown()
+        }
+    }
+
+    LaunchedEffect(ttsInitialized, settings.ttsSpeechRate, settings.ttsPitch, settings.ttsVoiceName) {
+        if (ttsInitialized) {
+            ttsAvailable = tts?.applyJapaneseTtsSettings(settings) == true
         }
     }
 
@@ -151,21 +181,42 @@ fun ReadingScreen(
                 },
                 actions = {
                     if (mat != null && !state.isLocked) {
-                        if (ttsAvailable) {
+                        if (ttsInitialized) {
                             IconButton(
                                 onClick = {
-                                    if (isSpeaking) {
+                                    if (!ttsAvailable) {
+                                        openInstallTtsData(context)
+                                    } else if (isSpeaking) {
                                         tts?.stop()
                                         isSpeaking = false
                                     } else {
-                                        tts?.speak(mat.plainText(), TextToSpeech.QUEUE_FLUSH, null, mat.id)
-                                        isSpeaking = true
+                                        val paragraphs = mat.paragraphs
+                                            .map { p ->
+                                                p.sentences.joinToString("") { s ->
+                                                    s.segments.joinToString("") { it.text }
+                                                }.trim()
+                                            }
+                                            .filter { it.isNotEmpty() }
+                                        if (paragraphs.isNotEmpty()) {
+                                            tts?.applyJapaneseTtsSettings(settings)
+                                            paragraphs.forEachIndexed { idx, pText ->
+                                                val mode = if (idx == 0) TextToSpeech.QUEUE_FLUSH else TextToSpeech.QUEUE_ADD
+                                                val uid = if (idx == paragraphs.lastIndex) "${mat.id}_last" else "${mat.id}_$idx"
+                                                tts?.speak(pText, mode, null, uid)
+                                            }
+                                            isSpeaking = true
+                                        }
                                     }
                                 }
                             ) {
                                 Icon(
                                     imageVector = if (isSpeaking) Icons.Rounded.Stop else Icons.AutoMirrored.Rounded.VolumeUp,
-                                    contentDescription = "Озвучить текст"
+                                    contentDescription = if (ttsAvailable) "Озвучить текст" else "Установить японский голос",
+                                    tint = if (ttsAvailable) {
+                                        MaterialTheme.colorScheme.onSurface
+                                    } else {
+                                        MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.55f)
+                                    }
                                 )
                             }
                         }

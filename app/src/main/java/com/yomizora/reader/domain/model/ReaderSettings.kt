@@ -18,5 +18,8 @@ data class ReaderSettings(
     val showFurigana: Boolean = true,
     val progressiveFurigana: Boolean = true,
     val displayMode: TextDisplayMode = TextDisplayMode.KANJI_WITH_FURIGANA,
-    val themeMode: ThemeMode = ThemeMode.SYSTEM
+    val themeMode: ThemeMode = ThemeMode.SYSTEM,
+    val ttsSpeechRate: Float = 1.0f,
+    val ttsPitch: Float = 1.0f,
+    val ttsVoiceName: String? = null
 )

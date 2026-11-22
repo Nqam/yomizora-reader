@@ -32,6 +32,9 @@ class SettingsRepositoryImpl @Inject constructor(
         val PROGRESSIVE_FURIGANA = booleanPreferencesKey("progressive_furigana")
         val DISPLAY_MODE = stringPreferencesKey("display_mode")
         val THEME_MODE = stringPreferencesKey("theme_mode")
+        val TTS_SPEECH_RATE = floatPreferencesKey("tts_speech_rate")
+        val TTS_PITCH = floatPreferencesKey("tts_pitch")
+        val TTS_VOICE_NAME = stringPreferencesKey("tts_voice_name")
         val ACTIVE_PROFILE_ID = stringPreferencesKey("active_profile_id")
     }
 
@@ -50,7 +53,10 @@ class SettingsRepositoryImpl @Inject constructor(
             } ?: TextDisplayMode.KANJI_WITH_FURIGANA,
             themeMode = prefs[Keys.THEME_MODE]?.let { name ->
                 runCatching { ThemeMode.valueOf(name) }.getOrNull()
-            } ?: ThemeMode.SYSTEM
+            } ?: ThemeMode.SYSTEM,
+            ttsSpeechRate = (prefs[Keys.TTS_SPEECH_RATE] ?: 1.0f).coerceIn(0.5f, 1.6f),
+            ttsPitch = (prefs[Keys.TTS_PITCH] ?: 1.0f).coerceIn(0.75f, 1.35f),
+            ttsVoiceName = prefs[Keys.TTS_VOICE_NAME]?.takeIf { it.isNotBlank() }
         )
     }
 
@@ -76,6 +82,21 @@ class SettingsRepositoryImpl @Inject constructor(
 
     override suspend fun setThemeMode(mode: ThemeMode) {
         context.dataStore.edit { it[Keys.THEME_MODE] = mode.name }
+    }
+
+    override suspend fun setTtsSpeechRate(rate: Float) {
+        context.dataStore.edit { it[Keys.TTS_SPEECH_RATE] = rate.coerceIn(0.5f, 1.6f) }
+    }
+
+    override suspend fun setTtsPitch(pitch: Float) {
+        context.dataStore.edit { it[Keys.TTS_PITCH] = pitch.coerceIn(0.75f, 1.35f) }
+    }
+
+    override suspend fun setTtsVoiceName(voiceName: String?) {
+        context.dataStore.edit {
+            if (voiceName.isNullOrBlank()) it.remove(Keys.TTS_VOICE_NAME)
+            else it[Keys.TTS_VOICE_NAME] = voiceName
+        }
     }
 
     override suspend fun setActiveProfileId(profileId: String) {
