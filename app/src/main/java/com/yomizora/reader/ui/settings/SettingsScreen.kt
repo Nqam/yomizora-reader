@@ -1,6 +1,7 @@
 package com.yomizora.reader.ui.settings
 
 import android.speech.tts.TextToSpeech
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.BorderStroke
@@ -18,21 +19,27 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.ArrowBack
 import androidx.compose.material.icons.automirrored.rounded.VolumeUp
 import androidx.compose.material.icons.rounded.Backup
+import androidx.compose.material.icons.rounded.ChevronRight
 import androidx.compose.material.icons.rounded.CloudDownload
 import androidx.compose.material.icons.rounded.DeleteOutline
 import androidx.compose.material.icons.rounded.Download
 import androidx.compose.material.icons.rounded.Edit
+import androidx.compose.material.icons.rounded.Info
+import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.PersonAdd
 import androidx.compose.material.icons.rounded.RestartAlt
 import androidx.compose.material.icons.rounded.Restore
 import androidx.compose.material.icons.rounded.SystemUpdate
+import androidx.compose.material.icons.rounded.TextFields
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.LinearProgressIndicator
@@ -50,6 +57,8 @@ import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
@@ -65,6 +74,7 @@ import com.yomizora.reader.ui.components.openInstallTtsData
 import java.util.Locale
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -75,6 +85,16 @@ import com.yomizora.reader.domain.model.TextDisplayMode
 import com.yomizora.reader.domain.model.ThemeMode
 import com.yomizora.reader.domain.model.UserProfile
 
+private enum class SettingsSection(val title: String) {
+    PROFILES("Профили пользователей"),
+    READING("Чтение и отображение"),
+    TTS("Озвучка текста (TTS)"),
+    UPDATES("Обновления (GitHub)"),
+    BACKUP("Резервное копирование и сброс"),
+    ABOUT("О приложении")
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
     viewModel: SettingsViewModel = hiltViewModel()
@@ -98,6 +118,11 @@ fun SettingsScreen(
     var profileNameInput by remember { mutableStateOf("") }
     val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
+    var selectedSection by remember { mutableStateOf<SettingsSection?>(null) }
+
+    BackHandler(enabled = selectedSection != null) {
+        selectedSection = null
+    }
 
     var ttsEngine by remember { mutableStateOf<TextToSpeech?>(null) }
     var ttsAvailable by remember { mutableStateOf(false) }
@@ -139,6 +164,24 @@ fun SettingsScreen(
     }
 
     Scaffold(
+        topBar = {
+            if (selectedSection != null) {
+                TopAppBar(
+                    title = { Text(selectedSection!!.title) },
+                    navigationIcon = {
+                        IconButton(onClick = { selectedSection = null }) {
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Rounded.ArrowBack,
+                                contentDescription = "Назад"
+                            )
+                        }
+                    },
+                    colors = TopAppBarDefaults.topAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.background
+                    )
+                )
+            }
+        },
         snackbarHost = { SnackbarHost(snackbarHostState) },
         containerColor = MaterialTheme.colorScheme.background
     ) { innerPadding ->
@@ -147,18 +190,70 @@ fun SettingsScreen(
                 .fillMaxSize()
                 .padding(innerPadding),
             contentPadding = PaddingValues(horizontal = 16.dp, vertical = 16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp)
+            verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
-            item {
-                Text(
-                    text = "Настройки",
-                    style = MaterialTheme.typography.headlineMedium,
-                    color = MaterialTheme.colorScheme.onBackground
-                )
+            if (selectedSection == null) {
+                item {
+                    Text(
+                        text = "Настройки",
+                        style = MaterialTheme.typography.headlineMedium,
+                        color = MaterialTheme.colorScheme.onBackground,
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.Rounded.Person,
+                        title = SettingsSection.PROFILES.title,
+                        subtitle = "Активный: ${activeProfile?.name ?: "Основной"}",
+                        onClick = { selectedSection = SettingsSection.PROFILES }
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.Rounded.TextFields,
+                        title = SettingsSection.READING.title,
+                        subtitle = "Шрифт ${settings.fontSizeSp.toInt()} sp · ${if (settings.showFurigana) "Фуригана вкл" else "Фуригана выкл"}",
+                        onClick = { selectedSection = SettingsSection.READING }
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.AutoMirrored.Rounded.VolumeUp,
+                        title = SettingsSection.TTS.title,
+                        subtitle = "Скорость ${String.format(Locale.US, "%.2fx", settings.ttsSpeechRate)} · Тембр ${String.format(Locale.US, "%.2fx", settings.ttsPitch)}",
+                        onClick = { selectedSection = SettingsSection.TTS }
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.Rounded.SystemUpdate,
+                        title = SettingsSection.UPDATES.title,
+                        subtitle = "Приложение v${BuildConfig.VERSION_NAME} и пакеты контента",
+                        onClick = { selectedSection = SettingsSection.UPDATES }
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.Rounded.Backup,
+                        title = SettingsSection.BACKUP.title,
+                        subtitle = "Копия прогресса и сброс по уровням",
+                        onClick = { selectedSection = SettingsSection.BACKUP }
+                    )
+                }
+                item {
+                    SettingsMenuRow(
+                        icon = Icons.Rounded.Info,
+                        title = SettingsSection.ABOUT.title,
+                        subtitle = "Yomizora (読み空) · Версия ${BuildConfig.VERSION_NAME}",
+                        onClick = { selectedSection = SettingsSection.ABOUT }
+                    )
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "Профили пользователей") {
+            if (selectedSection == SettingsSection.PROFILES) {
+                item {
+                    SettingsSectionCard(title = "Профили пользователей") {
                     Text(
                         text = "Для каждого профиля прогресс чтения, статистика и прохождение уровней сохраняются отдельно.",
                         style = MaterialTheme.typography.bodyMedium,
@@ -213,10 +308,12 @@ fun SettingsScreen(
                         Text("Добавить профиль")
                     }
                 }
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "Чтение и отображение") {
+            if (selectedSection == SettingsSection.READING) {
+                item {
+                    SettingsSectionCard(title = "Чтение и отображение") {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
                         horizontalArrangement = Arrangement.SpaceBetween,
@@ -309,10 +406,12 @@ fun SettingsScreen(
                         }
                     }
                 }
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "Озвучка текста (TTS)") {
+            if (selectedSection == SettingsSection.TTS) {
+                item {
+                    SettingsSectionCard(title = "Озвучка текста (TTS)") {
                     val hasOfflineVoice = japaneseVoices.any { it.isOffline }
                     Text(
                         text = when {
@@ -411,10 +510,12 @@ fun SettingsScreen(
                         Text("Проверить голос")
                     }
                 }
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "Обновление приложения (GitHub)") {
+            if (selectedSection == SettingsSection.UPDATES) {
+                item {
+                    SettingsSectionCard(title = "Обновление приложения (GitHub)") {
                     Text(
                         text = "Текущая версия: v${BuildConfig.VERSION_NAME}",
                         style = MaterialTheme.typography.bodyMedium,
@@ -508,10 +609,12 @@ fun SettingsScreen(
                         }
                     }
                 }
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "Резервное копирование") {
+            if (selectedSection == SettingsSection.BACKUP) {
+                item {
+                    SettingsSectionCard(title = "Резервное копирование") {
                     OutlinedButton(
                         onClick = { backupLauncher.launch("yomizora_progress_backup.json") },
                         shape = RoundedCornerShape(12.dp),
@@ -559,20 +662,23 @@ fun SettingsScreen(
                         }
                     }
                 }
+                }
             }
 
-            item {
-                SettingsSectionCard(title = "О приложении") {
-                    Text(
-                        text = "Yomizora (読み空) • Версия ${BuildConfig.VERSION_NAME}",
-                        style = MaterialTheme.typography.bodyLarge,
-                        fontWeight = FontWeight.Medium
-                    )
-                    Text(
-                        text = "Полностью автономное приложение для практики чтения на японском языке (JLPT N5–N4).",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
+            if (selectedSection == SettingsSection.ABOUT) {
+                item {
+                    SettingsSectionCard(title = "О приложении") {
+                        Text(
+                            text = "Yomizora (読み空) • Версия ${BuildConfig.VERSION_NAME}",
+                            style = MaterialTheme.typography.bodyLarge,
+                            fontWeight = FontWeight.Medium
+                        )
+                        Text(
+                            text = "Полностью автономное приложение для практики чтения на японском языке (JLPT N5–N1).",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
                 }
             }
         }
@@ -726,6 +832,54 @@ fun SettingsScreen(
                 }
             }
         )
+    }
+}
+
+@Composable
+private fun SettingsMenuRow(
+    icon: ImageVector,
+    title: String,
+    subtitle: String,
+    onClick: () -> Unit
+) {
+    Card(
+        onClick = onClick,
+        shape = RoundedCornerShape(16.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.45f)),
+        modifier = Modifier.fillMaxWidth()
+    ) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 14.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp)
+        ) {
+            Icon(
+                imageVector = icon,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.primary
+            )
+            Column(modifier = Modifier.weight(1f)) {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
+            Icon(
+                imageVector = Icons.Rounded.ChevronRight,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
     }
 }
 
