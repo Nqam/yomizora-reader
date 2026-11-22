@@ -461,6 +461,28 @@ class ProgressRepositoryImpl @Inject constructor(
         return seen
     }
 
+    override suspend fun getSeenWordIds(excludeMaterialId: String?): Set<String> {
+        val profileId = currentProfileId()
+        val completedIds = progressDao.getAllOnce(profileId)
+            .filter { it.state == STATE_COMPLETED && it.materialId != excludeMaterialId }
+            .map { it.materialId }
+        if (completedIds.isEmpty()) return emptySet()
+
+        val seen = mutableSetOf<String>()
+        for (id in completedIds) {
+            val mat = contentRepository.getMaterialById(id) ?: continue
+            for (p in mat.paragraphs) {
+                for (s in p.sentences) {
+                    for (seg in s.segments) {
+                        val did = seg.dictId
+                        if (!did.isNullOrBlank()) seen += did
+                    }
+                }
+            }
+        }
+        return seen
+    }
+
     override fun observeWordReviews(): Flow<List<WordReviewItem>> =
         settingsRepository.activeProfileIdFlow.flatMapLatest { profileId ->
             wordReviewDao.observeAll(profileId).map { list ->

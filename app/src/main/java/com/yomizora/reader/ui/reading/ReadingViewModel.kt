@@ -83,6 +83,7 @@ class ReadingViewModel @Inject constructor(
             progressRepository.markMaterialOpened(materialId)
             val updated = progressRepository.getMaterialWithProgress(materialId) ?: item
             val seenGrammarIds = progressRepository.getSeenGrammarIds(excludeMaterialId = materialId)
+            val seenWordIds = progressRepository.getSeenWordIds(excludeMaterialId = materialId)
             val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
 
             val dictIds = LinkedHashSet<String>()
@@ -131,7 +132,7 @@ class ReadingViewModel @Inject constructor(
                             val entry = (if (hasDictId) batchDict[seg.dictId] else null)
                                 ?: contentRepository.lookupWord(seg.dictId, seg.text, seg.reading)
                                 ?: continue
-                            if (entry.partOfSpeech.startsWith("числительное") || !seenIds.add(entry.id)) continue
+                            if (entry.partOfSpeech.startsWith("числительное") || entry.id in seenWordIds || !seenIds.add(entry.id)) continue
                             val posLower = entry.partOfSpeech.lowercase()
                             if (posLower.contains("разговор") || posLower.contains("выражен") || posLower.contains("идиом")) {
                                 conversationalVocab += entry
