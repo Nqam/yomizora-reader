@@ -66,12 +66,24 @@ fun YomizoraNavHost() {
                         NavigationBarItem(
                             selected = selected,
                             onClick = {
-                                navController.navigate(dest.route) {
-                                    popUpTo(navController.graph.findStartDestination().id) {
-                                        saveState = true
+                                if (dest.route == "home") {
+                                    val popped = navController.popBackStack("home", inclusive = false)
+                                    if (!popped) {
+                                        navController.navigate("home") {
+                                            popUpTo(navController.graph.findStartDestination().id) {
+                                                inclusive = false
+                                            }
+                                            launchSingleTop = true
+                                        }
                                     }
-                                    launchSingleTop = true
-                                    restoreState = true
+                                } else {
+                                    navController.navigate(dest.route) {
+                                        popUpTo(navController.graph.findStartDestination().id) {
+                                            saveState = true
+                                        }
+                                        launchSingleTop = true
+                                        restoreState = true
+                                    }
                                 }
                             },
                             icon = { Icon(dest.icon, contentDescription = dest.label) },
