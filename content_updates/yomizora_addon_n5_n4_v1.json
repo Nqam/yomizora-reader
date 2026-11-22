@@ -1,6 +1,6 @@
 {
   "pack_id": "yomizora_addon_n5_n4_v1",
-  "pack_version": 5,
+  "pack_version": 6,
   "materials": [
     {
       "id": "n5_addon_070",
@@ -14,7 +14,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -146,7 +146,7 @@
                 {
                   "text": "はい",
                   "reading": null,
-                  "dict_id": "da_0273bd5472"
+                  "dict_id": "dh_2668a187b9"
                 },
                 {
                   "text": "、",
@@ -205,7 +205,7 @@
                 {
                   "text": "します",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "。",
@@ -394,7 +394,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -734,7 +734,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -897,7 +897,7 @@
                 {
                   "text": "よく",
                   "reading": null,
-                  "dict_id": "da_44cf244865"
+                  "dict_id": "dh_885f80f47b"
                 },
                 {
                   "text": "乾",
@@ -1033,7 +1033,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -1093,7 +1093,7 @@
                 {
                   "text": "たい",
                   "reading": null,
-                  "dict_id": "da_3a9b058806"
+                  "dict_id": "dh_66771eaf85"
                 },
                 {
                   "text": "焼",
@@ -1142,7 +1142,7 @@
                 {
                   "text": "した",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "温",
@@ -1257,7 +1257,7 @@
                 {
                   "text": "なりました",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -1369,7 +1369,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -1447,7 +1447,7 @@
                 {
                   "text": "よく",
                   "reading": null,
-                  "dict_id": "da_44cf244865"
+                  "dict_id": "dh_885f80f47b"
                 },
                 {
                   "text": "見",
@@ -1769,7 +1769,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -2145,7 +2145,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -2610,7 +2610,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -2903,7 +2903,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -3250,7 +3250,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -3559,7 +3559,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -3626,13 +3626,12 @@
                 },
                 {
                   "text": "の",
-                  "reading": null,
-                  "dict_id": "dw_1d9bd925a0"
+                  "reading": null
                 },
                 {
                   "text": "葉",
                   "reading": "は",
-                  "dict_id": "dw_1d9bd925a0"
+                  "dict_id": "dw_18a3aca0dd"
                 },
                 {
                   "text": "が",
@@ -3740,13 +3739,12 @@
                 },
                 {
                   "text": "り",
-                  "reading": null,
-                  "dict_id": "dw_dc286302dd"
+                  "reading": null
                 },
                 {
                   "text": "物",
                   "reading": "もの",
-                  "dict_id": "dw_dc286302dd"
+                  "dict_id": "dw_817f7f659f"
                 },
                 {
                   "text": "を",
@@ -3901,7 +3899,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -4293,7 +4291,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -4456,7 +4454,7 @@
                 {
                   "text": "かけて",
                   "reading": null,
-                  "dict_id": "da_580e28e9b4"
+                  "dict_id": "dh_6be369515a"
                 },
                 {
                   "text": "使",
@@ -4644,7 +4642,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -4708,13 +4706,12 @@
                 },
                 {
                   "text": "の",
-                  "reading": null,
-                  "dict_id": "dw_630377472a"
+                  "reading": null
                 },
                 {
                   "text": "子",
                   "reading": "こ",
-                  "dict_id": "dw_630377472a"
+                  "dict_id": "dw_e991f6fc0d"
                 },
                 {
                   "text": "が",
@@ -4838,7 +4835,7 @@
                 {
                   "text": "なって",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "から、",
@@ -4866,7 +4863,7 @@
                 {
                   "text": "なりました",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -5002,7 +4999,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -5135,7 +5132,16 @@
                   "dict_id": "dw_77cf199e7f"
                 },
                 {
-                  "text": "のために",
+                  "text": "の",
+                  "reading": null
+                },
+                {
+                  "text": "ため",
+                  "reading": null,
+                  "dict_id": "dh_5035062139"
+                },
+                {
+                  "text": "に",
                   "reading": null
                 },
                 {
@@ -5228,7 +5234,7 @@
                 {
                   "text": "なります",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -5358,7 +5364,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -5463,7 +5469,7 @@
                 {
                   "text": "はい",
                   "reading": null,
-                  "dict_id": "da_0273bd5472"
+                  "dict_id": "dh_2668a187b9"
                 },
                 {
                   "text": "、",
@@ -5548,7 +5554,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "に",
@@ -5557,7 +5563,7 @@
                 {
                   "text": "なりまして",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "、",
@@ -5589,12 +5595,12 @@
                 {
                   "text": "いただく",
                   "reading": null,
-                  "dict_id": "db_25b1bac46a"
+                  "dict_id": "dh_76b3c8dcf9"
                 },
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "は",
@@ -5856,7 +5862,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -6121,7 +6127,7 @@
                 {
                   "text": "よさ",
                   "reading": null,
-                  "dict_id": "dw_cdba972480"
+                  "dict_id": "dh_d9ff8ef19f"
                 },
                 {
                   "text": "そうですよ。",
@@ -6344,7 +6350,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -6867,7 +6873,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -6916,7 +6922,12 @@
                   "dict_id": "dw_5c671cc72a"
                 },
                 {
-                  "text": "とき、",
+                  "text": "とき",
+                  "reading": null,
+                  "dict_id": "dh_23acc6c3a7"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -6978,7 +6989,7 @@
                 {
                   "text": "している",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "人",
@@ -7103,7 +7114,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "です。",
@@ -7161,13 +7172,12 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "d_omou"
+                  "reading": null
                 },
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "d_omou"
+                  "dict_id": "dw_2e00ff484b"
                 },
                 {
                   "text": "として",
@@ -7180,18 +7190,16 @@
                 },
                 {
                   "text": "ち",
-                  "reading": null,
-                  "dict_id": "dw_64a5f616a5"
+                  "reading": null
                 },
                 {
                   "text": "帰",
                   "reading": "かえ",
-                  "dict_id": "dw_64a5f616a5"
+                  "dict_id": "d_kaeru"
                 },
                 {
                   "text": "る",
-                  "reading": null,
-                  "dict_id": "dw_64a5f616a5"
+                  "reading": null
                 },
                 {
                   "text": "人",
@@ -7205,7 +7213,7 @@
                 {
                   "text": "いる",
                   "reading": null,
-                  "dict_id": "db_7a81fa2afa"
+                  "dict_id": "dh_e511de41c7"
                 },
                 {
                   "text": "ほどです。",
@@ -7376,7 +7384,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -7417,7 +7425,7 @@
                 {
                   "text": "だし",
                   "reading": null,
-                  "dict_id": "da_b30320df51"
+                  "dict_id": "dh_58fc4b7ae5"
                 },
                 {
                   "text": "」の",
@@ -7476,7 +7484,7 @@
                 {
                   "text": "し",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "などから",
@@ -7504,7 +7512,7 @@
                 {
                   "text": "だし",
                   "reading": null,
-                  "dict_id": "da_b30320df51"
+                  "dict_id": "dh_58fc4b7ae5"
                 },
                 {
                   "text": "は、",
@@ -7568,7 +7576,7 @@
                 {
                   "text": "だし",
                   "reading": null,
-                  "dict_id": "da_b30320df51"
+                  "dict_id": "dh_58fc4b7ae5"
                 },
                 {
                   "text": "を",
@@ -7592,7 +7600,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "で、",
@@ -7629,7 +7637,7 @@
                 {
                   "text": "して",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "も",
@@ -7660,10 +7668,15 @@
                 {
                   "text": "なる",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
-                  "text": "ため、",
+                  "text": "ため",
+                  "reading": null,
+                  "dict_id": "dh_5035062139"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -7875,7 +7888,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -8100,12 +8113,12 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "なく",
                   "reading": null,
-                  "dict_id": "da_7b592b15b8"
+                  "dict_id": "dh_f17ca3c033"
                 },
                 {
                   "text": "、",
@@ -8211,7 +8224,7 @@
                 {
                   "text": "します",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "。",
@@ -8395,7 +8408,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -8567,7 +8580,7 @@
                 {
                   "text": "します",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "。",
@@ -8649,7 +8662,7 @@
                 {
                   "text": "なって",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "眠",
@@ -8664,7 +8677,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "が",
@@ -8757,7 +8770,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "も",
@@ -8836,7 +8849,7 @@
                 {
                   "text": "なっています",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -9031,7 +9044,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -9096,7 +9109,7 @@
                 {
                   "text": "い",
                   "reading": null,
-                  "dict_id": "d_omou"
+                  "dict_id": "dk_0b0479e74a"
                 },
                 {
                   "text": "すぎて",
@@ -9143,7 +9156,7 @@
                 {
                   "text": "よく",
                   "reading": null,
-                  "dict_id": "da_44cf244865"
+                  "dict_id": "dh_885f80f47b"
                 },
                 {
                   "text": "見",
@@ -9235,7 +9248,7 @@
                 {
                   "text": "いません",
                   "reading": null,
-                  "dict_id": "db_7a81fa2afa"
+                  "dict_id": "dh_e511de41c7"
                 },
                 {
                   "text": "。",
@@ -9337,7 +9350,7 @@
                 {
                   "text": "ほう",
                   "reading": null,
-                  "dict_id": "dw_6e2524a9f8"
+                  "dict_id": "dh_a65c8a0503"
                 },
                 {
                   "text": "が、",
@@ -9365,7 +9378,7 @@
                 {
                   "text": "なります",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -9561,7 +9574,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -9596,8 +9609,7 @@
                 },
                 {
                   "text": "お",
-                  "reading": null,
-                  "dict_id": "dw_d869d24230"
+                  "reading": null
                 },
                 {
                   "text": "気",
@@ -9606,21 +9618,15 @@
                 },
                 {
                   "text": "に",
-                  "reading": null,
-                  "dict_id": "dw_d869d24230"
+                  "reading": null
                 },
                 {
                   "text": "入",
                   "reading": "い",
-                  "dict_id": "dw_d869d24230"
+                  "dict_id": "dw_eff0273cfd"
                 },
                 {
-                  "text": "り",
-                  "reading": null,
-                  "dict_id": "dw_d869d24230"
-                },
-                {
-                  "text": "の",
+                  "text": "りの",
                   "reading": null
                 },
                 {
@@ -9644,7 +9650,7 @@
                 {
                   "text": "すり",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "切",
@@ -9697,7 +9703,7 @@
                 {
                   "text": "なってしまいました",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -9723,13 +9729,12 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "d_omou"
+                  "reading": null
                 },
                 {
                   "text": "出",
                   "reading": "で",
-                  "dict_id": "d_omou"
+                  "dict_id": "dw_2e00ff484b"
                 },
                 {
                   "text": "が",
@@ -9766,7 +9771,7 @@
                 {
                   "text": "なれません",
                   "reading": null,
-                  "dict_id": "dw_c14ca43bee"
+                  "dict_id": "dh_680464aadb"
                 },
                 {
                   "text": "。",
@@ -9857,21 +9862,15 @@
                 },
                 {
                   "text": "り",
-                  "reading": null,
-                  "dict_id": "d_tsukuru"
+                  "reading": null
                 },
                 {
                   "text": "直",
                   "reading": "なお",
-                  "dict_id": "d_tsukuru"
+                  "dict_id": "dw_cdf78e5de2"
                 },
                 {
-                  "text": "してみました",
-                  "reading": null,
-                  "dict_id": "d_tsukuru"
-                },
-                {
-                  "text": "。",
+                  "text": "してみました。",
                   "reading": null
                 }
               ]
@@ -9928,7 +9927,7 @@
                 {
                   "text": "たび",
                   "reading": null,
-                  "dict_id": "dw_ed4dfc70eb"
+                  "dict_id": "dh_da68cb7a0d"
                 },
                 {
                   "text": "に",
@@ -9961,7 +9960,7 @@
                 {
                   "text": "なります",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -10069,7 +10068,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -10108,7 +10107,7 @@
                 {
                   "text": "しま",
                   "reading": null,
-                  "dict_id": "dw_ffb3241d2b"
+                  "dict_id": "dh_844944e5a7"
                 },
                 {
                   "text": "なみ",
@@ -10323,7 +10322,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "が",
@@ -10552,7 +10551,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -10603,7 +10602,7 @@
                 {
                   "text": "なり",
                   "reading": null,
-                  "dict_id": "dh_a35d442879"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "がちですが、",
@@ -11086,7 +11085,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -11131,18 +11130,16 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "d_omou"
+                  "reading": null
                 },
                 {
                   "text": "切",
                   "reading": "き",
-                  "dict_id": "d_omou"
+                  "dict_id": "dw_c10252bc38"
                 },
                 {
                   "text": "って",
-                  "reading": null,
-                  "dict_id": "d_omou"
+                  "reading": null
                 },
                 {
                   "text": "ロボット",
@@ -11214,7 +11211,7 @@
                 {
                   "text": "してくれる",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "姿",
@@ -11327,18 +11324,16 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "dw_d30f7e5981"
+                  "reading": null
                 },
                 {
                   "text": "込",
                   "reading": "こ",
-                  "dict_id": "dw_d30f7e5981"
+                  "dict_id": "dw_6ecb5e255a"
                 },
                 {
                   "text": "んで",
-                  "reading": null,
-                  "dict_id": "dw_d30f7e5981"
+                  "reading": null
                 },
                 {
                   "text": "止",
@@ -11429,7 +11424,7 @@
                 {
                   "text": "なり",
                   "reading": null,
-                  "dict_id": "dh_a35d442879"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "、",
@@ -11470,7 +11465,7 @@
                 {
                   "text": "なりました",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -11670,7 +11665,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -11901,12 +11896,12 @@
                 {
                   "text": "する",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "が",
@@ -11969,7 +11964,7 @@
                 {
                   "text": "そう",
                   "reading": null,
-                  "dict_id": "dw_d8e22179a5"
+                  "dict_id": "dh_d669529e98"
                 },
                 {
                   "text": "です。",
@@ -12155,7 +12150,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -12182,10 +12177,15 @@
                 {
                   "text": "する",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
-                  "text": "とき、",
+                  "text": "とき",
+                  "reading": null,
+                  "dict_id": "dh_23acc6c3a7"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -12204,13 +12204,12 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "dw_91b55fa823"
+                  "reading": null
                 },
                 {
                   "text": "方",
                   "reading": "かた",
-                  "dict_id": "dw_91b55fa823"
+                  "dict_id": "dw_09727d9307"
                 },
                 {
                   "text": "には",
@@ -12237,7 +12236,7 @@
                 {
                   "text": "つけるべき",
                   "reading": null,
-                  "dict_id": "da_0186c8881d"
+                  "dict_id": "dh_dc89d234e4"
                 },
                 {
                   "text": "マナー",
@@ -12323,18 +12322,16 @@
                 },
                 {
                   "text": "っ",
-                  "reading": null,
-                  "dict_id": "dw_5083119d8c"
+                  "reading": null
                 },
                 {
                   "text": "直",
                   "reading": "す",
-                  "dict_id": "dw_5083119d8c"
+                  "dict_id": "dw_935e1dad40"
                 },
                 {
                   "text": "ぐ",
-                  "reading": null,
-                  "dict_id": "dw_5083119d8c"
+                  "reading": null
                 },
                 {
                   "text": "刺",
@@ -12367,7 +12364,7 @@
                 {
                   "text": "なりません",
                   "reading": null,
-                  "dict_id": "dw_0a7cd91412"
+                  "dict_id": "dh_01a0c6ed9c"
                 },
                 {
                   "text": "。",
@@ -12420,21 +12417,15 @@
                 },
                 {
                   "text": "き",
-                  "reading": null,
-                  "dict_id": "dw_a4f6077b2f"
+                  "reading": null
                 },
                 {
                   "text": "寄",
                   "reading": "よ",
-                  "dict_id": "dw_a4f6077b2f"
+                  "dict_id": "dw_f56153dd92"
                 },
                 {
-                  "text": "せ",
-                  "reading": null,
-                  "dict_id": "dw_a4f6077b2f"
-                },
-                {
-                  "text": "たり、",
+                  "text": "せたり、",
                   "reading": null
                 },
                 {
@@ -12518,7 +12509,7 @@
                 {
                   "text": "する",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "のも、",
@@ -12546,7 +12537,7 @@
                 {
                   "text": "されています",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "。",
@@ -12600,7 +12591,7 @@
                 {
                   "text": "して",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "も",
@@ -12781,7 +12772,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 3,
+      "version": 4,
       "paragraphs": [
         {
           "sentences": [
@@ -12812,13 +12803,12 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "d_kau"
+                  "reading": null
                 },
                 {
                   "text": "物",
                   "reading": "もの",
-                  "dict_id": "d_kau"
+                  "dict_id": "dw_817f7f659f"
                 },
                 {
                   "text": "に",
@@ -12837,7 +12827,7 @@
                 {
                   "text": "たび",
                   "reading": null,
-                  "dict_id": "dw_ed4dfc70eb"
+                  "dict_id": "dh_da68cb7a0d"
                 },
                 {
                   "text": "に、",
@@ -12912,7 +12902,7 @@
                 {
                   "text": "こと",
                   "reading": null,
-                  "dict_id": "da_8d614babeb"
+                  "dict_id": "dh_3a987a1b0b"
                 },
                 {
                   "text": "が",
@@ -12921,7 +12911,7 @@
                 {
                   "text": "よく",
                   "reading": null,
-                  "dict_id": "da_44cf244865"
+                  "dict_id": "dh_885f80f47b"
                 },
                 {
                   "text": "ありました",
@@ -13026,7 +13016,7 @@
                 {
                   "text": "してみました",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "。",
@@ -13061,7 +13051,12 @@
                   "dict_id": "dw_cd03443edb"
                 },
                 {
-                  "text": "ときに",
+                  "text": "とき",
+                  "reading": null,
+                  "dict_id": "dh_23acc6c3a7"
+                },
+                {
+                  "text": "に",
                   "reading": null
                 },
                 {
@@ -13104,13 +13099,12 @@
                 },
                 {
                   "text": "い",
-                  "reading": null,
-                  "dict_id": "d_kau"
+                  "reading": null
                 },
                 {
                   "text": "物",
                   "reading": "もの",
-                  "dict_id": "d_kau"
+                  "dict_id": "dw_817f7f659f"
                 },
                 {
                   "text": "を",
@@ -13119,7 +13113,7 @@
                 {
                   "text": "せず",
                   "reading": null,
-                  "dict_id": "da_2659dc951f"
+                  "dict_id": "dh_8470accbc2"
                 },
                 {
                   "text": "に",

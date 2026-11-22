@@ -17,9 +17,14 @@ from pathlib import Path
 from janome.tokenizer import Tokenizer
 
 ROOT = Path(__file__).resolve().parent.parent
-MISSING_RU_PATH = Path(
-    r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_words_ru.json"
-)
+MISSING_RU_PATHS = [
+    Path(
+        r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_words_ru.json"
+    ),
+    Path(
+        r"C:\Users\am200\.gemini\antigravity\brain\b1dc824a-314c-4c02-ab70-90ecec894781\scratch\missing_kana_words_ru.json"
+    ),
+]
 
 PACK_FILES = [
     ROOT / "app/src/main/assets/content/01_n5_pack.json",
@@ -75,8 +80,10 @@ def load_dictionaries():
             add_entry(e)
 
     new_entries = []
-    if MISSING_RU_PATH.exists():
-        with open(MISSING_RU_PATH, encoding="utf-8") as f:
+    for ru_path in MISSING_RU_PATHS:
+        if not ru_path.exists():
+            continue
+        with open(ru_path, encoding="utf-8") as f:
             missing_list = json.load(f)
         for item in missing_list:
             w = item["word"]
@@ -306,10 +313,7 @@ def resolve_dict_id(group, orig_char_dict, by_word_read, by_word, by_read):
         return by_word[base]
     if surf in by_word:
         return by_word[surf]
-    if base in by_read:
-        return by_read[base]
-    if surf in by_read:
-        return by_read[surf]
+    # Never fall back to reading-only lookup for pure-kana words (prevents なります -> 鳴る)
     return None
 
 
@@ -341,6 +345,31 @@ def resegment_sentence(tok: Tokenizer, segments: list, by_word_read, by_word, by
     # Emit new segments, splitting each group at original reading/span boundaries
     new_segs = []
     for g in groups:
+        # Guard against merging multiple distinct original words (e.g. 木 + の + 葉)
+        distinct_orig_dicts = {
+            orig_char_dict[idx]
+            for idx in range(g["start"], g["end"])
+            if orig_char_dict[idx]
+        }
+        if len(distinct_orig_dicts) >= 2 and g["surface"] not in by_word:
+            cur_start = g["start"]
+            while cur_start < g["end"]:
+                sp0 = orig_span_id[cur_start]
+                r0 = orig_reading[cur_start]
+                d0 = orig_char_dict[cur_start]
+                cur_end = cur_start + 1
+                while cur_end < g["end"] and orig_span_id[cur_end] == sp0:
+                    cur_end += 1
+                seg_obj = {
+                    "text": txt[cur_start:cur_end],
+                    "reading": r0,
+                }
+                if d0:
+                    seg_obj["dict_id"] = d0
+                new_segs.append(seg_obj)
+                cur_start = cur_end
+            continue
+
         did = resolve_dict_id(g, orig_char_dict, by_word_read, by_word, by_read) if g["is_word"] else None
         # Split [g['start'], g['end']) whenever orig_reading changes or original reading span changes
         cur_start = g["start"]
@@ -428,9 +457,9 @@ def main():
                 for p in mat["paragraphs"]
             )
             assert new_plain == old_plain, f"Material {mat['id']} plainText changed!"
-            mat["version"] = mat.get("version", 1) + 1
+            mat["version"] = mat.get("version", 1) + 2
 
-        data["pack_version"] = data.get("pack_version", 1) + 1
+        data["pack_version"] = data.get("pack_version", 1) + 2
         with open(pack_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"Updated {pack_path.name} -> pack_version={data['pack_version']}")
@@ -439,7 +468,7 @@ def main():
     manifest_path = ROOT / "content_updates/manifest.json"
     with open(manifest_path, encoding="utf-8") as f:
         manifest = json.load(f)
-    manifest["manifest_version"] = manifest.get("manifest_version", 1) + 1
+    manifest["manifest_version"] = manifest.get("manifest_version", 1) + 3
     pack_versions = {}
     for pack_path in PACK_FILES:
         with open(pack_path, encoding="utf-8") as f:
