@@ -54,8 +54,8 @@ object ContentValidator {
             if (totalSegments == 0) errors += "No text segments found in ${dto.id}"
         }
 
-        if (dto.questions.size !in 1..3) {
-            errors += "Questions count must be 1..3 (found ${dto.questions.size}) for ${dto.id}"
+        if (dto.questions.size !in 1..5) {
+            errors += "Questions count must be 1..5 (found ${dto.questions.size}) for ${dto.id}"
         } else {
             val qTexts = mutableSetOf<String>()
             dto.questions.forEachIndexed { idx, q ->

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 8,
+  "manifest_version": 9,
   "packs": [
     {
       "pack_id": "yomizora_addon_n5_n4_v1",
@@ -17,14 +17,14 @@
     },
     {
       "pack_id": "yomizora_pack_n3_n2_n1_v1",
-      "pack_version": 4,
+      "pack_version": 5,
       "title": "Уровни JLPT N3–N2–N1 (90 лонгрид-текстов)",
       "description": "По 30 расширенных текстов для JLPT N3 (500–900 симв.), N2 (950–1500 симв.) и N1 (1550–2130 симв.) с 2–4 вопросами",
       "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_pack_n3_n2_n1_v1.json"
     },
     {
       "pack_id": "yomizora_pack_n3_n2_n1_v2",
-      "pack_version": 3,
+      "pack_version": 4,
       "title": "Дополнение N3–N2–N1 (+30 текстов)",
       "description": "По 10 новых лонгрид-текстов для JLPT N3, N2 и N1 (итого по 40 текстов в каждом уровне)",
       "url": "https://raw.githubusercontent.com/Nqam/yomizora-reader/main/content_updates/yomizora_pack_n3_n2_n1_v2.json"
