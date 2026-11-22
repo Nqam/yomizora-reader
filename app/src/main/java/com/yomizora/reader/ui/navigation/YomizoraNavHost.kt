@@ -159,7 +159,8 @@ fun YomizoraNavHost() {
                         if (!popped) {
                             navController.navigate("library") {
                                 popUpTo(navController.graph.findStartDestination().id) {
-                                    saveState = true
+                                    inclusive = false
+                                    saveState = false
                                 }
                                 launchSingleTop = true
                             }

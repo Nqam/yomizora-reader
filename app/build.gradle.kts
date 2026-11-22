@@ -24,8 +24,8 @@ android {
         applicationId = "com.yomizora.reader"
         minSdk = 26
         targetSdk = 35
-        versionCode = 13
-        versionName = "1.2.5"
+        versionCode = 14
+        versionName = "1.2.6"
 
         buildConfigField("String", "GITHUB_OWNER", "\"Nqam\"")
         buildConfigField("String", "GITHUB_REPO", "\"yomizora-reader\"")
