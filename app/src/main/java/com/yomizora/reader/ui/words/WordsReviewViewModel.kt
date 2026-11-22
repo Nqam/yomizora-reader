@@ -23,6 +23,7 @@ data class WordsReviewUiState(
     val totalWordsCount: Int = 0,
     val dueWordsCount: Int = 0,
     val masteredCount: Int = 0,
+    val masteredWords: List<WordReviewItem> = emptyList(),
     val nextDueInHours: Long? = null,
     val isFreePracticeMode: Boolean = false,
     val freePracticeRemaining: Int = 0,
@@ -63,7 +64,20 @@ class WordsReviewViewModel @Inject constructor(
     fun startFreePracticeAll() {
         if (allWords.isEmpty()) return
         freePracticeQueue.clear()
-        freePracticeQueue.addAll(allWords.shuffled())
+        val unmastered = allWords.filter { it.repetitions < 3 }.shuffled()
+        val masteredSample = allWords.filter { it.repetitions >= 3 }.shuffled()
+        if (unmastered.isEmpty()) {
+            freePracticeQueue.addAll(masteredSample)
+        } else {
+            // Unmastered words appear first; mastered words appear much less frequently (1 per 4 unmastered)
+            val mIter = masteredSample.iterator()
+            unmastered.forEachIndexed { idx, w ->
+                freePracticeQueue.addLast(w)
+                if ((idx + 1) % 4 == 0 && mIter.hasNext()) {
+                    freePracticeQueue.addLast(mIter.next())
+                }
+            }
+        }
         val first = freePracticeQueue.removeFirstOrNull()
         _uiState.update {
             it.copy(
@@ -95,7 +109,10 @@ class WordsReviewViewModel @Inject constructor(
     private fun rebuildState() {
         val now = System.currentTimeMillis()
         val due = allWords.filter { it.nextReviewAt <= now }
-        val mastered = allWords.count { it.repetitions >= 2 }
+            .sortedWith(compareBy<WordReviewItem> { it.repetitions >= 3 }.thenBy { it.nextReviewAt })
+        val masteredList = allWords.filter { it.repetitions >= 3 }
+            .sortedWith(compareByDescending<WordReviewItem> { it.repetitions }.thenBy { it.word })
+        val mastered = masteredList.size
         val nextUpcoming = allWords
             .filter { it.nextReviewAt > now }
             .minByOrNull { it.nextReviewAt }
@@ -116,6 +133,7 @@ class WordsReviewViewModel @Inject constructor(
                 totalWordsCount = allWords.size,
                 dueWordsCount = due.size,
                 masteredCount = mastered,
+                masteredWords = masteredList,
                 nextDueInHours = hoursLeft,
                 currentCard = cardToShow
             )

@@ -1,6 +1,6 @@
 {
   "pack_id": "starter_n4_v1",
-  "pack_version": 6,
+  "pack_version": 7,
   "materials": [
     {
       "id": "n4_dialogue_044",
@@ -14,7 +14,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -156,7 +156,12 @@
             {
               "segments": [
                 {
-                  "text": "よかったら",
+                  "text": "よかった",
+                  "reading": null,
+                  "dict_id": "dc_366402ad58"
+                },
+                {
+                  "text": "ら",
                   "reading": null
                 },
                 {
@@ -383,7 +388,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -722,7 +727,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -1098,7 +1103,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -1485,7 +1490,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -1922,7 +1927,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -2350,7 +2355,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -2774,7 +2779,7 @@
       "title": "荷物の受け取り",
       "description": "Вежливый разговор с курьером о доставке тяжёлой посылки",
       "order_index": 8,
-      "version": 4,
+      "version": 5,
       "content_hash": "769e1f13db36514b16882b9b080bfd77c826389655c4bb49e62a7f15dc030878",
       "paragraphs": [
         {
@@ -3335,7 +3340,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -3572,7 +3577,16 @@
                   "dict_id": "dw_c29723f0c8"
                 },
                 {
-                  "text": "けてみれば、きっといい",
+                  "text": "けてみれば、",
+                  "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
+                },
+                {
+                  "text": "いい",
                   "reading": null
                 },
                 {
@@ -3749,7 +3763,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -3788,7 +3802,16 @@
                   "dict_id": "dw_68586b19a9"
                 },
                 {
-                  "text": "すそうですね。",
+                  "text": "す",
+                  "reading": null
+                },
+                {
+                  "text": "そうですね",
+                  "reading": null,
+                  "dict_id": "dc_fbc761d670"
+                },
+                {
+                  "text": "。",
                   "reading": null
                 }
               ]
@@ -4266,7 +4289,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -4712,7 +4735,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -5187,7 +5210,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -5574,7 +5597,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -6004,7 +6027,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -6391,7 +6414,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -6640,7 +6663,16 @@
                   "dict_id": "d_iku"
                 },
                 {
-                  "text": "ってよかったと",
+                  "text": "って",
+                  "reading": null
+                },
+                {
+                  "text": "よかった",
+                  "reading": null,
+                  "dict_id": "dc_366402ad58"
+                },
+                {
+                  "text": "と",
                   "reading": null
                 },
                 {
@@ -6775,7 +6807,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -7148,7 +7180,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -7532,7 +7564,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -7597,7 +7629,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も",
                   "reading": null
                 },
                 {
@@ -7951,7 +7988,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -8433,7 +8470,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -8628,7 +8665,8 @@
               "segments": [
                 {
                   "text": "すっかり",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_b3c2103c62"
                 },
                 {
                   "text": "忘",
@@ -8843,7 +8881,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -9302,7 +9340,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -9735,7 +9773,7 @@
       "title": "美容院の予約変更",
       "description": "Вежливый телефонный разговор о переносе записи в парикмахерскую",
       "order_index": 24,
-      "version": 4,
+      "version": 5,
       "content_hash": "6626835861807e6b987c20de9a9bdbbd0e8a2878510daa026fe834bc5e4b6724",
       "paragraphs": [
         {
@@ -10277,7 +10315,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -10675,7 +10713,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -11030,7 +11068,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -11476,7 +11514,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -11671,7 +11709,16 @@
                   "dict_id": "dw_668469130b"
                 },
                 {
-                  "text": "はよかったので、",
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "よかった",
+                  "reading": null,
+                  "dict_id": "dc_366402ad58"
+                },
+                {
+                  "text": "ので、",
                   "reading": null
                 },
                 {
@@ -11873,7 +11920,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -12302,7 +12349,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -12771,7 +12818,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -13220,7 +13267,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -13308,7 +13355,16 @@
                   "dict_id": "dw_7d46a76f2d"
                 },
                 {
-                  "text": "っただしは、それだけ",
+                  "text": "っ",
+                  "reading": null
+                },
+                {
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "は、それだけ",
                   "reading": null
                 },
                 {
@@ -13609,7 +13665,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -13978,7 +14034,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -14427,7 +14483,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -14829,7 +14885,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -15360,7 +15416,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -15796,7 +15852,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -16193,7 +16249,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -16588,7 +16644,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -17022,7 +17078,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -17535,7 +17591,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -17986,7 +18042,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -18446,7 +18502,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -18898,7 +18954,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -19331,7 +19387,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -19734,7 +19790,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -20172,7 +20228,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -20587,7 +20643,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -21067,7 +21123,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -21529,7 +21585,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -22039,7 +22095,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -22508,7 +22564,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -22961,7 +23017,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -23188,8 +23244,13 @@
                   "dict_id": "dw_6212febb7a"
                 },
                 {
-                  "text": "で、すでに",
+                  "text": "で、",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "応募",
@@ -23389,7 +23450,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -23778,7 +23839,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -24189,7 +24250,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -24679,7 +24740,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -25104,7 +25165,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -25622,7 +25683,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -25688,7 +25749,8 @@
               "segments": [
                 {
                   "text": "ほとんど",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "毎日",
@@ -26099,7 +26161,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -26518,7 +26580,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -26944,7 +27006,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -27426,7 +27488,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -27823,7 +27885,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -28274,7 +28336,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -28810,7 +28872,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -28974,7 +29036,16 @@
                   "dict_id": "dw_b067cf8f7a"
                 },
                 {
-                  "text": "しがっかりしましたが、その",
+                  "text": "し",
+                  "reading": null
+                },
+                {
+                  "text": "がっかり",
+                  "reading": null,
+                  "dict_id": "dc_6d4f0e0af0"
+                },
+                {
+                  "text": "しましたが、その",
                   "reading": null
                 },
                 {
@@ -29217,7 +29288,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -29771,7 +29842,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -30180,7 +30251,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -30644,7 +30715,7 @@
       "title": "社内会議の準備",
       "description": "Заблаговременная подготовка к совещанию и предотвращение сбоев",
       "order_index": 71,
-      "version": 4,
+      "version": 5,
       "content_hash": "4256b0af54c9c6eefd74aa6d9e70fbcdcab53ca18540fd783e2481ec1133e667",
       "paragraphs": [
         {
@@ -31170,7 +31241,7 @@
       "title": "スマートフォンの整理",
       "description": "Удаление старых фотографий и освобождение памяти телефона",
       "order_index": 72,
-      "version": 4,
+      "version": 5,
       "content_hash": "87c251f579fa05cbbd66fafc521f5373cf233c29429bce4c06b26bf1d0b910da",
       "paragraphs": [
         {
@@ -31385,7 +31456,16 @@
                   "dict_id": "dw_1830958edf"
                 },
                 {
-                  "text": "すのはもったいないので、",
+                  "text": "すのは",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "ので、",
                   "reading": null
                 },
                 {
@@ -31653,7 +31733,7 @@
       "title": "図書館の延長手続き",
       "description": "Диалог в библиотеке о продлении книги и рекомендации похожих авторов",
       "order_index": 73,
-      "version": 4,
+      "version": 5,
       "content_hash": "a29db86d0672c4826810de4a7107636e304b56e44263e593f0cd3031bb799cab",
       "paragraphs": [
         {
@@ -31949,7 +32029,16 @@
                   "dict_id": "d_yomu"
                 },
                 {
-                  "text": "むのがもったいないんです。",
+                  "text": "むのが",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "んです。",
                   "reading": null
                 }
               ]
@@ -32467,7 +32556,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -33047,7 +33136,7 @@
       "title": "銭湯のマナー",
       "description": "Правила посещения традиционной японской бани и отдых для души",
       "order_index": 75,
-      "version": 4,
+      "version": 5,
       "content_hash": "05fdd1ab389a062de4b2f0a0a9e24961a289558e31e9ddcdef9f27de3ffe96d4",
       "paragraphs": [
         {
@@ -33520,8 +33609,13 @@
                   "dict_id": "dw_1657aa7c9e"
                 },
                 {
-                  "text": "で、すっかり",
+                  "text": "で、",
                   "reading": null
+                },
+                {
+                  "text": "すっかり",
+                  "reading": null,
+                  "dict_id": "dh_b3c2103c62"
                 },
                 {
                   "text": "気",
@@ -33671,7 +33765,7 @@
       "author": "Yomizora",
       "license": "CC-BY-4.0 / Original",
       "created_at": "2026-11-18",
-      "version": 4,
+      "version": 5,
       "paragraphs": [
         {
           "sentences": [
@@ -34188,7 +34282,7 @@
       "title": "留学の説明会",
       "description": "Подготовка вопросов для встречи о стажировке за границей",
       "order_index": 77,
-      "version": 4,
+      "version": 5,
       "content_hash": "52db5caeb28a69b4ec9e9b3ff723f0fb21254562cb2d044f093f6e1ef8e7799a",
       "paragraphs": [
         {
@@ -34667,7 +34761,7 @@
       "title": "初めての味噌作り",
       "description": "Мастер-класс по приготовлению домашнего мисо и терпеливое ожидание",
       "order_index": 78,
-      "version": 4,
+      "version": 5,
       "content_hash": "97f7c0c0619b249d562cff008247b60d7ce5dcfa85c7595e1732e4eda932677c",
       "paragraphs": [
         {
@@ -35220,7 +35314,7 @@
       "title": "お正月の年賀状",
       "description": "Традиция новогодних открыток в эпоху мессенджеров",
       "order_index": 79,
-      "version": 4,
+      "version": 5,
       "content_hash": "19b53817e84864d04f99c0c27a43f2c383635814ffd25bcd5043a0d28afdca9c",
       "paragraphs": [
         {
@@ -35754,7 +35848,7 @@
       "title": "テレワークの工夫",
       "description": "Как научиться переключаться между работой и отдыхом дома",
       "order_index": 80,
-      "version": 4,
+      "version": 5,
       "content_hash": "35021d1577417d70511a55cd7530060ad6e16093b459f9d0b863a0a5431218bd",
       "paragraphs": [
         {
@@ -36264,7 +36358,7 @@
       "title": "リサイクルショップ",
       "description": "Удачная покупка книжного шкафа и радость обустройства комнаты",
       "order_index": 81,
-      "version": 4,
+      "version": 5,
       "content_hash": "9210cec9412d485cd2ed6964829a1bc5a71f0477e0f1eff1dcc6ecd1cda151e7",
       "paragraphs": [
         {
@@ -36810,7 +36904,7 @@
       "title": "季節の野菜",
       "description": "Покупки в овощной лавке и советы от добродушного продавца",
       "order_index": 82,
-      "version": 4,
+      "version": 5,
       "content_hash": "a5edde541e46f89f15c989ede3bbcea66fb00591bdbc035b4a3abbb0f769a5f7",
       "paragraphs": [
         {
@@ -37329,7 +37423,7 @@
       "title": "忘れ物の問い合わせ",
       "description": "Телефонный звонок в службу забытых вещей и счастливая находка",
       "order_index": 83,
-      "version": 4,
+      "version": 5,
       "content_hash": "0ffa211e264313b3115217a4f6252ec8947033d18e16a466ef7dd0c2e1437148",
       "paragraphs": [
         {
@@ -37790,8 +37884,13 @@
             {
               "segments": [
                 {
-                  "text": "…あ、ただいま",
+                  "text": "…あ、",
                   "reading": null
+                },
+                {
+                  "text": "ただいま",
+                  "reading": null,
+                  "dict_id": "dh_693de0a338"
                 },
                 {
                   "text": "終点",
@@ -37826,8 +37925,13 @@
                   "dict_id": "dw_463a344b96"
                 },
                 {
-                  "text": "がぴったり",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "ぴったり",
+                  "reading": null,
+                  "dict_id": "dh_7852ef8168"
                 },
                 {
                   "text": "一致",
@@ -38192,7 +38296,7 @@
       "title": "自転車の点検",
       "description": "Вовремя замеченная неисправность тормозов и помощь мастера",
       "order_index": 84,
-      "version": 4,
+      "version": 5,
       "content_hash": "671c2d21c9fb0b64e1b9d94d7768a7c0db0c3d070264ebcb7d8ff81d4e992bd8",
       "paragraphs": [
         {
@@ -38429,8 +38533,13 @@
                   "dict_id": "dw_e19e8c95bf"
                 },
                 {
-                  "text": "もかなり",
+                  "text": "も",
                   "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
                 },
                 {
                   "text": "抜",
@@ -38777,7 +38886,7 @@
       "title": "文化祭の模擬店",
       "description": "Подготовка класса к школьному фестивалю и командная работа",
       "order_index": 85,
-      "version": 4,
+      "version": 5,
       "content_hash": "f8b9030fd753c1186d09900a77cffeaa390bbeae9d3ad8f71b21d7261f346a0f",
       "paragraphs": [
         {
@@ -39292,7 +39401,7 @@
       "title": "道に迷った観光客",
       "description": "Помощь туристу у станции и преодоление языкового барьера",
       "order_index": 86,
-      "version": 4,
+      "version": 5,
       "content_hash": "7e1348f22438c580bf0fc24755654f83b0464a2f522562d91cc921314b5ae418",
       "paragraphs": [
         {
@@ -39826,7 +39935,7 @@
       "title": "港町の朝市",
       "description": "Поездка в портовый городок и оживлённый утренний рынок",
       "order_index": 87,
-      "version": 4,
+      "version": 5,
       "content_hash": "a4eed26f284005bef00d5604a2e3581fcc354bc604ce67d4913adc7850a924f6",
       "paragraphs": [
         {
@@ -40413,7 +40522,7 @@
       "title": "抹茶スイーツの魅力",
       "description": "Поход с зарубежными друзьями за десертами маття в депатика",
       "order_index": 88,
-      "version": 4,
+      "version": 5,
       "content_hash": "c462445fd198de8fa71f90401c99745132936e4954d27f167ea4e1db44abcc3f",
       "paragraphs": [
         {
@@ -40986,8 +41095,13 @@
                   "dict_id": "d_kaeru"
                 },
                 {
-                  "text": "りたいと、すごく",
+                  "text": "りたいと、",
                   "reading": null
+                },
+                {
+                  "text": "すごく",
+                  "reading": null,
+                  "dict_id": "dh_f2b69135d1"
                 },
                 {
                   "text": "気",
@@ -41360,7 +41474,7 @@
       "title": "お寺での座禅体験",
       "description": "Раннее утро в киотском храме и непривычная тишина дзадзэн",
       "order_index": 89,
-      "version": 4,
+      "version": 5,
       "content_hash": "531fc0e8e9133645c8c91cd1d67d282d0b35831b23e7f75ea1edd4874a0261fc",
       "paragraphs": [
         {
@@ -42307,7 +42421,7 @@
       "title": "漢字の覚え方のコツ",
       "description": "Как радикалы превратили скучную зубрёжку иероглифов в логичную игру",
       "order_index": 90,
-      "version": 4,
+      "version": 5,
       "content_hash": "c3b2e5f6ed37d3fdbf1e14197d1ca405dbdd2ac422cb1d3a0ffdc5e8624402a7",
       "paragraphs": [
         {
@@ -42556,7 +42670,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -43100,7 +43219,7 @@
       "title": "カフェのアルバイトとラテアート",
       "description": "Преодоление первых ошибок в кофейне и первый красивый латте-арт",
       "order_index": 91,
-      "version": 4,
+      "version": 5,
       "content_hash": "73a604c9510e89e19ddea246c0eabd8f3faa6bd91005ec95235bd75eb49a28f8",
       "paragraphs": [
         {
@@ -43707,8 +43826,13 @@
             {
               "segments": [
                 {
-                  "text": "これからももっと",
+                  "text": "これからも",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "練習",
@@ -44032,7 +44156,7 @@
       "title": "山の天気と備えの大切さ",
       "description": "Поход в горы, внезапный туман и урок о важности снаряжения",
       "order_index": 92,
-      "version": 4,
+      "version": 5,
       "content_hash": "d989e4c35ae5f30b2862f6abf1a75a4bf62d3bfdf666755d0b30f94059340d69",
       "paragraphs": [
         {
@@ -44370,8 +44494,13 @@
                   "dict_id": "dw_4553d458a4"
                 },
                 {
-                  "text": "がぐっと",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "下",
@@ -44959,7 +45088,7 @@
       "title": "スピーチ大会への挑戦",
       "description": "Подготовка выступления на японском языке и преодоление страха сцены",
       "order_index": 93,
-      "version": 4,
+      "version": 5,
       "content_hash": "5c878dd32e1b58828bf2e08a5d1c462c1fef82fd3f4253ad76864d1675e756e8",
       "paragraphs": [
         {
@@ -45876,7 +46005,7 @@
       "title": "高原の満天の星空",
       "description": "Поездка в горы, ночь под открытым небом и незабываемый Млечный Путь",
       "order_index": 94,
-      "version": 4,
+      "version": 5,
       "content_hash": "d7ff25db83c28aa03d45ac2b699ef267b8074e17553800aa17acd2b5e71cf3fa",
       "paragraphs": [
         {
@@ -46301,8 +46430,13 @@
             {
               "segments": [
                 {
-                  "text": "「うわあ、まるで",
+                  "text": "「うわあ、",
                   "reading": null
+                },
+                {
+                  "text": "まるで",
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
                 },
                 {
                   "text": "宝石箱",
@@ -46738,7 +46872,7 @@
       "title": "健康診断と小さな習慣",
       "description": "Результаты медосмотра и простая привычка ходить пешком после работы",
       "order_index": 95,
-      "version": 4,
+      "version": 5,
       "content_hash": "dc4c3ce88e2e5cc1fe51396bfb5358d3f6f1fd88992e1afb0661f3228f4c8760",
       "paragraphs": [
         {
@@ -47656,7 +47790,7 @@
       "title": "風呂敷の知恵とエコ",
       "description": "Традиционный японский платок фуросики и его современная польза",
       "order_index": 96,
-      "version": 4,
+      "version": 5,
       "content_hash": "6882b91f0f397e23ef02f91f4b66f23dd4dc7976faa412218f811b4f63f30f40",
       "paragraphs": [
         {
@@ -48663,7 +48797,7 @@
       "title": "梅雨の時期の楽しみ方",
       "description": "Сезон дождей в июне: неудобства и тихая красота гортензий",
       "order_index": 97,
-      "version": 4,
+      "version": 5,
       "content_hash": "a98a2093f3f6e4678771a2691b1f37ad33afe12b166168e9e4c5805caf29bb1b",
       "paragraphs": [
         {
@@ -49624,7 +49758,7 @@
       "title": "名刺の渡し方と第一印象",
       "description": "Первые уроки делового этикета и как важно внимание к деталям",
       "order_index": 98,
-      "version": 4,
+      "version": 5,
       "content_hash": "685bb255c7d7233f38c12f33178075fadbd82f233f3e0d5984a5dea4eb9686a1",
       "paragraphs": [
         {
@@ -50507,7 +50641,7 @@
       "title": "節約と健康のための自炊",
       "description": "Переход от кафе к домашней готовке и система заготовок на неделю",
       "order_index": 99,
-      "version": 4,
+      "version": 5,
       "content_hash": "66b26d4918688376d68306da07e79d076de337e5a4b66a3e1c956aa7e7255b0c",
       "paragraphs": [
         {
@@ -51376,7 +51510,7 @@
       "title": "防災グッズの定期チェック",
       "description": "Подготовка к землетрясениям и проверка тревожного рюкзака раз в полгода",
       "order_index": 100,
-      "version": 4,
+      "version": 5,
       "content_hash": "e3a7262050a1519a9fe5886af410eb16b1a02adde61ac394dba0696f8d0d67de",
       "paragraphs": [
         {

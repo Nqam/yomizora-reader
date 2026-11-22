@@ -1,7 +1,9 @@
 package com.yomizora.reader.ui.settings
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
+import android.provider.OpenableColumns
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.yomizora.reader.data.content.ImportReport
@@ -106,6 +108,10 @@ class SettingsViewModel @Inject constructor(
 
     private val _isDownloadingContent = MutableStateFlow(false)
     val isDownloadingContent: StateFlow<Boolean> = _isDownloadingContent.asStateFlow()
+
+    private val backupPrefs = context.getSharedPreferences("yomizora_backup_prefs", Context.MODE_PRIVATE)
+    private val _linkedBackupName = MutableStateFlow(backupPrefs.getString("backup_name", null))
+    val linkedBackupName: StateFlow<String?> = _linkedBackupName.asStateFlow()
 
     fun checkAppUpdate() {
         viewModelScope.launch {
@@ -231,23 +237,46 @@ class SettingsViewModel @Inject constructor(
         }
     }
 
+    fun exportBackupToLinkedOrPick(onNeedPicker: () -> Unit) {
+        val savedUriStr = backupPrefs.getString("backup_uri", null)
+        if (savedUriStr.isNullOrBlank()) {
+            onNeedPicker()
+            return
+        }
+        val uri = Uri.parse(savedUriStr)
+        viewModelScope.launch {
+            try {
+                writeBackupToUri(uri)
+                _statusMessage.value = "Копия перезаписана в «${_linkedBackupName.value ?: "выбранный файл"}»."
+            } catch (_: Exception) {
+                // Permission expired or file deleted — ask user to pick/create again
+                onNeedPicker()
+            }
+        }
+    }
+
     fun exportBackupToUri(uri: Uri) {
         viewModelScope.launch {
             try {
-                val backupJson = progressRepository.exportProgressBackupJson()
-                withContext(Dispatchers.IO) {
-                    context.contentResolver.openOutputStream(uri)?.bufferedWriter(Charsets.UTF_8)
-                        ?.use { it.write(backupJson) }
-                        ?: throw IllegalStateException("Не удалось записать файл")
-                }
-                _statusMessage.value = "Резервная копия прогресса сохранена."
+                linkBackupUri(uri)
+                writeBackupToUri(uri)
+                _statusMessage.value = "Резервная копия сохранена и привязана («${_linkedBackupName.value ?: "файл"}»)."
             } catch (e: Exception) {
                 _statusMessage.value = "Ошибка резервного копирования: ${e.localizedMessage ?: "Неизвестная ошибка"}"
             }
         }
     }
 
-    fun importBackupFromUri(uri: Uri) {
+    fun restoreFromLinkedBackup() {
+        val savedUriStr = backupPrefs.getString("backup_uri", null)
+        if (savedUriStr.isNullOrBlank()) {
+            _statusMessage.value = "Нет привязанного файла копии."
+            return
+        }
+        importBackupFromUri(Uri.parse(savedUriStr), linkAfterImport = false)
+    }
+
+    fun importBackupFromUri(uri: Uri, linkAfterImport: Boolean = true) {
         viewModelScope.launch {
             try {
                 val rawJson = withContext(Dispatchers.IO) {
@@ -256,12 +285,46 @@ class SettingsViewModel @Inject constructor(
                         ?: throw IllegalStateException("Не удалось прочитать файл")
                 }
                 val restored = progressRepository.importProgressBackupJson(rawJson)
+                if (linkAfterImport) {
+                    linkBackupUri(uri)
+                }
                 _statusMessage.value = "Восстановлено записей прогресса: $restored"
             } catch (e: Exception) {
                 _statusMessage.value = "Ошибка восстановления: ${e.localizedMessage ?: "Неверный формат файла"}"
             }
         }
     }
+
+    private suspend fun writeBackupToUri(uri: Uri) {
+        val backupJson = progressRepository.exportProgressBackupJson()
+        withContext(Dispatchers.IO) {
+            val os = runCatching { context.contentResolver.openOutputStream(uri, "wt") }.getOrNull()
+                ?: context.contentResolver.openOutputStream(uri)
+                ?: throw IllegalStateException("Не удалось открыть файл для записи")
+            os.bufferedWriter(Charsets.UTF_8).use { it.write(backupJson) }
+        }
+    }
+
+    private fun linkBackupUri(uri: Uri) {
+        runCatching {
+            context.contentResolver.takePersistableUriPermission(
+                uri,
+                Intent.FLAG_GRANT_READ_URI_PERMISSION or Intent.FLAG_GRANT_WRITE_URI_PERMISSION
+            )
+        }
+        val name = resolveDisplayName(uri) ?: "yomizora_progress_backup.json"
+        backupPrefs.edit()
+            .putString("backup_uri", uri.toString())
+            .putString("backup_name", name)
+            .apply()
+        _linkedBackupName.value = name
+    }
+
+    private fun resolveDisplayName(uri: Uri): String? = runCatching {
+        context.contentResolver.query(uri, arrayOf(OpenableColumns.DISPLAY_NAME), null, null, null)?.use { c ->
+            if (c.moveToFirst()) c.getString(0) else null
+        }
+    }.getOrNull()
 
     fun dismissImportReport() {
         _importReport.value = null

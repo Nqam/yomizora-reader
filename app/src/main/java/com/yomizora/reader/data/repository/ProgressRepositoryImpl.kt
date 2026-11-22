@@ -545,8 +545,8 @@ class ProgressRepositoryImpl @Inject constructor(
             val days = when (existing.repetitions) {
                 0 -> 1
                 1 -> 3
-                2 -> 7
-                else -> (existing.intervalDays * 2).coerceAtMost(60)
+                2 -> 14
+                else -> (existing.intervalDays * 2).coerceAtMost(90)
             }
             Triple(reps, days, now + days * dayMs)
         } else {

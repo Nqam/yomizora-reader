@@ -1,6 +1,6 @@
 {
   "pack_id": "yomizora_pack_n3_n2_n1_v1",
-  "pack_version": 2,
+  "pack_version": 3,
   "materials": [
     {
       "id": "n3_007",
@@ -9,7 +9,7 @@
       "title": "引っ越しの挨拶まわり",
       "description": "Знакомство с новыми соседями после переезда",
       "order_index": 1,
-      "version": 2,
+      "version": 3,
       "content_hash": "bc577216612335a24a843d4906483b8d94c02a6c486441d933876c4660c656ee",
       "paragraphs": [
         {
@@ -522,8 +522,13 @@
                   "dict_id": "da_789830fa72"
                 },
                 {
-                  "text": "がかなり",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
                 },
                 {
                   "text": "しっかり",
@@ -549,8 +554,13 @@
                   "dict_id": "da_c89726abd0"
                 },
                 {
-                  "text": "ならほとんど",
+                  "text": "なら",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "気",
@@ -1395,7 +1405,7 @@
       "title": "完璧主義をやめてみたら",
       "description": "Отказ от излишнего перфекционизма в повседневных делах",
       "order_index": 2,
-      "version": 2,
+      "version": 3,
       "content_hash": "23c01e190b0fd87b5deb15980184e463af083e0aec2e2a89fe66a2c9d65a7dd0",
       "paragraphs": [
         {
@@ -2865,7 +2875,7 @@
       "title": "お辞儀の角度と気持ち",
       "description": "Разные виды поклонов в Японии и смысл, стоящий за ними",
       "order_index": 3,
-      "version": 2,
+      "version": 3,
       "content_hash": "b2083a27b1ed7be09373688ea9ce05e071efcc5509647add85747dfee97a9bc5",
       "paragraphs": [
         {
@@ -2914,7 +2924,16 @@
                   "dict_id": "da_cf9f183c8e"
                 },
                 {
-                  "text": "など、さまざまな",
+                  "text": "など、",
+                  "reading": null
+                },
+                {
+                  "text": "さまざま",
+                  "reading": null,
+                  "dict_id": "dh_0604fc06f1"
+                },
+                {
+                  "text": "な",
                   "reading": null
                 },
                 {
@@ -3416,8 +3435,13 @@
                   "dict_id": "dw_ac665b3e5d"
                 },
                 {
-                  "text": "きがぎこちなくなり、かえって",
+                  "text": "きがぎこちなくなり、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "不自然",
@@ -4205,7 +4229,7 @@
       "title": "レストランでのアレルギー確認",
       "description": "Вежливый диалог в ресторане об аллергии на орехи",
       "order_index": 4,
-      "version": 2,
+      "version": 3,
       "content_hash": "6b72837abf3fecaf389f6019ddb7f4c1b52c1f4eccefd4a3e2476d790e94e7d0",
       "paragraphs": [
         {
@@ -5510,8 +5534,13 @@
                   "dict_id": "dw_930226ba9b"
                 },
                 {
-                  "text": "もきっと",
+                  "text": "も",
                   "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
                 },
                 {
                   "text": "喜",
@@ -6086,7 +6115,7 @@
       "title": "間違いを恐れない会話練習",
       "description": "Как преодолеть страх ошибок при разговоре на иностранном языке",
       "order_index": 5,
-      "version": 2,
+      "version": 3,
       "content_hash": "64db8be910ee134f193114acfa87788aa10c0522655148e99e0ed5df252c62b0",
       "paragraphs": [
         {
@@ -6239,7 +6268,16 @@
                   "dict_id": "dw_eb892d365f"
                 },
                 {
-                  "text": "、まさにその",
+                  "text": "、",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "その",
                   "reading": null
                 },
                 {
@@ -7083,8 +7121,13 @@
                   "dict_id": "dk_a9c719d142"
                 },
                 {
-                  "text": "がぐっと",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "良",
@@ -7564,7 +7607,7 @@
       "title": "上司への相談と提案",
       "description": "Конструктивное обсуждение оптимизации работы с руководителем",
       "order_index": 6,
-      "version": 2,
+      "version": 3,
       "content_hash": "f059e3f91ffdc8dd67debf121fff1dd9067d0224aff197d06e259f557aa85e27",
       "paragraphs": [
         {
@@ -9094,7 +9137,7 @@
       "title": "計画を立てない旅の良さ",
       "description": "Поездка без жёсткого маршрута и неожиданные открытия",
       "order_index": 7,
-      "version": 2,
+      "version": 3,
       "content_hash": "56683077e166f991cd604ccf301eb9d2d6560452ee0d4c43f9d9e74a84302a34",
       "paragraphs": [
         {
@@ -10586,7 +10629,7 @@
       "title": "報連相の本当の意味",
       "description": "Почему в японских компаниях так важен принцип хо-рэн-со",
       "order_index": 8,
-      "version": 2,
+      "version": 3,
       "content_hash": "4d074861c391dcf0e42c2d73d6968401e84ceeef60aadb88a815cf5357eab25f",
       "paragraphs": [
         {
@@ -11346,7 +11389,8 @@
               "segments": [
                 {
                   "text": "つまり",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
                 },
                 {
                   "text": "報連相",
@@ -11881,7 +11925,7 @@
       "title": "定時退社と仕事の効率",
       "description": "Почему уход вовремя стимулирует работать продуктивнее",
       "order_index": 9,
-      "version": 2,
+      "version": 3,
       "content_hash": "9cc8a0804a94f4258c5f0108aa75e4549e02a9700a89c1daceac4cbf4b19c527",
       "paragraphs": [
         {
@@ -12075,7 +12119,16 @@
                   "dict_id": "dw_ede9721f85"
                 },
                 {
-                  "text": "くだけでは、かえってミスが",
+                  "text": "くだけでは、",
+                  "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
+                },
+                {
+                  "text": "ミスが",
                   "reading": null
                 },
                 {
@@ -12579,7 +12632,16 @@
                   "dict_id": "dw_c0aaf3f9f2"
                 },
                 {
-                  "text": "がぐっとシンプルになり、",
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
+                },
+                {
+                  "text": "シンプルになり、",
                   "reading": null
                 },
                 {
@@ -13316,7 +13378,7 @@
       "title": "デジタルデトックスの週末",
       "description": "Выходные без смартфона и возвращение чувства времени",
       "order_index": 10,
-      "version": 2,
+      "version": 3,
       "content_hash": "e5ec6292dd82eeb342be31802256d3f4b450c4da17e58ad946b685a3607516ce",
       "paragraphs": [
         {
@@ -13473,8 +13535,13 @@
                   "dict_id": "dw_dd60960453"
                 },
                 {
-                  "text": "はもっと",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "本",
@@ -14866,7 +14933,7 @@
       "title": "出汁のうま味という発見",
       "description": "Роль бульона даси в японской кухне и пятый вкус умами",
       "order_index": 11,
-      "version": 2,
+      "version": 3,
       "content_hash": "8a1ae37fba5701a669d7ae79d3794868db39fde3ae84b16d1800e5beff604044",
       "paragraphs": [
         {
@@ -15462,8 +15529,13 @@
                   "dict_id": "dw_049683f694"
                 },
                 {
-                  "text": "んだところから、すでに",
+                  "text": "んだところから、",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "楽",
@@ -15574,7 +15646,8 @@
               "segments": [
                 {
                   "text": "ひとまず",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_6a81dda73e"
                 },
                 {
                   "text": "一口",
@@ -15837,7 +15910,12 @@
                   "dict_id": "dw_03adf90baa"
                 },
                 {
-                  "text": "ただしい",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "い",
                   "reading": null
                 },
                 {
@@ -16285,7 +16363,7 @@
       "title": "四季を感じさせる和菓子の名前",
       "description": "Поэтичные названия японских сладостей, отражающие смену сезонов",
       "order_index": 12,
-      "version": 2,
+      "version": 3,
       "content_hash": "4ddc86ee7eb93c4cd7844c358f1c13960e4314b204b86c6343ec8ed38fb9db70",
       "paragraphs": [
         {
@@ -16419,7 +16497,16 @@
                   "dict_id": "da_c8367609b1"
                 },
                 {
-                  "text": "しさだけでなく、それぞれに",
+                  "text": "しさだけでなく、",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "に",
                   "reading": null
                 },
                 {
@@ -17193,7 +17280,16 @@
                   "dict_id": "da_08deffbf83"
                 },
                 {
-                  "text": "べるのがもったいないほど、",
+                  "text": "べるのが",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "ほど、",
                   "reading": null
                 },
                 {
@@ -17919,7 +18015,7 @@
       "title": "地域によって違う雑煮の味",
       "description": "Почему новогодний суп дзони отличается в разных регионах Японии",
       "order_index": 13,
-      "version": 2,
+      "version": 3,
       "content_hash": "a1709790885d566026f95c8dbc892dc3867b32b27663c657f91eb179c4653da0",
       "paragraphs": [
         {
@@ -18101,7 +18197,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -18720,8 +18821,13 @@
                   "dict_id": "dw_e7e5c08b44"
                 },
                 {
-                  "text": "もかなり",
+                  "text": "も",
                   "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
                 },
                 {
                   "text": "不思議",
@@ -18991,7 +19097,16 @@
                   "dict_id": "dc_f1015c2c7d"
                 },
                 {
-                  "text": "、それぞれの",
+                  "text": "、",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "の",
                   "reading": null
                 },
                 {
@@ -19630,7 +19745,7 @@
       "title": "体調を気遣う会話",
       "description": "Заботливый разговор коллег в сезон простуд",
       "order_index": 14,
-      "version": 2,
+      "version": 3,
       "content_hash": "1149567ab92ba4a9674e6451747b21180c7bd6dc3b2f21592e0d6ea2c4d47906",
       "paragraphs": [
         {
@@ -20009,8 +20124,13 @@
                   "dict_id": "da_d052221468"
                 },
                 {
-                  "text": "がかなり",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
                 },
                 {
                   "text": "激",
@@ -20400,8 +20520,13 @@
                   "dict_id": "dw_ebd408a580"
                 },
                 {
-                  "text": "ちますし、かえって",
+                  "text": "ちますし、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "治",
@@ -21590,7 +21715,7 @@
       "title": "夜行バスでの小さな気遣い",
       "description": "Поездка на ночном автобусе и простая вежливость пассажиров",
       "order_index": 15,
-      "version": 2,
+      "version": 3,
       "content_hash": "68b804c89a076c0d0a56441508434f13c4a884610e5a53c3341da1c7f095958a",
       "paragraphs": [
         {
@@ -21907,8 +22032,13 @@
                   "dict_id": "dw_0a7cd91412"
                 },
                 {
-                  "text": "らしたりして、ほとんど",
+                  "text": "らしたりして、",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "眠",
@@ -23319,7 +23449,7 @@
       "title": "ゼミでの発表を終えて",
       "description": "Подготовка к университетскому семинару и польза вопросов из аудитории",
       "order_index": 16,
-      "version": 2,
+      "version": 3,
       "content_hash": "efd2005ae389a2a8ad58cabc6b63582d888e7aa93374198bdd5294ce9b653777",
       "paragraphs": [
         {
@@ -23667,7 +23797,7 @@
                 },
                 {
                   "text": "早口",
-                  "reading": "はやぐち",
+                  "reading": "はやくち",
                   "dict_id": "da_f9de5161ba"
                 },
                 {
@@ -25043,7 +25173,7 @@
       "title": "モノを減らして見えたもの",
       "description": "Расхламление комнаты и осознанное отношение к покупкам",
       "order_index": 17,
-      "version": 2,
+      "version": 3,
       "content_hash": "a30e82e94d6ce70a9e2ab499f3f77372f1e0627d53c784f96c07cecf0bca9c45",
       "paragraphs": [
         {
@@ -25269,8 +25399,13 @@
                   "dict_id": "dw_8de034b856"
                 },
                 {
-                  "text": "りないのではなく、そもそも",
+                  "text": "りないのではなく、",
                   "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "部屋",
@@ -25537,7 +25672,16 @@
                   "dict_id": "dw_0aa187f7f7"
                 },
                 {
-                  "text": "てたらもったいない」と",
+                  "text": "てたら",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "」と",
                   "reading": null
                 },
                 {
@@ -26691,7 +26835,7 @@
       "title": "聞く力というスキル",
       "description": "Почему в переговорах и общении важнее уметь слушать, чем красиво говорить",
       "order_index": 18,
-      "version": 2,
+      "version": 3,
       "content_hash": "a31bb62c3a360df2ef0e3132d467e2f439f7e290629be019e5d750772c4eea50",
       "paragraphs": [
         {
@@ -27022,8 +27166,13 @@
                   "dict_id": "da_1b5d9a4853"
                 },
                 {
-                  "text": "、ほとんど",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "自分",
@@ -28741,7 +28890,7 @@
       "title": "「お疲れ様」に込められた心",
       "description": "Многозначность и теплота повседневного приветствия «оцукарэсама»",
       "order_index": 19,
-      "version": 2,
+      "version": 3,
       "content_hash": "24c3192a4c6aa219356b718216b41c0c878fbdd03c3546d9deffe024b8a7006c",
       "paragraphs": [
         {
@@ -29654,8 +29803,13 @@
                   "dict_id": "dw_e665a05174"
                 },
                 {
-                  "text": "よりぐっと",
+                  "text": "より",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "縮",
@@ -30017,8 +30171,13 @@
                   "dict_id": "da_2b6bdc9ed1"
                 },
                 {
-                  "text": "らしがますます",
+                  "text": "らしが",
                   "reading": null
+                },
+                {
+                  "text": "ますます",
+                  "reading": null,
+                  "dict_id": "dh_4d311632fe"
                 },
                 {
                   "text": "好",
@@ -30628,7 +30787,7 @@
       "title": "グループ学習の難しさと面白さ",
       "description": "Работа в студенческой команде с разными характерами",
       "order_index": 20,
-      "version": 2,
+      "version": 3,
       "content_hash": "f5c92eee797a5ae134dcd9e7b06852ce15de848182dcd46ff0e4277f75e4a9d2",
       "paragraphs": [
         {
@@ -31142,7 +31301,16 @@
                   "dict_id": "dw_1b1f4db27f"
                 },
                 {
-                  "text": "はそれぞれに",
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "に",
                   "reading": null
                 },
                 {
@@ -31484,7 +31652,16 @@
                   "dict_id": "dw_50ffda9ac7"
                 },
                 {
-                  "text": "がはっきりすると、",
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "はっきり",
+                  "reading": null,
+                  "dict_id": "dh_0bf0e323e9"
+                },
+                {
+                  "text": "すると、",
                   "reading": null
                 },
                 {
@@ -32030,8 +32207,13 @@
                   "dict_id": "dw_1e1b0e2902"
                 },
                 {
-                  "text": "はもっと",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "最初",
@@ -32691,7 +32873,7 @@
       "title": "食品ロスを減らす工夫",
       "description": "Простые бытовые привычки, помогающие не выбрасывать еду",
       "order_index": 21,
-      "version": 2,
+      "version": 3,
       "content_hash": "8a6c8429adb5b704f79343adca72ab19f015691f350db07483df8bfeefe16d17",
       "paragraphs": [
         {
@@ -33931,8 +34113,13 @@
                   "dict_id": "dw_775e8ae19f"
                 },
                 {
-                  "text": "までぐっと",
+                  "text": "まで",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "減",
@@ -34667,7 +34854,7 @@
       "title": "小さな親切の連鎖",
       "description": "Как один добрый поступок на станции меняет настроение на весь день",
       "order_index": 22,
-      "version": 2,
+      "version": 3,
       "content_hash": "afcb01afce0b4af40e9a22355d118f45d1e754fa64df0ac0cfa3fd6efcb3b22e",
       "paragraphs": [
         {
@@ -36946,7 +37133,7 @@
       "title": "メモの取り方ひとつで変わる仕事",
       "description": "Разница между дословным переписыванием и выделением сути",
       "order_index": 23,
-      "version": 2,
+      "version": 3,
       "content_hash": "7572bba395900d8df8ea822e620f53717ddcdbbff56200c8c8e9d9a19ff6ef4c",
       "paragraphs": [
         {
@@ -37451,8 +37638,13 @@
                   "dict_id": "dw_7faa9652f8"
                 },
                 {
-                  "text": "、とうとう",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "とうとう",
+                  "reading": null,
+                  "dict_id": "dh_8ae8e6f484"
                 },
                 {
                   "text": "大切",
@@ -37693,8 +37885,13 @@
                   "dict_id": "dw_96e5df2a2f"
                 },
                 {
-                  "text": "はほとんど",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "書",
@@ -38398,8 +38595,13 @@
                   "dict_id": "da_861abd7355"
                 },
                 {
-                  "text": "れがぐっと",
+                  "text": "れが",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "減",
@@ -39086,7 +39288,7 @@
       "title": "読書が与えてくれるもう一つの人生",
       "description": "Ценность художественной литературы и развитие эмпатии",
       "order_index": 24,
-      "version": 2,
+      "version": 3,
       "content_hash": "03427a5661fe5cc140c3d8f61e39b67ef1b7c264e09b101b5ef8f0604e95454f",
       "paragraphs": [
         {
@@ -39809,8 +40011,13 @@
                   "dict_id": "dw_04d70ff0d1"
                 },
                 {
-                  "text": "われて、ほとんど",
+                  "text": "われて、",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "物語",
@@ -40301,8 +40508,13 @@
                   "dict_id": "d_bunka"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "立場",
@@ -41505,7 +41717,7 @@
       "title": "睡眠の質を高める習慣",
       "description": "Почему важно готовиться ко сну за час до постели",
       "order_index": 25,
-      "version": 2,
+      "version": 3,
       "content_hash": "ac2d94ab3df3e32d3bf79849ba2757425a1c9006cc2644bbe24ecfc4d0a4b4d2",
       "paragraphs": [
         {
@@ -42775,7 +42987,8 @@
               "segments": [
                 {
                   "text": "まさに",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
                 },
                 {
                   "text": "体",
@@ -43696,7 +43909,7 @@
       "title": "もったいないの精神",
       "description": "Философия бережливости моттаинаи и культура ремонта вещей",
       "order_index": 26,
-      "version": 2,
+      "version": 3,
       "content_hash": "19e48e454e159ac91d7e0e50b6f85e6529df7b8c45b359565889153baf1254f4",
       "paragraphs": [
         {
@@ -43718,7 +43931,16 @@
                   "dict_id": "d_furui"
                 },
                 {
-                  "text": "くから「もったいない」という",
+                  "text": "くから「",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "」という",
                   "reading": null
                 },
                 {
@@ -43776,7 +43998,16 @@
                   "dict_id": "dw_7f0774dad8"
                 },
                 {
-                  "text": "をつけっぱなしにしたらもったいない」や「",
+                  "text": "をつけっぱなしにしたら",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "」や「",
                   "reading": null
                 },
                 {
@@ -43808,7 +44039,16 @@
                   "dict_id": "dw_35649dcf33"
                 },
                 {
-                  "text": "すのはもったいない」といった",
+                  "text": "すのは",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "」といった",
                   "reading": null
                 },
                 {
@@ -44274,8 +44514,13 @@
                   "dict_id": "da_379c3d28f5"
                 },
                 {
-                  "text": "そうとするのではなく、むしろ",
+                  "text": "そうとするのではなく、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "細",
@@ -45101,7 +45346,16 @@
                   "dict_id": "dw_91b55fa823"
                 },
                 {
-                  "text": "う「もったいない」の",
+                  "text": "う「",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "」の",
                   "reading": null
                 },
                 {
@@ -45909,7 +46163,7 @@
       "title": "温泉街の夕暮れ",
       "description": "Вечерняя прогулка в юката по старинному курортному городку",
       "order_index": 27,
-      "version": 2,
+      "version": 3,
       "content_hash": "7bec16dc75fa54d248cfa0df9ea8fa242629656ff14dedfae0c28083b9a33df9",
       "paragraphs": [
         {
@@ -46093,8 +46347,13 @@
                   "dict_id": "dw_becfab5215"
                 },
                 {
-                  "text": "いたそこは、まるで",
+                  "text": "いたそこは、",
                   "reading": null
+                },
+                {
+                  "text": "まるで",
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
                 },
                 {
                   "text": "時間",
@@ -47319,7 +47578,12 @@
                   "dict_id": "dw_03adf90baa"
                 },
                 {
-                  "text": "ただしく",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "く",
                   "reading": null
                 },
                 {
@@ -48032,7 +48296,7 @@
       "title": "失敗から立ち直る力",
       "description": "Почему ошибки в работе ценны, если из них делать выводы",
       "order_index": 28,
-      "version": 2,
+      "version": 3,
       "content_hash": "0567edf615b46ac7c9ab51cdc48304bcfd11275d901a37e0dc73d80798f64cf2",
       "paragraphs": [
         {
@@ -48478,7 +48742,8 @@
                 },
                 {
                   "text": "はっきり",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0bf0e323e9"
                 },
                 {
                   "text": "覚",
@@ -49234,7 +49499,16 @@
                   "dict_id": "dw_63997e47f4"
                 },
                 {
-                  "text": "はきっとうまくできる」という",
+                  "text": "は",
+                  "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
+                },
+                {
+                  "text": "うまくできる」という",
                   "reading": null
                 },
                 {
@@ -50449,7 +50723,7 @@
       "title": "地方移住への関心の高まり",
       "description": "Почему всё больше людей переезжают из мегаполисов в регионы",
       "order_index": 29,
-      "version": 2,
+      "version": 3,
       "content_hash": "031ef7aebdd34608a66faf4bfdf940e2d8abcb6c6d2c744c492144c9904944d8",
       "paragraphs": [
         {
@@ -50909,8 +51183,13 @@
                   "dict_id": "da_12d05ba209"
                 },
                 {
-                  "text": "をかなり",
+                  "text": "を",
                   "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
                 },
                 {
                   "text": "抑",
@@ -52067,7 +52346,16 @@
                   "dict_id": "da_bbf45714c2"
                 },
                 {
-                  "text": "きるかを、それぞれが",
+                  "text": "きるかを、",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "が",
                   "reading": null
                 },
                 {
@@ -52692,7 +52980,7 @@
       "title": "コンビニスイーツの進化",
       "description": "Как японские мини-маркеты стали конкурировать с кондитерскими",
       "order_index": 30,
-      "version": 2,
+      "version": 3,
       "content_hash": "d0e60e869c208b0b6c42c96a09380a61e02d359be2388a47b9d6192488f0eb16",
       "paragraphs": [
         {
@@ -54957,7 +55245,7 @@
       "title": "企画会議での意見調整",
       "description": "Конструктивная дискуссия о бюджете и сроках нового проекта",
       "order_index": 1,
-      "version": 2,
+      "version": 3,
       "content_hash": "6ba3f283b484779b5caece67192e48ac56aeb9b701bee8a41214891f7a40b383",
       "paragraphs": [
         {
@@ -57921,7 +58209,7 @@
       "title": "クレーム対応から学ぶ信頼回復",
       "description": "Разговор менеджера и сотрудника после жалобы клиента",
       "order_index": 2,
-      "version": 2,
+      "version": 3,
       "content_hash": "88e11c523dcfae0c9b2fc6fa889b56c07e2ba93ccd9d47ebb2d87a49b3b050c2",
       "paragraphs": [
         {
@@ -57965,7 +58253,16 @@
                   "dict_id": "d_denwa"
                 },
                 {
-                  "text": "、かなりお",
+                  "text": "、",
+                  "reading": null
+                },
+                {
+                  "text": "かなり",
+                  "reading": null,
+                  "dict_id": "dh_f73e51562e"
+                },
+                {
+                  "text": "お",
                   "reading": null
                 },
                 {
@@ -61018,7 +61315,7 @@
       "title": "「第三の場所」がもたらす心の余裕",
       "description": "Значение «третьего места» — между домом и работой",
       "order_index": 3,
-      "version": 2,
+      "version": 3,
       "content_hash": "86f6a1fba14c9778f5a5c0c701670eb4b2e2cf50e4251995ee31160beff41fc2",
       "paragraphs": [
         {
@@ -61050,7 +61347,8 @@
                 },
                 {
                   "text": "あるいは",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "学校",
@@ -61453,7 +61751,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、お",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、お",
                   "reading": null
                 },
                 {
@@ -61498,8 +61801,13 @@
                   "dict_id": "da_01f41d401b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "休",
@@ -62235,7 +62543,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -62756,8 +63069,13 @@
                   "dict_id": "dw_0f92e653f9"
                 },
                 {
-                  "text": "えれば、かえって",
+                  "text": "えれば、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "家庭",
@@ -63915,7 +64233,7 @@
       "title": "情報過多の時代における「選ぶ力」",
       "description": "Как не утонуть в потоке новостей и проверять источники",
       "order_index": 4,
-      "version": 2,
+      "version": 3,
       "content_hash": "e277b8d1e69b3b493468f5f478d863f0eaa6fc09f1a79288ca9365e1d6c591b2",
       "paragraphs": [
         {
@@ -66833,7 +67151,7 @@
       "title": "「できる人」の引き算の思考",
       "description": "Умение отказываться от лишних задач ради главного результата",
       "order_index": 5,
-      "version": 2,
+      "version": 3,
       "content_hash": "2ea027bd923e63e303586a4d589bacf3b6e5f8795772369ea05bfe840b5c4e65",
       "paragraphs": [
         {
@@ -66909,8 +67227,13 @@
                   "dict_id": "da_a8e24a4d10"
                 },
                 {
-                  "text": "てをこなすか」「もっと",
+                  "text": "てをこなすか」「",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "作業",
@@ -68080,7 +68403,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば「",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -69936,7 +70264,7 @@
       "title": "異文化理解の第一歩",
       "description": "Почему знание стереотипов мешает видеть живого человека",
       "order_index": 6,
-      "version": 2,
+      "version": 3,
       "content_hash": "697f2e2151555fa54f22dea9a11cf49514a83192f607a0ec84b6ff0fc1c03192",
       "paragraphs": [
         {
@@ -70182,7 +70510,12 @@
             {
               "segments": [
                 {
-                  "text": "なぜなら、",
+                  "text": "なぜなら",
+                  "reading": null,
+                  "dict_id": "dh_fab827ccd9"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -70388,7 +70721,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、「この",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、「この",
                   "reading": null
                 },
                 {
@@ -71731,7 +72069,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -71836,7 +72179,16 @@
                   "dict_id": "da_99d7e986d4"
                 },
                 {
-                  "text": "れているか」ではなく「それぞれの",
+                  "text": "れているか」ではなく「",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "の",
                   "reading": null
                 },
                 {
@@ -72950,7 +73302,7 @@
       "title": "言葉に表れない「空気を読む」文化",
       "description": "Плюсы и сложности высококонтекстного общения в Японии",
       "order_index": 7,
-      "version": 2,
+      "version": 3,
       "content_hash": "c6b54a01f1fcadf9fbb29ceed96b31d7a5b28af18dc1195c6e0c2adac6ab2545",
       "paragraphs": [
         {
@@ -73227,7 +73579,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -73832,8 +74189,13 @@
                   "dict_id": "da_316e74fe7d"
                 },
                 {
-                  "text": "がかえって",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "深刻",
@@ -74899,7 +75261,7 @@
                 },
                 {
                   "text": "気配",
-                  "reading": "きくば",
+                  "reading": "きくばり",
                   "dict_id": "da_b4baa894b7"
                 },
                 {
@@ -75105,8 +75467,13 @@
                   "dict_id": "da_8556a70a03"
                 },
                 {
-                  "text": "でますます",
+                  "text": "で",
                   "reading": null
+                },
+                {
+                  "text": "ますます",
+                  "reading": null,
+                  "dict_id": "dh_4d311632fe"
                 },
                 {
                   "text": "重要",
@@ -76006,7 +76373,7 @@
       "title": "「覚える学び」から「考える学び」へ",
       "description": "Почему в эпоху ИИ важнее формулировать вопросы, чем заучивать факты",
       "order_index": 8,
-      "version": 2,
+      "version": 3,
       "content_hash": "53d3502103bd356391a04a582d911eeeebf2ae8093d72f9e03043ff4546ac856",
       "paragraphs": [
         {
@@ -76548,7 +76915,16 @@
                   "dict_id": "da_095ada7b39"
                 },
                 {
-                  "text": "がなければ、そもそもAIに",
+                  "text": "がなければ、",
+                  "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
+                },
+                {
+                  "text": "AIに",
                   "reading": null
                 },
                 {
@@ -76664,8 +77040,13 @@
                   "dict_id": "dk_20a255eb7f"
                 },
                 {
-                  "text": "、これからますます",
+                  "text": "、これから",
                   "reading": null
+                },
+                {
+                  "text": "ますます",
+                  "reading": null,
+                  "dict_id": "dh_4d311632fe"
                 },
                 {
                   "text": "重要",
@@ -79117,7 +79498,7 @@
       "title": "多様化する働き方と自己管理",
       "description": "Свобода гибкого графика и ответственность за собственный ритм",
       "order_index": 9,
-      "version": 2,
+      "version": 3,
       "content_hash": "7732291890cbeee7257174e0b100424cc8bbbbd8116ad39e3d063676c02b034e",
       "paragraphs": [
         {
@@ -79565,7 +79946,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -80181,8 +80567,13 @@
                   "dict_id": "dw_09727d9307"
                 },
                 {
-                  "text": "のはずが、かえって",
+                  "text": "のはずが、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "慢性",
@@ -82129,7 +82520,7 @@
       "title": "キャリア相談の面談",
       "description": "Содержательная беседа сотрудника с наставником о профессиональном росте",
       "order_index": 10,
-      "version": 2,
+      "version": 3,
       "content_hash": "e4cf5c5875c52b713d1ca57b85ab4408977b4e564998a9a714a4e7124b74417d",
       "paragraphs": [
         {
@@ -82213,8 +82604,13 @@
                   "dict_id": "da_f4e522835d"
                 },
                 {
-                  "text": "にはだいぶ",
+                  "text": "には",
                   "reading": null
+                },
+                {
+                  "text": "だいぶ",
+                  "reading": null,
+                  "dict_id": "dh_7ef83affc9"
                 },
                 {
                   "text": "慣",
@@ -83222,8 +83618,13 @@
                   "dict_id": "da_da6a240e12"
                 },
                 {
-                  "text": "にならないというか、むしろ",
+                  "text": "にならないというか、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "好",
@@ -83290,8 +83691,13 @@
                   "dict_id": "dw_fba1945c4b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "トラブル",
@@ -83349,7 +83755,16 @@
                   "dict_id": "d_keiken"
                 },
                 {
-                  "text": "がほとんどないので、",
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
+                },
+                {
+                  "text": "ないので、",
                   "reading": null
                 },
                 {
@@ -83507,7 +83922,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -83787,7 +84207,7 @@
               "segments": [
                 {
                   "text": "具体的",
-                  "reading": "ぐたい",
+                  "reading": "ぐたいてき",
                   "dict_id": "da_0def3d2a16"
                 },
                 {
@@ -85461,7 +85881,7 @@
       "title": "発酵食品が支える日本の食卓",
       "description": "Микроорганизмы, климат и мудрость японской ферментации",
       "order_index": 11,
-      "version": 2,
+      "version": 3,
       "content_hash": "361a32418470a466a14dd249af6c7bedcdd13b75c675742a3beabaf743e7ed49",
       "paragraphs": [
         {
@@ -86080,7 +86500,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -87235,7 +87660,12 @@
                   "dict_id": "dw_03adf90baa"
                 },
                 {
-                  "text": "ただしい",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "い",
                   "reading": null
                 },
                 {
@@ -88600,7 +89030,7 @@
       "title": "「間」の美学",
       "description": "Почему пауза и пустое пространство в японской культуре так выразительны",
       "order_index": 12,
-      "version": 2,
+      "version": 3,
       "content_hash": "7ba1fd18666b78e968341d6bf647a34686605fc0ea56e3c22817b204e10e3a58",
       "paragraphs": [
         {
@@ -88654,7 +89084,16 @@
                   "dict_id": "dw_d3d3ddb4e5"
                 },
                 {
-                  "text": "にいたるまで、さまざまな",
+                  "text": "にいたるまで、",
+                  "reading": null
+                },
+                {
+                  "text": "さまざま",
+                  "reading": null,
+                  "dict_id": "dh_0604fc06f1"
+                },
+                {
+                  "text": "な",
                   "reading": null
                 },
                 {
@@ -89151,8 +89590,13 @@
                   "dict_id": "da_5c0892e4a0"
                 },
                 {
-                  "text": "にも、あるいは",
+                  "text": "にも、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "広大",
@@ -89227,8 +89671,13 @@
                   "dict_id": "d_setsumei"
                 },
                 {
-                  "text": "しきらないからこそ、かえって",
+                  "text": "しきらないからこそ、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "見",
@@ -89501,8 +89950,13 @@
                   "dict_id": "dw_b7759483ea"
                 },
                 {
-                  "text": "をぐっと",
+                  "text": "を",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "引",
@@ -91895,7 +92349,7 @@
       "title": "世代間のコミュニケーションギャップ",
       "description": "Как понять разные подходы к работе и общению у разных поколений",
       "order_index": 13,
-      "version": 2,
+      "version": 3,
       "content_hash": "bcd1cca0947ae9fffd4a77bdd82916524ab6a4f1d640685824f36fcea600138c",
       "paragraphs": [
         {
@@ -92187,7 +92641,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -92371,8 +92830,13 @@
                   "dict_id": "da_67b309de3b"
                 },
                 {
-                  "text": "にはそれぞれ",
+                  "text": "には",
                   "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
                 },
                 {
                   "text": "合理的",
@@ -93750,7 +94214,7 @@
                 },
                 {
                   "text": "年齢",
-                  "reading": "ねんだい",
+                  "reading": "ねんれい",
                   "dict_id": "da_c2673c0fe3"
                 },
                 {
@@ -95043,7 +95507,7 @@
       "title": "「ながら行動」が奪う集中力",
       "description": "Почему многозадачность снижает и продуктивность, и удовольствие",
       "order_index": 14,
-      "version": 2,
+      "version": 3,
       "content_hash": "6fe5d062e41e224c21c4cfc958b8d5ebf9f0fa24f2697a60cfdb62abb854f89c",
       "paragraphs": [
         {
@@ -95128,8 +95592,13 @@
                   "dict_id": "d_tsukuru"
                 },
                 {
-                  "text": "ったり、あるいは",
+                  "text": "ったり、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "テレビ",
@@ -95949,8 +96418,13 @@
                   "dict_id": "dw_a1009fb26f"
                 },
                 {
-                  "text": "え、かえって",
+                  "text": "え、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "疲労感",
@@ -96198,7 +96672,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -98544,7 +99023,7 @@
       "title": "旅先での「不便さ」が記憶に残る理由",
       "description": "Почему мелкие трудности в дороге превращаются в лучшие истории",
       "order_index": 15,
-      "version": 2,
+      "version": 3,
       "content_hash": "82df74a2dcfb4c838e7b724dbf8e3c91591c033b45c003395eebfe7ea5459c57",
       "paragraphs": [
         {
@@ -99127,7 +99606,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -99220,7 +99704,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -99507,7 +99996,12 @@
             {
               "segments": [
                 {
-                  "text": "あるいは、",
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -100373,8 +100867,13 @@
                   "dict_id": "d_okiru"
                 },
                 {
-                  "text": "きても、きっと",
+                  "text": "きても、",
                   "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
                 },
                 {
                   "text": "自分",
@@ -100904,7 +101403,16 @@
                   "dict_id": "da_a473c86c3c"
                 },
                 {
-                  "text": "してしまってはもったいない。",
+                  "text": "してしまっては",
+                  "reading": null
+                },
+                {
+                  "text": "もったいない",
+                  "reading": null,
+                  "dict_id": "dh_2ce5c079e3"
+                },
+                {
+                  "text": "。",
                   "reading": null
                 }
               ]
@@ -101911,7 +102419,7 @@
       "title": "オーバーツーリズムと地域の暮らし",
       "description": "Баланс между интересами туристов и спокойствием местных жителей",
       "order_index": 16,
-      "version": 2,
+      "version": 3,
       "content_hash": "f9f987952dedc0d319d795d7523a2409b580c75a30172f18fc029a3bb4e16a2a",
       "paragraphs": [
         {
@@ -102158,7 +102666,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -104899,7 +105412,7 @@
       "title": "睡眠不足が判断力に与える影響",
       "description": "Почему недосып обходится дороже, чем кажется",
       "order_index": 17,
-      "version": 2,
+      "version": 3,
       "content_hash": "dad649c7c8ff16811dd4bc35152badfdbc9fba20e6ac024e8cee27486aa882a5",
       "paragraphs": [
         {
@@ -105263,7 +105776,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -105562,7 +106080,16 @@
                   "dict_id": "da_761e2ac309"
                 },
                 {
-                  "text": "がほとんどないにもかかわらず、",
+                  "text": "が",
+                  "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
+                },
+                {
+                  "text": "ないにもかかわらず、",
                   "reading": null
                 },
                 {
@@ -106096,8 +106623,13 @@
                   "dict_id": "da_d072609b63"
                 },
                 {
-                  "text": "はかえって",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "下",
@@ -106204,8 +106736,13 @@
                   "dict_id": "d_jikan"
                 },
                 {
-                  "text": "がかかっては、まさに",
+                  "text": "がかかっては、",
                   "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
                 },
                 {
                   "text": "本末",
@@ -106547,8 +107084,13 @@
                   "dict_id": "d_asa"
                 },
                 {
-                  "text": "にかえって",
+                  "text": "に",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "強",
@@ -108159,7 +108701,7 @@
       "title": "都市と自然が共生する街づくり",
       "description": "Зелёные крыши, городские парки и новое планирование городов",
       "order_index": 18,
-      "version": 2,
+      "version": 3,
       "content_hash": "1cb9b2434d50993f0317350a2c0baac9c3575b3d45ba5f9f68b4d1ccd2bc9d83",
       "paragraphs": [
         {
@@ -108957,7 +109499,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -111522,7 +112069,7 @@
       "title": "エコツーリズムの可能性",
       "description": "Ответственный туризм, который помогает сохранять природу",
       "order_index": 19,
-      "version": 2,
+      "version": 3,
       "content_hash": "7fa7334657ed124f8525a82082a45ee81f5eefb060577eeb44ed9aa6b068c9d2",
       "paragraphs": [
         {
@@ -111923,8 +112470,13 @@
                   "dict_id": "da_0034cca290"
                 },
                 {
-                  "text": "で、かえって",
+                  "text": "で、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "貴重",
@@ -112178,7 +112730,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -113083,7 +113640,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -114831,7 +115393,7 @@
       "title": "「なぜ」を問い続ける姿勢",
       "description": "Развитие критического мышления в учёбе и повседневной жизни",
       "order_index": 20,
-      "version": 2,
+      "version": 3,
       "content_hash": "86cad3df0a2f6600c7e386b1d3ed09c4c96a52ef94b1b589f410ee2134b8dc2e",
       "paragraphs": [
         {
@@ -115525,7 +116087,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -116349,7 +116916,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -116756,8 +117328,13 @@
                   "dict_id": "d_omou"
                 },
                 {
-                  "text": "わず、むしろ",
+                  "text": "わず、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "理解",
@@ -118124,7 +118701,7 @@
       "title": "「旬」を味わう贅沢",
       "description": "Почему сезонные продукты вкуснее, полезнее и ближе к природе",
       "order_index": 21,
-      "version": 2,
+      "version": 3,
       "content_hash": "d70368e5616026c68a5bfd74a38c8b0db1baa5165ae8a5b10ea4f34e0cf6f361",
       "paragraphs": [
         {
@@ -118338,7 +118915,7 @@
                 },
                 {
                   "text": "発展",
-                  "reading": "はったつ",
+                  "reading": "はってん",
                   "dict_id": "da_5053eac424"
                 },
                 {
@@ -118782,7 +119359,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -119823,8 +120405,13 @@
                   "dict_id": "dw_d113664348"
                 },
                 {
-                  "text": "はかえって",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "豊",
@@ -119988,7 +120575,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -120495,8 +121087,13 @@
                   "dict_id": "da_0dc79bbb93"
                 },
                 {
-                  "text": "がぐっと",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "ぐっと",
+                  "reading": null,
+                  "dict_id": "dh_3c2d963843"
                 },
                 {
                   "text": "近",
@@ -121593,7 +122190,7 @@
       "title": "郷土料理が映す風土と歴史",
       "description": "Как климат и ландшафт сформировали региональные блюда Японии",
       "order_index": 22,
-      "version": 2,
+      "version": 3,
       "content_hash": "f82ad98a6be7d89c6a420cff39a9dd369ed68b3287510ec860b6bca277574e3f",
       "paragraphs": [
         {
@@ -121835,7 +122432,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -122257,8 +122859,13 @@
                   "dict_id": "da_cf7efd61da"
                 },
                 {
-                  "text": "やたたき、あるいは",
+                  "text": "やたたき、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "酢",
@@ -125059,7 +125666,7 @@
       "title": "フィードバックを受け止める技術",
       "description": "Как отличать критику работы от оценки личности",
       "order_index": 23,
-      "version": 2,
+      "version": 3,
       "content_hash": "bf3b4507250696fc6cb304d99df62a95ea73c2cede8d70492a535d6a11327e20",
       "paragraphs": [
         {
@@ -125238,7 +125845,12 @@
             {
               "segments": [
                 {
-                  "text": "まるで「",
+                  "text": "まるで",
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -125315,8 +125927,13 @@
                   "dict_id": "dw_6ecb5e255a"
                 },
                 {
-                  "text": "んだり、あるいは",
+                  "text": "んだり、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "無意識",
@@ -126007,7 +126624,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば「この",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "「この",
                   "reading": null
                 },
                 {
@@ -126923,7 +127545,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -128577,7 +129204,7 @@
       "title": "「教えること」は最大の学び",
       "description": "Почему объяснение материала другим выявляет собственные пробелы",
       "order_index": 24,
-      "version": 2,
+      "version": 3,
       "content_hash": "90996cd43236e15bbd5130a3da015d5ad935b5c3d2c2602916af76aff0d13c26",
       "paragraphs": [
         {
@@ -128635,8 +129262,13 @@
                   "dict_id": "dc_2e1550a3f1"
                 },
                 {
-                  "text": "、すっかり",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "すっかり",
+                  "reading": null,
+                  "dict_id": "dh_b3c2103c62"
                 },
                 {
                   "text": "理解",
@@ -129017,7 +129649,16 @@
                   "dict_id": "da_8974233803"
                 },
                 {
-                  "text": "だったのかがはっきりと",
+                  "text": "だったのかが",
+                  "reading": null
+                },
+                {
+                  "text": "はっきり",
+                  "reading": null,
+                  "dict_id": "dh_0bf0e323e9"
+                },
+                {
+                  "text": "と",
                   "reading": null
                 },
                 {
@@ -129960,7 +130601,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -132295,7 +132941,7 @@
       "title": "「ちょうどいい」距離感の難しさ",
       "description": "Баланс между дружелюбием и профессиональными границами на работе",
       "order_index": 25,
-      "version": 2,
+      "version": 3,
       "content_hash": "c66704f74eb0e375c5bdb2132519b1ff3f1f1e3d4b33167d50ae514e5a570af5",
       "paragraphs": [
         {
@@ -132855,8 +133501,13 @@
                   "dict_id": "da_d397fb8fc7"
                 },
                 {
-                  "text": "かになったりすると、かえって",
+                  "text": "かになったりすると、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "深刻",
@@ -133049,7 +133700,12 @@
             {
               "segments": [
                 {
-                  "text": "つまり、",
+                  "text": "つまり",
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -133292,8 +133948,13 @@
                   "dict_id": "da_32e4fafc4c"
                 },
                 {
-                  "text": "をはっきり",
+                  "text": "を",
                   "reading": null
+                },
+                {
+                  "text": "はっきり",
+                  "reading": null,
+                  "dict_id": "dh_0bf0e323e9"
                 },
                 {
                   "text": "分",
@@ -133569,7 +134230,8 @@
               "segments": [
                 {
                   "text": "たとえば",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
                 },
                 {
                   "text": "個人",
@@ -134152,8 +134814,13 @@
                   "dict_id": "da_0394748380"
                 },
                 {
-                  "text": "やかなつながりこそが、かえって",
+                  "text": "やかなつながりこそが、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "人々",
@@ -134962,7 +135629,7 @@
                 },
                 {
                   "text": "気配",
-                  "reading": "きくば",
+                  "reading": "きくばり",
                   "dict_id": "da_b4baa894b7"
                 },
                 {
@@ -136106,7 +136773,7 @@
       "title": "地域ボランティアの打ち合わせ",
       "description": "Обсуждение организации субботника и привлечения молодёжи",
       "order_index": 26,
-      "version": 2,
+      "version": 3,
       "content_hash": "2a6689502787cb57a7dee9477a7d703ceea1cd7afb8934f7ef2cb9ec21cb1112",
       "paragraphs": [
         {
@@ -136395,8 +137062,13 @@
                   "dict_id": "da_0c98ae9599"
                 },
                 {
-                  "text": "になりがちで、『もっと",
+                  "text": "になりがちで、『",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "若",
@@ -136906,8 +137578,13 @@
                   "dict_id": "da_d0b4bb42d9"
                 },
                 {
-                  "text": "はそもそも",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "町内会",
@@ -139818,7 +140495,7 @@
       "title": "言葉が通じなくても心は通う",
       "description": "Встреча с добротой в стране, языка которой не знаешь",
       "order_index": 27,
-      "version": 2,
+      "version": 3,
       "content_hash": "4a905cd16c4ff0806fea1591afcbecb6588a1e93e6dd541ac6c5c7b0867fd228",
       "paragraphs": [
         {
@@ -140630,8 +141307,13 @@
                   "dict_id": "da_ae86b83582"
                 },
                 {
-                  "text": "りはすでに",
+                  "text": "りは",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "薄暗",
@@ -143442,7 +144124,7 @@
       "title": "「待つ時間」の過ごし方",
       "description": "Как перестать раздражаться в очередях и пробках",
       "order_index": 28,
-      "version": 2,
+      "version": 3,
       "content_hash": "080103b528d59a117d0931de0c61fa1edda86c5fbb6acd3fb1fd0046525b3808",
       "paragraphs": [
         {
@@ -143528,8 +144210,13 @@
                   "dict_id": "dw_1d0afa84d9"
                 },
                 {
-                  "text": "ってこなかったり、あるいは",
+                  "text": "ってこなかったり、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "スーパー",
@@ -145496,8 +146183,13 @@
                   "dict_id": "dw_7001790e0f"
                 },
                 {
-                  "text": "しそうになるなら、そもそも",
+                  "text": "しそうになるなら、",
                   "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "移動",
@@ -146326,8 +147018,13 @@
                   "dict_id": "da_08deffbf83"
                 },
                 {
-                  "text": "らうことがあっても、きっと",
+                  "text": "らうことがあっても、",
                   "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
                 },
                 {
                   "text": "いつも",
@@ -147311,7 +148008,7 @@
       "title": "伝統工芸と現代デザインの融合",
       "description": "Как молодые мастера сохраняют ремёсла в современных интерьерах",
       "order_index": 29,
-      "version": 2,
+      "version": 3,
       "content_hash": "be1e2efca546a82f0847b4619665bcbadce515f912b69a85c75a054342d11f47",
       "paragraphs": [
         {
@@ -147456,7 +148153,12 @@
             {
               "segments": [
                 {
-                  "text": "それぞれの",
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "の",
                   "reading": null
                 },
                 {
@@ -148189,7 +148891,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、これまでは",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、これまでは",
                   "reading": null
                 },
                 {
@@ -148902,8 +149609,13 @@
                   "dict_id": "dk_9aff52197a"
                 },
                 {
-                  "text": "、そもそも",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "今日",
@@ -151160,7 +151872,7 @@
       "title": "食の安全と「地産地消」",
       "description": "Почему покупка местных продуктов выгодна и экологична",
       "order_index": 30,
-      "version": 2,
+      "version": 3,
       "content_hash": "29ebaa8638d14a21abacf5a66435826ef5cbd99967ac6a0822b89697678caaa3",
       "paragraphs": [
         {
@@ -154859,7 +155571,7 @@
       "title": "「忘却」が持つ静かな救済",
       "description": "Почему способность забывать так же важна для психики, как и память",
       "order_index": 1,
-      "version": 2,
+      "version": 3,
       "content_hash": "f08055259540bf9e73ff71273f6c3a088b3a9b4ae2ecc3e9105c36637eeb6634",
       "paragraphs": [
         {
@@ -154967,7 +155679,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "デジタル",
@@ -155412,7 +156125,7 @@
                 },
                 {
                   "text": "現在",
-                  "reading": "げんだい",
+                  "reading": "げんざい",
                   "dict_id": "dw_34c633f13c"
                 },
                 {
@@ -155702,7 +156415,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -156028,8 +156746,13 @@
                   "dict_id": "da_b0f4228976"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "取",
@@ -156378,7 +157101,7 @@
                 },
                 {
                   "text": "現在",
-                  "reading": "げんだい",
+                  "reading": "げんざい",
                   "dict_id": "dw_34c633f13c"
                 },
                 {
@@ -157918,7 +158641,7 @@
                 },
                 {
                   "text": "現在",
-                  "reading": "げんだい",
+                  "reading": "げんざい",
                   "dict_id": "dw_34c633f13c"
                 },
                 {
@@ -159196,7 +159919,7 @@
       "title": "翻訳不可能な言葉の奥行き",
       "description": "Слова, отражающие уникальное мировосприятие, и границы буквального перевода",
       "order_index": 2,
-      "version": 2,
+      "version": 3,
       "content_hash": "3a3b3dcf98264c045fe27c6449fde6db2d5c8e46e6ff09a085dd21f4bb327c27",
       "paragraphs": [
         {
@@ -159343,7 +160066,12 @@
             {
               "segments": [
                 {
-                  "text": "とりわけ、その",
+                  "text": "とりわけ",
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
+                },
+                {
+                  "text": "、その",
                   "reading": null
                 },
                 {
@@ -159375,8 +160103,13 @@
                   "dict_id": "dw_b078096cce"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "固有",
@@ -159576,7 +160309,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -159621,7 +160359,16 @@
                   "dict_id": "da_0dbbbded27"
                 },
                 {
-                  "text": "び」、あるいは「",
+                  "text": "び」、",
+                  "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -160871,7 +161618,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "近年",
@@ -161435,8 +162183,18 @@
             {
               "segments": [
                 {
-                  "text": "したがって、ぴったり",
+                  "text": "したがって",
+                  "reading": null,
+                  "dict_id": "dh_fac1ab9dd0"
+                },
+                {
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "ぴったり",
+                  "reading": null,
+                  "dict_id": "dh_7852ef8168"
                 },
                 {
                   "text": "重",
@@ -162326,7 +163084,16 @@
                   "dict_id": "da_23438402fd"
                 },
                 {
-                  "text": "に、それぞれの",
+                  "text": "に、",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "の",
                   "reading": null
                 },
                 {
@@ -163514,7 +164281,7 @@
       "title": "「一汁三菜」にみる調和の知恵",
       "description": "Архитектура традиционного японского приёма пищи и баланс вкусов",
       "order_index": 3,
-      "version": 2,
+      "version": 3,
       "content_hash": "2773d63a12672e15efa520e635890b0e843f2448b36bdd914687442591923e62",
       "paragraphs": [
         {
@@ -164480,7 +165247,12 @@
             {
               "segments": [
                 {
-                  "text": "それぞれが",
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "が",
                   "reading": null
                 },
                 {
@@ -166715,7 +167487,8 @@
               "segments": [
                 {
                   "text": "たとえば",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
                 },
                 {
                   "text": "一",
@@ -168010,7 +168783,7 @@
       "title": "孤独と孤立の境界線",
       "description": "Разница между добровольным уединением и болезненной социальной изоляцией",
       "order_index": 4,
-      "version": 2,
+      "version": 3,
       "content_hash": "1745d6b540d01786bcb4223898a27edb6aeac231ca37ec493bea7a4a76e08c90",
       "paragraphs": [
         {
@@ -168277,7 +169050,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "都市",
@@ -170244,8 +171018,13 @@
                   "dict_id": "dw_d51eea4082"
                 },
                 {
-                  "text": "、すなわち",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "すなわち",
+                  "reading": null,
+                  "dict_id": "dh_4243fe7f3d"
                 },
                 {
                   "text": "他者",
@@ -170618,7 +171397,8 @@
                 },
                 {
                   "text": "ますます",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_4d311632fe"
                 },
                 {
                   "text": "拡充",
@@ -170634,7 +171414,12 @@
             {
               "segments": [
                 {
-                  "text": "とりわけ、",
+                  "text": "とりわけ",
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -172486,7 +173271,7 @@
       "title": "「観光」の本来の意味を問い直す",
       "description": "От потребительского осмотра достопримечательностей к диалогу с местом",
       "order_index": 5,
-      "version": 2,
+      "version": 3,
       "content_hash": "fc6acabeb5e3cbbbb1a62b6132c50479ef4c04fb2b8d948b6ca9e3e58a8d86f5",
       "paragraphs": [
         {
@@ -173950,7 +174735,12 @@
             {
               "segments": [
                 {
-                  "text": "そもそも、",
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -174326,7 +175116,8 @@
               "segments": [
                 {
                   "text": "たとえば",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
                 },
                 {
                   "text": "朝",
@@ -174380,7 +175171,7 @@
                 },
                 {
                   "text": "店番",
-                  "reading": "みせば",
+                  "reading": "みせばん",
                   "dict_id": "da_c0b32e7149"
                 },
                 {
@@ -174938,7 +175729,8 @@
                 },
                 {
                   "text": "ますます",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_4d311632fe"
                 },
                 {
                   "text": "重要",
@@ -177218,7 +178010,7 @@
       "title": "「見えない労働」の価値を測る",
       "description": "Почему цифровая аналитика не всегда видит главную поддержку в команде",
       "order_index": 6,
-      "version": 2,
+      "version": 3,
       "content_hash": "9f267109a6079966ccd4024c01b77c3bb8087ddcadc7e4ebe137ea2029affdba",
       "paragraphs": [
         {
@@ -178192,8 +178984,13 @@
                   "dict_id": "da_842b90f94e"
                 },
                 {
-                  "text": "はかえって",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "際立",
@@ -178213,7 +179010,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -178413,7 +179215,8 @@
               "segments": [
                 {
                   "text": "そもそも",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "大",
@@ -178948,7 +179751,7 @@
                 },
                 {
                   "text": "気配",
-                  "reading": "きくば",
+                  "reading": "きくばり",
                   "dict_id": "da_b4baa894b7"
                 },
                 {
@@ -179691,7 +180494,12 @@
             {
               "segments": [
                 {
-                  "text": "したがって、",
+                  "text": "したがって",
+                  "reading": null,
+                  "dict_id": "dh_fac1ab9dd0"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -179742,7 +180550,7 @@
                 },
                 {
                   "text": "数字",
-                  "reading": "すうち",
+                  "reading": "すうじ",
                   "dict_id": "dw_7bfa7d676e"
                 },
                 {
@@ -180160,7 +180968,7 @@
                 },
                 {
                   "text": "数字",
-                  "reading": "すうち",
+                  "reading": "すうじ",
                   "dict_id": "dw_7bfa7d676e"
                 },
                 {
@@ -180300,7 +181108,7 @@
                 },
                 {
                   "text": "数字",
-                  "reading": "すうち",
+                  "reading": "すうじ",
                   "dict_id": "dw_7bfa7d676e"
                 },
                 {
@@ -180668,7 +181476,7 @@
               "segments": [
                 {
                   "text": "数字",
-                  "reading": "すうち",
+                  "reading": "すうじ",
                   "dict_id": "dw_7bfa7d676e"
                 },
                 {
@@ -181799,7 +182607,7 @@
       "title": "AIと人間の役割分担をめぐる対話",
       "description": "Дискуссия исследователей о границах автоматизации и ответственности человека",
       "order_index": 7,
-      "version": 2,
+      "version": 3,
       "content_hash": "4fab87e2b2960e9e2791cfcff8a4df789473bfac0fe52f26d0ccd00ff0a8adc8",
       "paragraphs": [
         {
@@ -183111,8 +183919,13 @@
                   "dict_id": "dw_65c9db0f73"
                 },
                 {
-                  "text": "よりむしろ",
+                  "text": "より",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "増",
@@ -183290,7 +184103,16 @@
                   "dict_id": "da_e7c233481d"
                 },
                 {
-                  "text": "ってしまえば、そもそもAIが",
+                  "text": "ってしまえば、",
+                  "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
+                },
+                {
+                  "text": "AIが",
                   "reading": null
                 },
                 {
@@ -184528,7 +185350,16 @@
             {
               "segments": [
                 {
-                  "text": "「まさにその",
+                  "text": "「",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "その",
                   "reading": null
                 },
                 {
@@ -184555,7 +185386,7 @@
                 },
                 {
                   "text": "芸術",
-                  "reading": "げんじゅつ",
+                  "reading": "げいじゅつ",
                   "dict_id": "da_4608ead531"
                 },
                 {
@@ -186546,7 +187377,7 @@
       "title": "効率化の果てに見失うもの",
       "description": "Философское размышление о том, что мы теряем в погоне за абсолютной эффективностью",
       "order_index": 8,
-      "version": 2,
+      "version": 3,
       "content_hash": "6a0ae4a7005c0fb94fa454d0aafae4da8548848fa8901e3f743072722e0f71f5",
       "paragraphs": [
         {
@@ -187411,8 +188242,13 @@
                   "dict_id": "dw_d113664348"
                 },
                 {
-                  "text": "はかえって",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "深",
@@ -187946,8 +188782,13 @@
                   "dict_id": "dw_e26f43b845"
                 },
                 {
-                  "text": "らぎ、あるいは",
+                  "text": "らぎ、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "予期",
@@ -188172,8 +189013,13 @@
                   "dict_id": "dw_505958a5c4"
                 },
                 {
-                  "text": "みがまるで",
+                  "text": "みが",
                   "reading": null
+                },
+                {
+                  "text": "まるで",
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
                 },
                 {
                   "text": "異",
@@ -188713,7 +189559,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -189053,8 +189904,13 @@
                   "dict_id": "da_efaef4a86b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "愛情",
@@ -190762,7 +191618,7 @@
       "title": "「正解のない問い」に向き合う教育",
       "description": "Зачем развивать умение вести спор без победителей и проигравших",
       "order_index": 9,
-      "version": 2,
+      "version": 3,
       "content_hash": "8b9efe5626af09595e2126495f3d0c9c0923d2640dbcde4f29c3367e038d838a",
       "paragraphs": [
         {
@@ -191333,8 +192189,13 @@
                   "dict_id": "dk_3e2f1f32a5"
                 },
                 {
-                  "text": "ろか、そもそも",
+                  "text": "ろか、",
                   "reading": null
+                },
+                {
+                  "text": "そもそも",
+                  "reading": null,
+                  "dict_id": "dh_6f4abd4a35"
                 },
                 {
                   "text": "何",
@@ -191612,7 +192473,16 @@
                   "dict_id": "da_7e33f125e7"
                 },
                 {
-                  "text": "なれば、それぞれが",
+                  "text": "なれば、",
+                  "reading": null
+                },
+                {
+                  "text": "それぞれ",
+                  "reading": null,
+                  "dict_id": "dh_9716e16c49"
+                },
+                {
+                  "text": "が",
                   "reading": null
                 },
                 {
@@ -192435,7 +193305,16 @@
                   "dict_id": "da_50390c24f6"
                 },
                 {
-                  "text": "けをはっきりつけたがる",
+                  "text": "けを",
+                  "reading": null
+                },
+                {
+                  "text": "はっきり",
+                  "reading": null,
+                  "dict_id": "dh_0bf0e323e9"
+                },
+                {
+                  "text": "つけたがる",
                   "reading": null
                 },
                 {
@@ -192637,7 +193516,16 @@
                   "dict_id": "da_90551e6960"
                 },
                 {
-                  "text": "は、まさにこの",
+                  "text": "は、",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "この",
                   "reading": null
                 },
                 {
@@ -195335,7 +196223,7 @@
       "title": "「日常」から離れて見直す自分の輪郭",
       "description": "Как смена обстановки помогает увидеть привычную жизнь со стороны",
       "order_index": 10,
-      "version": 2,
+      "version": 3,
       "content_hash": "1654e6a45551b8b0da9d7f655b3b6034e89eaa2e5626142094723e810eeeddf1",
       "paragraphs": [
         {
@@ -195419,7 +196307,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -196430,8 +197323,13 @@
                   "dict_id": "da_2c331d995d"
                 },
                 {
-                  "text": "さ、あるいは",
+                  "text": "さ、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "見知",
@@ -196769,7 +197667,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -198351,8 +199254,13 @@
                   "dict_id": "dw_0791510211"
                 },
                 {
-                  "text": "されるのは、かえって",
+                  "text": "されるのは、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "普段",
@@ -200585,7 +201493,7 @@
       "title": "専門知と対話するリーダーシップ",
       "description": "Почему в эпоху неопределённости лидеру важнее задавать вопросы, чем давать готовые ответы",
       "order_index": 11,
-      "version": 2,
+      "version": 3,
       "content_hash": "fbebe19e70b240e2d95db85c5dc1487582b308d580778c4ec513b3e866490a3f",
       "paragraphs": [
         {
@@ -201058,8 +201966,13 @@
                   "dict_id": "da_eb20b9f66e"
                 },
                 {
-                  "text": "が、かえって",
+                  "text": "が、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "組織",
@@ -201929,7 +202842,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -202855,8 +203773,13 @@
                   "dict_id": "da_28557a8feb"
                 },
                 {
-                  "text": "するものではないし、むしろ",
+                  "text": "するものではないし、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "二者",
@@ -205052,7 +205975,7 @@
       "title": "「美味しさ」を決める五感の記憶",
       "description": "Почему вкус блюда неотделим от обстановки, памяти и людей рядом",
       "order_index": 12,
-      "version": 2,
+      "version": 3,
       "content_hash": "baeced717876dc676bb0d6573ce0ed01f7e2cc4bea1e4997555a9940a5c29904",
       "paragraphs": [
         {
@@ -205106,8 +206029,13 @@
                   "dict_id": "da_f59ffd9bc9"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "調理",
@@ -205874,7 +206802,7 @@
                 },
                 {
                   "text": "塩味",
-                  "reading": "えんみ",
+                  "reading": "しおあじ",
                   "dict_id": "dw_89cf3b04d4"
                 },
                 {
@@ -206120,7 +207048,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -206863,7 +207796,16 @@
                   "dict_id": "dw_801487b852"
                 },
                 {
-                  "text": "、あるいは「",
+                  "text": "、",
+                  "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -207066,8 +208008,13 @@
                   "dict_id": "da_3362c9861f"
                 },
                 {
-                  "text": "がかえって",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "鈍",
@@ -207576,8 +208523,13 @@
                   "dict_id": "d_jikan"
                 },
                 {
-                  "text": "そのものが、すでに",
+                  "text": "そのものが、",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "食事",
@@ -208570,7 +209522,12 @@
                   "dict_id": "dw_03adf90baa"
                 },
                 {
-                  "text": "ただしい",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "い",
                   "reading": null
                 },
                 {
@@ -210128,7 +211085,7 @@
       "title": "「食べること」の倫理と想像力",
       "description": "Осознанное потребление и уважение к труду, стоящему за каждым блюдом",
       "order_index": 13,
-      "version": 2,
+      "version": 3,
       "content_hash": "898079e658d7c6a746155c26d766055c72c6f2735b277148724adfc9ac662978",
       "paragraphs": [
         {
@@ -210150,8 +211107,13 @@
                   "dict_id": "da_966bf799e3"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "飲食店",
@@ -210886,8 +211848,13 @@
                   "dict_id": "da_f59ffd9bc9"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "労働",
@@ -210975,7 +211942,16 @@
                   "dict_id": "dw_dfc458735b"
                 },
                 {
-                  "text": "である「いただきます」には、",
+                  "text": "である「",
+                  "reading": null
+                },
+                {
+                  "text": "いただきます",
+                  "reading": null,
+                  "dict_id": "dh_32542eb70a"
+                },
+                {
+                  "text": "」には、",
                   "reading": null
                 },
                 {
@@ -211270,7 +212246,12 @@
             {
               "segments": [
                 {
-                  "text": "とりわけ、",
+                  "text": "とりわけ",
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -212737,8 +213718,13 @@
                   "dict_id": "da_ee6601cd09"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "規格",
@@ -213436,8 +214422,13 @@
                   "dict_id": "da_1b7fa92c9a"
                 },
                 {
-                  "text": "ますこと、あるいは",
+                  "text": "ますこと、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "地元",
@@ -214914,7 +215905,7 @@
       "title": "「ちょうどいい」という言葉の危うさ",
       "description": "Почему стремление не выделяться иногда мешает смелым переменам",
       "order_index": 14,
-      "version": 2,
+      "version": 3,
       "content_hash": "074c2ca0ccdb58bade0f8c319b5d97dcbff43010306be603247402ef51416681",
       "paragraphs": [
         {
@@ -219747,7 +220738,7 @@
       "title": "新規事業の撤退をめぐる議論",
       "description": "Сложный управленческий разговор о закрытии убыточного проекта",
       "order_index": 15,
-      "version": 2,
+      "version": 3,
       "content_hash": "60344337184e57b41ba007ba0729777ad501f18389ad2397d398eb47eedae132",
       "paragraphs": [
         {
@@ -221240,8 +222231,13 @@
                   "dict_id": "da_2ef61117f7"
                 },
                 {
-                  "text": "はかえって",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "傷口",
@@ -221679,7 +222675,12 @@
             {
               "segments": [
                 {
-                  "text": "ただし、",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -222392,7 +223393,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -224366,7 +225372,7 @@
       "title": "廃線が問いかける地域の未来",
       "description": "Сокращение локальных железных дорог и поиск новых связей в регионах",
       "order_index": 16,
-      "version": 2,
+      "version": 3,
       "content_hash": "3ae0784eaec30fbfb7391b5021b8a849695f0e75d3a5b9e61176561ef5d20c79",
       "paragraphs": [
         {
@@ -226173,7 +227179,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -228925,7 +229936,7 @@
       "title": "「分かる」と「できる」の隔たり",
       "description": "Почему интеллектуальное понимание не сразу переходит в живой навык",
       "order_index": 17,
-      "version": 2,
+      "version": 3,
       "content_hash": "4f621a70414eca6f075240b5bbbc1c69236ed737355c1d8a762f7352bab51ba2",
       "paragraphs": [
         {
@@ -228956,8 +229967,13 @@
                   "dict_id": "dw_92349854c7"
                 },
                 {
-                  "text": "にせよ、あるいは",
+                  "text": "にせよ、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "外国語",
@@ -229406,7 +230422,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "緊張",
@@ -230102,7 +231119,12 @@
             {
               "segments": [
                 {
-                  "text": "つまり、",
+                  "text": "つまり",
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -230628,8 +231650,13 @@
                   "dict_id": "dw_ead11e7606"
                 },
                 {
-                  "text": "をすでに",
+                  "text": "を",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "獲得",
@@ -231801,7 +232828,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、だからといって",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、だからといって",
                   "reading": null
                 },
                 {
@@ -233849,7 +234881,7 @@
       "title": "基礎研究の価値はすぐには測れない",
       "description": "Почему фундаментальная наука нуждается в долгосрочном доверии общества",
       "order_index": 18,
-      "version": 2,
+      "version": 3,
       "content_hash": "6766a0dbed16db5bd8e22f07fd0d1e5701d4cd9ca6e3cbd2faaed802f0ba4485",
       "paragraphs": [
         {
@@ -234407,7 +235439,7 @@
                 },
                 {
                   "text": "集中",
-                  "reading": "しゅううちゅう",
+                  "reading": "しゅうちゅう",
                   "dict_id": "dw_dc2c9105ac"
                 },
                 {
@@ -234776,7 +235808,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -236498,7 +237535,16 @@
                   "dict_id": "dw_c29723f0c8"
                 },
                 {
-                  "text": "けてきたのは、まさにそれらの",
+                  "text": "けてきたのは、",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "それらの",
                   "reading": null
                 },
                 {
@@ -236609,7 +237655,12 @@
             {
               "segments": [
                 {
-                  "text": "したがって、",
+                  "text": "したがって",
+                  "reading": null,
+                  "dict_id": "dh_fac1ab9dd0"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -238518,7 +239569,7 @@
       "title": "「何もしない時間」への罪悪感",
       "description": "Почему современный человек разучился отдыхать без чувства вины",
       "order_index": 19,
-      "version": 2,
+      "version": 3,
       "content_hash": "2877a09e6b8c036cb55112b8b76c21aee5662ad9ef42356b6be56c96fa36e2cf",
       "paragraphs": [
         {
@@ -238698,8 +239749,13 @@
                   "dict_id": "d_neru"
                 },
                 {
-                  "text": "ていたはずなのに、かえって",
+                  "text": "ていたはずなのに、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "自己",
@@ -238770,8 +239826,13 @@
                   "dict_id": "da_bd02ebb4c2"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "スキルアップ",
@@ -241174,8 +242235,13 @@
                   "dict_id": "da_0b3632f931"
                 },
                 {
-                  "text": "い、あるいは",
+                  "text": "い、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "障害",
@@ -243638,7 +244704,7 @@
       "title": "方言が宿す感情の温度",
       "description": "Почему региональные диалекты сохраняют то, что теряется в стандартном языке",
       "order_index": 20,
-      "version": 2,
+      "version": 3,
       "content_hash": "4d74cb594f7ff2a21dc857032e485debc6d213027b3da977163a82b8f75cf148",
       "paragraphs": [
         {
@@ -243801,8 +244867,13 @@
                   "dict_id": "da_a776655ef3"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "災害",
@@ -243930,7 +245001,7 @@
                 },
                 {
                   "text": "成果",
-                  "reading": "せいかい",
+                  "reading": "せいか",
                   "dict_id": "da_8dc1762636"
                 },
                 {
@@ -245338,7 +246409,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -245356,8 +246432,13 @@
                   "dict_id": "dw_668102f8ec"
                 },
                 {
-                  "text": "み、あるいは",
+                  "text": "み、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "人",
@@ -246006,7 +247087,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、その",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、その",
                   "reading": null
                 },
                 {
@@ -249041,7 +250127,7 @@
       "title": "古書店街を歩くという贅沢",
       "description": "Очарование старых книжных кварталов и случайных находок",
       "order_index": 21,
-      "version": 2,
+      "version": 3,
       "content_hash": "5fd22a1e435347851fdb05ca5e6feaefd39fe900e989dc0859d9c025e880984f",
       "paragraphs": [
         {
@@ -250217,8 +251303,13 @@
                   "dict_id": "da_912fa611e1"
                 },
                 {
-                  "text": "がそっと",
+                  "text": "が",
                   "reading": null
+                },
+                {
+                  "text": "そっと",
+                  "reading": null,
+                  "dict_id": "dh_8ee684e628"
                 },
                 {
                   "text": "挟",
@@ -250280,8 +251371,13 @@
                   "dict_id": "da_dd1abfc542"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "欄外",
@@ -251371,7 +252467,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、",
                   "reading": null
                 },
                 {
@@ -253945,7 +255046,7 @@
       "title": "合意形成における「反対意見」の価値",
       "description": "Почему единое мнение без споров часто ведёт к слепым зонам",
       "order_index": 22,
-      "version": 2,
+      "version": 3,
       "content_hash": "d8da13a0970ea17e7e7110b10aabaaf96ac75b493d3cfaec1859d423747db267",
       "paragraphs": [
         {
@@ -254481,8 +255582,13 @@
                   "dict_id": "da_2c8e7846e4"
                 },
                 {
-                  "text": "、むしろ",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "不自然",
@@ -255399,7 +256505,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -255715,7 +256826,16 @@
                   "dict_id": "da_90551e6960"
                 },
                 {
-                  "text": "も、まさにこの",
+                  "text": "も、",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "この",
                   "reading": null
                 },
                 {
@@ -255745,7 +256865,12 @@
             {
               "segments": [
                 {
-                  "text": "もっとも、ただ",
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
+                },
+                {
+                  "text": "も、ただ",
                   "reading": null
                 },
                 {
@@ -256164,7 +257289,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、あえて",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、あえて",
                   "reading": null
                 },
                 {
@@ -259022,7 +260152,7 @@
       "title": "街の再生と住民の合意",
       "description": "Дискуссия архитектора и представителя жителей о сохранении старого квартала",
       "order_index": 23,
-      "version": 2,
+      "version": 3,
       "content_hash": "432fc0eaeb342ab19d426f452457d8c775ce7bcfd39c478b3ed034d2b8cfd458",
       "paragraphs": [
         {
@@ -260024,7 +261154,16 @@
             {
               "segments": [
                 {
-                  "text": "「まさにそこが",
+                  "text": "「",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "そこが",
                   "reading": null
                 },
                 {
@@ -260404,7 +261543,16 @@
                   "dict_id": "da_ff7609dcc1"
                 },
                 {
-                  "text": "れているのも、まさにその",
+                  "text": "れているのも、",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "その",
                   "reading": null
                 },
                 {
@@ -260970,7 +262118,8 @@
               "segments": [
                 {
                   "text": "たとえば",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
                 },
                 {
                   "text": "低層",
@@ -264318,7 +265467,7 @@
       "title": "建築と自然光の対話",
       "description": "Как свет и тень в традиционном японском доме меняют ощущение пространства",
       "order_index": 24,
-      "version": 2,
+      "version": 3,
       "content_hash": "2144b0b025fd1f40c072943c41ce10a7dd938373acda2168889723aaac00e302",
       "paragraphs": [
         {
@@ -264359,8 +265508,13 @@
                   "dict_id": "da_e75d51684b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "現代",
@@ -264743,7 +265897,16 @@
                   "dict_id": "da_119f8819c7"
                 },
                 {
-                  "text": "においては、むしろ「",
+                  "text": "においては、",
+                  "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -264752,8 +265915,13 @@
                   "dict_id": "da_83dff30a08"
                 },
                 {
-                  "text": "」、すなわち",
+                  "text": "」、",
                   "reading": null
+                },
+                {
+                  "text": "すなわち",
+                  "reading": null,
+                  "dict_id": "dh_4243fe7f3d"
                 },
                 {
                   "text": "光",
@@ -265663,8 +266831,13 @@
                   "dict_id": "da_11afff8e21"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "畳",
@@ -266456,8 +267629,13 @@
                   "dict_id": "da_d524bb8c6b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "金属",
@@ -266506,8 +267684,13 @@
                   "dict_id": "dw_765cad7349"
                 },
                 {
-                  "text": "ではかえって",
+                  "text": "では",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "派手",
@@ -267455,8 +268638,13 @@
                   "dict_id": "da_b7e2b2edd7"
                 },
                 {
-                  "text": "をほとんど",
+                  "text": "を",
                   "reading": null
+                },
+                {
+                  "text": "ほとんど",
+                  "reading": null,
+                  "dict_id": "dh_ed0fd88742"
                 },
                 {
                   "text": "失",
@@ -268824,8 +270012,13 @@
                   "dict_id": "d_watashi"
                 },
                 {
-                  "text": "たちはもっと",
+                  "text": "たちは",
                   "reading": null
+                },
+                {
+                  "text": "もっと",
+                  "reading": null,
+                  "dict_id": "dh_7a740eef08"
                 },
                 {
                   "text": "耳",
@@ -270252,7 +271445,7 @@
       "title": "「信頼」という見えない資本",
       "description": "Почему репутация строится годами, а рушится одним нечестным шагом",
       "order_index": 25,
-      "version": 2,
+      "version": 3,
       "content_hash": "ee2e3c23f3fdbda44ff55c9bc21c5ae5165091540217a6fef0069278601ad7e9",
       "paragraphs": [
         {
@@ -270737,7 +271930,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、「",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、「",
                   "reading": null
                 },
                 {
@@ -271587,7 +272785,12 @@
             {
               "segments": [
                 {
-                  "text": "つまり、",
+                  "text": "つまり",
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -272406,8 +273609,13 @@
                   "dict_id": "dw_8ea5a880ac"
                 },
                 {
-                  "text": "、かえって",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "以前",
@@ -275474,7 +276682,7 @@
       "title": "翻訳における「忠実さ」のジレンマ",
       "description": "Беседа переводчиков о выборе между дословностью и живым звучанием",
       "order_index": 26,
-      "version": 2,
+      "version": 3,
       "content_hash": "9bff0fb56aa7a259822ec7f0d0c1abfe579b5599bc43b52358e4b4a89c2f75fa",
       "paragraphs": [
         {
@@ -276094,7 +277302,16 @@
             {
               "segments": [
                 {
-                  "text": "「まさにそこが",
+                  "text": "「",
+                  "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
+                },
+                {
+                  "text": "そこが",
                   "reading": null
                 },
                 {
@@ -276143,7 +277360,12 @@
             {
               "segments": [
                 {
-                  "text": "たとえば、",
+                  "text": "たとえば",
+                  "reading": null,
+                  "dict_id": "dh_45b0a5b182"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -276758,8 +277980,13 @@
                   "dict_id": "da_0eb724481c"
                 },
                 {
-                  "text": "はまるで",
+                  "text": "は",
                   "reading": null
+                },
+                {
+                  "text": "まるで",
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
                 },
                 {
                   "text": "変",
@@ -277322,8 +278549,13 @@
                   "dict_id": "dw_6ecb5e255a"
                 },
                 {
-                  "text": "むと、かえって",
+                  "text": "むと、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "作者",
@@ -277479,8 +278711,13 @@
                   "dict_id": "dw_35649dcf33"
                 },
                 {
-                  "text": "すことで、かえって",
+                  "text": "すことで、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "異国",
@@ -278411,7 +279648,16 @@
             {
               "segments": [
                 {
-                  "text": "「つまり、",
+                  "text": "「",
+                  "reading": null
+                },
+                {
+                  "text": "つまり",
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -279084,8 +280330,13 @@
                   "dict_id": "da_e714a13022"
                 },
                 {
-                  "text": "は、まさに",
+                  "text": "は、",
                   "reading": null
+                },
+                {
+                  "text": "まさに",
+                  "reading": null,
+                  "dict_id": "dh_bd1e55b112"
                 },
                 {
                   "text": "演奏",
@@ -279855,8 +281106,13 @@
                   "dict_id": "da_f27b88e566"
                 },
                 {
-                  "text": "なりは、きっと",
+                  "text": "なりは、",
                   "reading": null
+                },
+                {
+                  "text": "きっと",
+                  "reading": null,
+                  "dict_id": "dh_10a1348f27"
                 },
                 {
                   "text": "海",
@@ -281453,7 +282709,7 @@
       "title": "「批判的思考」は否定ではない",
       "description": "Истинный смысл критического мышления в науке и обществе",
       "order_index": 27,
-      "version": 2,
+      "version": 3,
       "content_hash": "e8df1fa7e575f239b396b5b746cbefcbf42c11d172e301eb9ef0457aa286b093",
       "paragraphs": [
         {
@@ -281983,7 +283239,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろそれは、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "それは、",
                   "reading": null
                 },
                 {
@@ -282347,7 +283608,12 @@
             {
               "segments": [
                 {
-                  "text": "つまり、",
+                  "text": "つまり",
+                  "reading": null,
+                  "dict_id": "dh_c69b0d8a86"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -282622,7 +283888,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "現代",
@@ -282901,8 +284168,13 @@
                   "dict_id": "dw_a1009fb26f"
                 },
                 {
-                  "text": "えるほどかえって",
+                  "text": "えるほど",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "偏見",
@@ -283618,7 +284890,12 @@
             {
               "segments": [
                 {
-                  "text": "ただし、ここ",
+                  "text": "ただし",
+                  "reading": null,
+                  "dict_id": "dh_f876560625"
+                },
+                {
+                  "text": "、ここ",
                   "reading": null
                 },
                 {
@@ -285119,8 +286396,13 @@
                   "dict_id": "dw_65c9db0f73"
                 },
                 {
-                  "text": "」にそっと",
+                  "text": "」に",
                   "reading": null
+                },
+                {
+                  "text": "そっと",
+                  "reading": null,
+                  "dict_id": "dh_8ee684e628"
                 },
                 {
                   "text": "疑問",
@@ -287115,7 +288397,7 @@
       "title": "「老い」を受け入れる静かな成熟",
       "description": "Принятие возрастных изменений как углубление опыта и внутренней свободы",
       "order_index": 28,
-      "version": 2,
+      "version": 3,
       "content_hash": "e51bc6652f165176086412d0ec4618991d8d15f291298edb41c8bab1de41d87b",
       "paragraphs": [
         {
@@ -287237,7 +288519,16 @@
                   "dict_id": "da_73c8ef21ac"
                 },
                 {
-                  "text": "え」、あるいは「",
+                  "text": "え」、",
+                  "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
+                },
+                {
+                  "text": "「",
                   "reading": null
                 },
                 {
@@ -287494,7 +288785,8 @@
               "segments": [
                 {
                   "text": "まるで",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_713715f80b"
                 },
                 {
                   "text": "見",
@@ -289689,8 +290981,13 @@
                   "dict_id": "dw_b6c8fcf882"
                 },
                 {
-                  "text": "は、むしろ",
+                  "text": "は、",
                   "reading": null
+                },
+                {
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
                 },
                 {
                   "text": "身体",
@@ -289984,8 +291281,13 @@
                   "dict_id": "dw_8038647a65"
                 },
                 {
-                  "text": "は、かえって",
+                  "text": "は、",
                   "reading": null
+                },
+                {
+                  "text": "かえって",
+                  "reading": null,
+                  "dict_id": "dh_303491315a"
                 },
                 {
                   "text": "周囲",
@@ -293224,7 +294526,7 @@
       "title": "「手仕事」の味と効率の狭間で",
       "description": "Судьба небольших семейных мастерских в эпоху массового производства",
       "order_index": 29,
-      "version": 2,
+      "version": 3,
       "content_hash": "ce190f1e7bcb72e3d7bc36c52eb9a21bd815e0d22257119ea0582533df05408e",
       "paragraphs": [
         {
@@ -293691,8 +294993,13 @@
                   "dict_id": "dw_dc4d709fe8"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "和菓子",
@@ -295595,8 +296902,13 @@
                   "dict_id": "da_c8844dfb0b"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "生地",
@@ -298973,7 +300285,7 @@
       "title": "地図から消えた道を辿る",
       "description": "Путешествие по старым торговым тропам Японии и ощущение связи времён",
       "order_index": 30,
-      "version": 2,
+      "version": 3,
       "content_hash": "de3a80e65d4d8ff4f2296a2f860f5e4f1b27e0c9e4bea3b46666acadd2832ff2",
       "paragraphs": [
         {
@@ -299000,8 +300312,13 @@
                   "dict_id": "dw_14df71af20"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "国内",
@@ -300090,8 +301407,13 @@
                   "dict_id": "da_efc5a635d5"
                 },
                 {
-                  "text": "、あるいは",
+                  "text": "、",
                   "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
                 },
                 {
                   "text": "旅",
@@ -300811,7 +302133,8 @@
               "segments": [
                 {
                   "text": "とりわけ",
-                  "reading": null
+                  "reading": null,
+                  "dict_id": "dh_0fdcfd913b"
                 },
                 {
                   "text": "印象",
@@ -301000,7 +302323,16 @@
                   "dict_id": "da_89fd7f5c85"
                 },
                 {
-                  "text": "、あるいはすれ",
+                  "text": "、",
+                  "reading": null
+                },
+                {
+                  "text": "あるいは",
+                  "reading": null,
+                  "dict_id": "dh_9137435191"
+                },
+                {
+                  "text": "すれ",
                   "reading": null
                 },
                 {
@@ -301990,8 +303322,13 @@
                   "dict_id": "dw_a13d77a2bc"
                 },
                 {
-                  "text": "にはすでに",
+                  "text": "には",
                   "reading": null
+                },
+                {
+                  "text": "すでに",
+                  "reading": null,
+                  "dict_id": "dh_7e522da55d"
                 },
                 {
                   "text": "載",
@@ -302578,7 +303915,12 @@
             {
               "segments": [
                 {
-                  "text": "むしろ、",
+                  "text": "むしろ",
+                  "reading": null,
+                  "dict_id": "dh_806c75f909"
+                },
+                {
+                  "text": "、",
                   "reading": null
                 },
                 {
@@ -344996,6 +346338,254 @@
       "reading": "ちょうじょう",
       "translation_ru": "вершина",
       "part_of_speech": "существительное",
+      "note": null
+    },
+    {
+      "id": "dh_f73e51562e",
+      "word": "かなり",
+      "reading": "かなり",
+      "translation_ru": "довольно-таки, весьма",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_ed0fd88742",
+      "word": "ほとんど",
+      "reading": "ほとんど",
+      "translation_ru": "почти (всё/не)",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_0604fc06f1",
+      "word": "さまざま",
+      "reading": "さまざま",
+      "translation_ru": "разнообразный, разный",
+      "part_of_speech": "な-прилагательное",
+      "note": null
+    },
+    {
+      "id": "dh_303491315a",
+      "word": "かえって",
+      "reading": "かえって",
+      "translation_ru": "наоборот, напротив",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_10a1348f27",
+      "word": "きっと",
+      "reading": "きっと",
+      "translation_ru": "наверняка, обязательно",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_bd1e55b112",
+      "word": "まさに",
+      "reading": "まさに",
+      "translation_ru": "именно, как раз",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_3c2d963843",
+      "word": "ぐっと",
+      "reading": "ぐっと",
+      "translation_ru": "резко, заметно; сдержав (слёзы/дыхание)",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_c69b0d8a86",
+      "word": "つまり",
+      "reading": "つまり",
+      "translation_ru": "то есть, короче говоря",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_7a740eef08",
+      "word": "もっと",
+      "reading": "もっと",
+      "translation_ru": "больше, ещё",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_7e522da55d",
+      "word": "すでに",
+      "reading": "すでに",
+      "translation_ru": "уже",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_6a81dda73e",
+      "word": "ひとまず",
+      "reading": "ひとまず",
+      "translation_ru": "пока что, на данный момент",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_f876560625",
+      "word": "ただし",
+      "reading": "ただし",
+      "translation_ru": "однако, правда (оговорка)",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_9716e16c49",
+      "word": "それぞれ",
+      "reading": "それぞれ",
+      "translation_ru": "каждый, по отдельности",
+      "part_of_speech": "наречие / сущ.",
+      "note": null
+    },
+    {
+      "id": "dh_2ce5c079e3",
+      "word": "もったいない",
+      "reading": "もったいない",
+      "translation_ru": "жаль тратить впустую, расточительно",
+      "part_of_speech": "выражение",
+      "note": null
+    },
+    {
+      "id": "dh_45b0a5b182",
+      "word": "たとえば",
+      "reading": "たとえば",
+      "translation_ru": "например",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_6f4abd4a35",
+      "word": "そもそも",
+      "reading": "そもそも",
+      "translation_ru": "вообще-то, изначально",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_4d311632fe",
+      "word": "ますます",
+      "reading": "ますます",
+      "translation_ru": "всё больше и больше",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_0bf0e323e9",
+      "word": "はっきり",
+      "reading": "はっきり",
+      "translation_ru": "чётко, ясно",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_8ae8e6f484",
+      "word": "とうとう",
+      "reading": "とうとう",
+      "translation_ru": "в конце концов, наконец",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_9137435191",
+      "word": "あるいは",
+      "reading": "あるいは",
+      "translation_ru": "или, либо",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_806c75f909",
+      "word": "むしろ",
+      "reading": "むしろ",
+      "translation_ru": "скорее",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_713715f80b",
+      "word": "まるで",
+      "reading": "まるで",
+      "translation_ru": "словно, будто",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_fab827ccd9",
+      "word": "なぜなら",
+      "reading": "なぜなら",
+      "translation_ru": "потому что",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_7ef83affc9",
+      "word": "だいぶ",
+      "reading": "だいぶ",
+      "translation_ru": "довольно, значительно",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_b3c2103c62",
+      "word": "すっかり",
+      "reading": "すっかり",
+      "translation_ru": "совсем, полностью",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_0fdcfd913b",
+      "word": "とりわけ",
+      "reading": "とりわけ",
+      "translation_ru": "особенно, в частности",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_fac1ab9dd0",
+      "word": "したがって",
+      "reading": "したがって",
+      "translation_ru": "следовательно, поэтому",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_7852ef8168",
+      "word": "ぴったり",
+      "reading": "ぴったり",
+      "translation_ru": "идеально подходит, вплотную",
+      "part_of_speech": "наречие",
+      "note": null
+    },
+    {
+      "id": "dh_4243fe7f3d",
+      "word": "すなわち",
+      "reading": "すなわち",
+      "translation_ru": "то есть, иначе говоря",
+      "part_of_speech": "союз",
+      "note": null
+    },
+    {
+      "id": "dh_32542eb70a",
+      "word": "いただきます",
+      "reading": "いただきます",
+      "translation_ru": "приятного аппетита / с благодарностью принимаю пищу",
+      "part_of_speech": "выражение",
+      "note": null
+    },
+    {
+      "id": "dh_8ee684e628",
+      "word": "そっと",
+      "reading": "そっと",
+      "translation_ru": "тихонько, осторожно",
+      "part_of_speech": "наречие",
       "note": null
     }
   ]

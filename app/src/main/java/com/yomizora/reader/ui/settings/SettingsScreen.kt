@@ -110,6 +110,7 @@ fun SettingsScreen(
     val isCheckingContentUpdate by viewModel.isCheckingContentUpdate.collectAsStateWithLifecycle()
     val remoteContentUpdates by viewModel.remoteContentUpdates.collectAsStateWithLifecycle()
     val isDownloadingContent by viewModel.isDownloadingContent.collectAsStateWithLifecycle()
+    val linkedBackupName by viewModel.linkedBackupName.collectAsStateWithLifecycle()
 
     var pendingResetLevel by remember { mutableStateOf<JlptLevel?>(null) }
     var showCreateProfileDialog by remember { mutableStateOf(false) }
@@ -615,27 +616,61 @@ fun SettingsScreen(
             if (selectedSection == SettingsSection.BACKUP) {
                 item {
                     SettingsSectionCard(title = "Резервное копирование") {
-                    OutlinedButton(
-                        onClick = { backupLauncher.launch("yomizora_progress_backup.json") },
-                        shape = RoundedCornerShape(12.dp),
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Icon(Icons.Rounded.Backup, contentDescription = null)
-                        Spacer(Modifier.width(8.dp))
-                        Text("Резервная копия прогресса")
-                    }
-                    Spacer(Modifier.height(8.dp))
-                    OutlinedButton(
-                        onClick = { restoreBackupLauncher.launch(arrayOf("application/json")) },
-                        shape = RoundedCornerShape(12.dp),
-                        modifier = Modifier.fillMaxWidth()
-                    ) {
-                        Icon(Icons.Rounded.Restore, contentDescription = null)
-                        Spacer(Modifier.width(8.dp))
-                        Text("Восстановить прогресс из копии")
+                        Text(
+                            text = if (linkedBackupName != null) {
+                                "Привязанный файл: $linkedBackupName (перезаписывается без создания копий)."
+                            } else {
+                                "Выберите файл в Google Диске или на устройстве — последующие копии будут перезаписывать его."
+                            },
+                            style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(Modifier.height(10.dp))
+                        Button(
+                            onClick = {
+                                viewModel.exportBackupToLinkedOrPick {
+                                    backupLauncher.launch("yomizora_progress_backup.json")
+                                }
+                            },
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Icon(Icons.Rounded.Backup, contentDescription = null)
+                            Spacer(Modifier.width(8.dp))
+                            Text(if (linkedBackupName != null) "Обновить копию (перезаписать)" else "Сохранить копию прогресса")
+                        }
+                        if (linkedBackupName != null) {
+                            Spacer(Modifier.height(8.dp))
+                            OutlinedButton(
+                                onClick = { backupLauncher.launch("yomizora_progress_backup.json") },
+                                shape = RoundedCornerShape(12.dp),
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text("Выбрать другой файл для копии")
+                            }
+                            Spacer(Modifier.height(8.dp))
+                            OutlinedButton(
+                                onClick = viewModel::restoreFromLinkedBackup,
+                                shape = RoundedCornerShape(12.dp),
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Icon(Icons.Rounded.CloudDownload, contentDescription = null)
+                                Spacer(Modifier.width(8.dp))
+                                Text("Загрузить из привязанного файла")
+                            }
+                        }
+                        Spacer(Modifier.height(8.dp))
+                        OutlinedButton(
+                            onClick = { restoreBackupLauncher.launch(arrayOf("application/json")) },
+                            shape = RoundedCornerShape(12.dp),
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Icon(Icons.Rounded.Restore, contentDescription = null)
+                            Spacer(Modifier.width(8.dp))
+                            Text("Выбрать и восстановить (Google Диск / файл)")
+                        }
                     }
                 }
-            }
 
             item {
                 SettingsSectionCard(title = "Сброс прогресса") {

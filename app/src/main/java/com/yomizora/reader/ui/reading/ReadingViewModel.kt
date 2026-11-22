@@ -135,7 +135,7 @@ class ReadingViewModel @Inject constructor(
                             val posLower = entry.partOfSpeech.lowercase()
                             if (posLower.contains("разговор") || posLower.contains("выражен") || posLower.contains("идиом")) {
                                 conversationalVocab += entry
-                            } else if (hasKanjiReading) {
+                            } else if (hasKanjiReading || hasDictId) {
                                 regularVocab += entry
                             }
                         }
@@ -143,7 +143,7 @@ class ReadingViewModel @Inject constructor(
                 }
                 vocab.addAll(conversationalVocab)
                 for (entry in regularVocab) {
-                    if (vocab.size >= 12) break
+                    if (vocab.size >= 16) break
                     vocab += entry
                 }
                 Triple(foundGrammar, positions, vocab)

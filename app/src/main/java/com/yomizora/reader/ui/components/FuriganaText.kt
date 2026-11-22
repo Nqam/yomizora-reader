@@ -171,6 +171,16 @@ fun FuriganaParagraph(
                                     RoundedCornerShape(1.dp)
                                 )
                         )
+                    } else if (item.isWordInteractive && item.rubyText == null) {
+                        Box(
+                            modifier = Modifier
+                                .widthIn(min = 14.dp)
+                                .height(1.5.dp)
+                                .background(
+                                    MaterialTheme.colorScheme.primary.copy(alpha = 0.35f),
+                                    RoundedCornerShape(1.dp)
+                                )
+                        )
                     }
                 }
             }
