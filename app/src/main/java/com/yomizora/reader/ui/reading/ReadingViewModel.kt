@@ -83,7 +83,8 @@ class ReadingViewModel @Inject constructor(
             progressRepository.markMaterialOpened(materialId)
             val updated = progressRepository.getMaterialWithProgress(materialId) ?: item
             val seenGrammarIds = progressRepository.getSeenGrammarIds(excludeMaterialId = materialId)
-            val seenWordIds = progressRepository.getSeenWordIds(excludeMaterialId = materialId)
+            val seenWordIds = progressRepository.getSeenWordIds(excludeMaterialId = materialId) +
+                contentRepository.getPriorWordIds(updated.material.level, updated.material.orderIndex)
             val familiar = progressRepository.getFamiliarWords(minCompletedTexts = 2)
 
             val dictIds = LinkedHashSet<String>()

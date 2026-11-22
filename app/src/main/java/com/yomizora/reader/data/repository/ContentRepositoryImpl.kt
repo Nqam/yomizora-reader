@@ -30,6 +30,9 @@ class ContentRepositoryImpl @Inject constructor(
     private val materialCache = ConcurrentHashMap<String, ReadingMaterial>()
     private val dictionaryCache = ConcurrentHashMap<String, DictionaryEntry>()
 
+    @Volatile
+    private var firstWordRankCache: Pair<Int, Map<String, Int>>? = null
+
     override fun observeMaterialsByLevel(level: JlptLevel): Flow<List<ReadingMaterial>> =
         materialDao.observeByLevel(level.code)
             .map { list -> list.map { it.toDomainCached() } }
@@ -114,6 +117,36 @@ class ContentRepositoryImpl @Inject constructor(
         }
         return result
     }
+
+    override suspend fun getPriorWordIds(level: JlptLevel, orderIndex: Int): Set<String> =
+        withContext(Dispatchers.IO) {
+            val allEntities = materialDao.getAllOnce()
+            val signature = allEntities.size * 31 + allEntities.sumOf { it.version }
+            val rankMap = firstWordRankCache?.takeIf { it.first == signature }?.second ?: run {
+                val sorted = allEntities.sortedBy {
+                    JlptLevel.fromCode(it.level).ordinal * 100_000 + it.orderIndex
+                }
+                val computed = HashMap<String, Int>(8192)
+                for (entity in sorted) {
+                    val rank = JlptLevel.fromCode(entity.level).ordinal * 100_000 + entity.orderIndex
+                    val mat = entity.toDomainCached()
+                    for (p in mat.paragraphs) {
+                        for (s in p.sentences) {
+                            for (seg in s.segments) {
+                                val did = seg.dictId
+                                if (!did.isNullOrBlank()) {
+                                    computed.putIfAbsent(did, rank)
+                                }
+                            }
+                        }
+                    }
+                }
+                firstWordRankCache = signature to computed
+                computed
+            }
+            val currentRank = level.ordinal * 100_000 + orderIndex
+            rankMap.filterValues { it < currentRank }.keys
+        }
 
     override suspend fun getMaterialCountByLevel(level: JlptLevel): Int =
         materialDao.countByLevel(level.code)

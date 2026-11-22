@@ -14,5 +14,6 @@ interface ContentRepository {
     suspend fun searchMaterials(query: String, level: JlptLevel? = null, category: String? = null): List<ReadingMaterial>
     suspend fun lookupWord(dictId: String?, surfaceText: String, reading: String? = null): DictionaryEntry?
     suspend fun lookupWordsByIds(ids: Collection<String>): Map<String, DictionaryEntry>
+    suspend fun getPriorWordIds(level: JlptLevel, orderIndex: Int): Set<String>
     suspend fun getMaterialCountByLevel(level: JlptLevel): Int
 }
